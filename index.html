@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/comm.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -16,12 +23,20 @@
         </nav>
       </header>
       <div class="slide">
-        <a href="#">
-          <img
-            src="./images/main/banner/mobile_banner.png"
-            alt="제로에 비타민C 가드득 칼로리제로, 당류제로, 비타500제로"
-          />
-        </a>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              Slide 1
+              <a href="#">
+                <img
+                  src="./images/main/banner/mobile_banner.png"
+                  alt="제로에 비타민C 가드득 칼로리제로, 당류제로, 비타500제로"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+        </div>
       </div>
       <div class="video">
         <iframe
