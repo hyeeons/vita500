@@ -14,6 +14,7 @@
   text-decoration: none;
   line-height: 1.5;
   font-size: 16px;
+  font-family: "Pretendard-Regular";
 }
 
 .blind {
@@ -40,6 +41,29 @@ body {
   position: absolute;
 }
 
+#main {
+  min-height: calc(100vh - 2044px - 820px - 447px);
+}
+#main .vita-mp,
+#main .vita-zero,
+#main .vita-reh {
+  height: 511px;
+}
+#main .vita-reh {
+  height: 820px;
+}
+#main .vita-prod {
+  height: 511px;
+}
+#main .vita-vdo {
+  height: 447px;
+}
+
+#footer {
+  width: 375px;
+  height: 233px;
+}
+
 .swiper-bnr {
   width: 375px;
   height: 608px;
@@ -51,7 +75,7 @@ body {
 
 .video {
   width: 375px;
-  height: 220px;
+  height: 227px;
   background: #ffcc5f;
 }
 .video .video-wraper {
@@ -64,4 +88,34 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.sec-titbox {
+  text-align: center;
+  padding: 61px;
+}
+.sec-titbox .sec-subtit-bk {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #212126;
+}
+.sec-titbox .sec-tit1 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px; /* 157.143% */
+  letter-spacing: -1.4px;
+}
+
+.sec-img {
+  width: 253px;
+  height: 253px;
+  translate: 60px -60px;
+}
+.sec-img img {
+  width: 253px;
+  height: 238px;
 }/*# sourceMappingURL=comm.css.map */

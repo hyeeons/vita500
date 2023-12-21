@@ -5,39 +5,40 @@ body {
   background: url("../../모바일_아이폰13미니_메인.png") no-repeat 50% 0;
 }
 
+// layout
 .wrap {
   width: 375px;
   margin: 0 auto;
 }
+
 #header {
   position: absolute;
 }
 
-// slide
-.swiper-bnr {
-  width: 375px;
-  height: 608px;
-  img {
-    width: 375px;
-    height: 608px;
+#main {
+  min-height: calc(100vh - 4 * $vitaH - $vitahisH - $vitavdoH);
+
+  .vita-mp,
+  .vita-zero,
+  .vita-reh {
+    height: $vitaH;
+  }
+
+  .vita-reh {
+    height: $vitahisH;
+  }
+
+  .vita-prod {
+    height: $vitaH;
+  }
+
+  .vita-vdo {
+    height: $vitavdoH;
   }
 }
 
-// video
-.video {
+#footer {
   width: 375px;
-  height: 220px;
-  background: $primary;
-  .video-wraper {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    iframe {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+  height: 233px;
 }
-
-// vita500
+@import "main", "sub1";

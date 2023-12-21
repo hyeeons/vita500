@@ -1,0 +1,52 @@
+// slide
+.swiper-bnr {
+  width: 375px;
+  height: 608px;
+  img {
+    width: 375px;
+    height: 608px;
+  }
+}
+
+// video
+.video {
+  width: 375px;
+  height: 227px;
+  background: $primary;
+  .video-wraper {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// vita500
+.sec-titbox {
+  text-align: center;
+  padding: 61px;
+
+  .sec-subtit-bk {
+    @include ft-bdsz12;
+    color: $txtDefult;
+  }
+
+  .sec-tit1 {
+    @include ft-titsz35;
+  }
+}
+
+.sec-img {
+  width: 253px;
+  height: 253px;
+  translate: (60px -60px);
+  img {
+    width: 253px;
+    height: 238px;
+  }
+}
+// 상단 작성 중
