@@ -43,7 +43,9 @@
 .sec-img {
   width: 253px;
   height: 253px;
-  translate: (60px -60px);
+  //   translate: (60px -60px);
+  //   margin 이용
+  // translate는 자리에서 움직일 때 주로 사용
   img {
     width: 253px;
     height: 238px;
