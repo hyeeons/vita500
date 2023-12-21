@@ -1,1 +1,43 @@
 @import "variables", "mixins", "fonts", "resets";
+
+// body-디자인이미지
+body {
+  background: url("../../모바일_아이폰13미니_메인.png") no-repeat 50% 0;
+}
+
+.wrap {
+  width: 375px;
+  margin: 0 auto;
+}
+#header {
+  position: absolute;
+}
+
+// slide
+.swiper-bnr {
+  width: 375px;
+  height: 608px;
+  img {
+    width: 375px;
+    height: 608px;
+  }
+}
+
+// video
+.video {
+  width: 375px;
+  height: 220px;
+  background: $primary;
+  .video-wraper {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// vita500
