@@ -315,7 +315,7 @@ body {
 }
 
 .prod-box .prod-textbox {
-  padding-left: 12px;
+  padding: 0 12px;
 }
 .prod-box .prod-textbox .prod-text-tit {
   padding-bottom: 9px;
