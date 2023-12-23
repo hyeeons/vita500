@@ -82,3 +82,11 @@
     margin-right: 5px;
   }
 }
+
+@mixin prod-box {
+  width: 186px;
+  height: 251px;
+  border: 1.5px solid $gray-lineF4;
+  border-radius: 10px;
+  background-color: $white;
+}

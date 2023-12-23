@@ -7,7 +7,7 @@
     height: 608px;
   }
 }
-// section-vita 공통부분
+// section-tit 공통부분
 .sec-titbox {
   text-align: center;
   padding: 61px 61px 0px 61px;
@@ -19,6 +19,14 @@
 
   .sec-tit1 {
     @include ft-titsz35;
+  }
+  .sec-tit3 {
+    @include ft-titsz25;
+  }
+
+  .sec-subtit-gray {
+    @include ft-bdsz12;
+    color: $gray-57B;
   }
 }
 
@@ -104,6 +112,7 @@
 // vita500 reh
 
 .vita-reh {
+  margin: 0;
   .sec-titbox {
     .sec-tit2 {
       @include ft-titsz25B;
@@ -121,6 +130,107 @@
     text-align: center;
     li {
       @include ft-bdsz14H;
+    }
+  }
+}
+
+// history
+
+.swiper-history {
+  height: 320px;
+  overflow: hidden;
+}
+
+.his-titbox {
+  display: block;
+  text-align: center;
+  padding: 30px 0 0;
+  em {
+    @include ft-bdsz12;
+  }
+  .sec-tit2 {
+    @include ft-titsz25B;
+  }
+}
+
+.vita-hist {
+  .hist-img {
+    padding: 11px 19px 23px;
+    img {
+      width: 338px;
+      height: 244px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.hiscard {
+  display: flex;
+  padding-bottom: 25px;
+  .hiscard-year {
+    padding: 15px;
+  }
+  .hiscard-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    padding-left: 14px;
+
+    span {
+      @include ft-bdsz14;
+      padding-bottom: 5px;
+    }
+  }
+  .hiscard-img {
+    padding-left: 3px;
+    img {
+      width: 44px;
+      height: 48px;
+    }
+  }
+
+  .hiscard-year {
+    @include ft-titsz18B;
+    padding-left: 0px;
+    padding-right: 14px;
+  }
+}
+
+// section-prod & video 공통
+
+.vita-prod {
+  .sec-titbox {
+    padding-top: 70px;
+    padding-bottom: 19px;
+    .sec-tit3 {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.swiper-slide {
+  padding: 0 25px;
+  .prod-box {
+    @include prod-box;
+  }
+  .prod-imgbox {
+    img {
+      width: 183px;
+      height: 185px;
+    }
+  }
+}
+
+.prod-box {
+  .prod-textbox {
+    padding-left: 12px;
+    .prod-text-tit {
+      padding-bottom: 9px;
+      @include ft-bdsz16;
+    }
+    .prod-text-info {
+      @include ft-bdsz10;
+      color: $gray-57B;
     }
   }
 }

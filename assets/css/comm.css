@@ -47,7 +47,7 @@ body {
 #main .vita-reh {
   height: 510px;
 }
-#main .vita-reh {
+#main .vita-hist {
   height: 820px;
 }
 #main .vita-prod {
@@ -89,6 +89,21 @@ body {
   font-weight: 600;
   line-height: 55px; /* 157.143% */
   letter-spacing: -1.4px;
+}
+.sec-titbox .sec-tit3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+.sec-titbox .sec-subtit-gray {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #57575b;
 }
 
 .video {
@@ -175,6 +190,9 @@ body {
   height: 222px;
 }
 
+.vita-reh {
+  margin: 0;
+}
 .vita-reh .sec-titbox .sec-tit2 {
   font-size: 25px;
   font-style: normal;
@@ -199,4 +217,119 @@ body {
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   letter-spacing: -0.56px;
+}
+
+.swiper-history {
+  height: 320px;
+  overflow: hidden;
+}
+
+.his-titbox {
+  display: block;
+  text-align: center;
+  padding: 30px 0 0;
+}
+.his-titbox em {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.his-titbox .sec-tit2 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+
+.vita-hist .hist-img {
+  padding: 11px 19px 23px;
+}
+.vita-hist .hist-img img {
+  width: 338px;
+  height: 244px;
+  border-radius: 10px;
+}
+
+.hiscard {
+  display: flex;
+  padding-bottom: 25px;
+}
+.hiscard .hiscard-year {
+  padding: 15px;
+}
+.hiscard .hiscard-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-left: 14px;
+}
+.hiscard .hiscard-text span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  padding-bottom: 5px;
+}
+.hiscard .hiscard-img {
+  padding-left: 3px;
+}
+.hiscard .hiscard-img img {
+  width: 44px;
+  height: 48px;
+}
+.hiscard .hiscard-year {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  padding-left: 0px;
+  padding-right: 14px;
+}
+
+.vita-prod .sec-titbox {
+  padding-top: 70px;
+  padding-bottom: 19px;
+}
+.vita-prod .sec-titbox .sec-tit3 {
+  padding-bottom: 5px;
+}
+
+.swiper-slide {
+  padding: 0 25px;
+}
+.swiper-slide .prod-box {
+  width: 186px;
+  height: 251px;
+  border: 1.5px solid #f4f4f4;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.swiper-slide .prod-imgbox img {
+  width: 183px;
+  height: 185px;
+}
+
+.prod-box .prod-textbox {
+  padding-left: 12px;
+}
+.prod-box .prod-textbox .prod-text-tit {
+  padding-bottom: 9px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.prod-box .prod-textbox .prod-text-info {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #57575b;
 }/*# sourceMappingURL=comm.css.map */
