@@ -7,6 +7,20 @@
     height: 608px;
   }
 }
+// section-vita 공통부분
+.sec-titbox {
+  text-align: center;
+  padding: 61px 61px 0px 61px;
+
+  .sec-subtit-bk {
+    @include ft-bdsz12;
+    color: $txtDefult;
+  }
+
+  .sec-tit1 {
+    @include ft-titsz35;
+  }
+}
 
 // video
 .video {
@@ -25,10 +39,10 @@
   }
 }
 
-// vita500
+// section-vita 공통부분
 .sec-titbox {
   text-align: center;
-  padding: 61px;
+  padding: 61px 61px 0px 61px;
 
   .sec-subtit-bk {
     @include ft-bdsz12;
@@ -40,15 +54,73 @@
   }
 }
 
-.sec-img {
-  width: 253px;
-  height: 253px;
-  //   translate: (60px -60px);
-  //   margin 이용
-  // translate는 자리에서 움직일 때 주로 사용
-  img {
-    width: 253px;
-    height: 238px;
+.sec-text {
+  text-align: center;
+  ul {
+    li {
+      width: 100%;
+      margin-bottom: 1px;
+      span {
+        @include icon-check;
+        @include ft-bdsz14H;
+      }
+    }
   }
 }
-// 상단 작성 중
+
+// vita500
+.vita-mp {
+  .sec-img {
+    width: 253px;
+    height: 238px;
+    margin: 0 61px;
+    //   translate: (60px -60px);
+    //   margin 이용
+    // translate는 자리에서 움직일 때 주로 사용
+    img {
+      width: 253px;
+      height: 238px;
+    }
+  }
+}
+// vita-500 zero
+
+.vita-zero {
+  .sec-titbox {
+    padding: 55px 61px 0px 61px;
+  }
+  .sec-img {
+    width: 196px;
+    height: 222px;
+    padding: 0 88px;
+    margin-bottom: 7px;
+    img {
+      width: 196px;
+      height: 222px;
+    }
+  }
+}
+
+// vita500 reh
+
+.vita-reh {
+  .sec-titbox {
+    .sec-tit2 {
+      @include ft-titsz25B;
+    }
+  }
+  .sec-img {
+    padding: 16px 150px 0px 150px;
+    margin-bottom: 10px;
+    img {
+      width: 78px;
+      height: 197px;
+    }
+  }
+  .text-reh {
+    text-align: center;
+    li {
+      @include ft-bdsz14H;
+    }
+  }
+}

@@ -8,20 +8,20 @@
   letter-spacing: -0.4px;
 }
 
-@mixin ft-bdsz14 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.56px;
-}
-
 @mixin ft-bdsz12 {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
+}
+
+@mixin ft-bdsz14 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
 }
 
 @mixin ft-bdsz14H {
@@ -60,7 +60,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.3;
   letter-spacing: -1px;
 }
 
@@ -70,4 +70,15 @@
   font-weight: 600;
   line-height: 55px; /* 157.143% */
   letter-spacing: -1.4px;
+}
+
+@mixin icon-check {
+  &::before {
+    content: "\e5ca";
+    font-family: "Material Icons";
+    font-size: 17px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    vertical-align: center;
+    margin-right: 5px;
+  }
 }

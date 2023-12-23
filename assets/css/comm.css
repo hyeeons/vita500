@@ -1,9 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 * {
   margin: 0;
@@ -42,18 +40,18 @@ body {
 }
 
 #main {
-  min-height: calc(100vh - 2044px - 820px - 447px);
+  min-height: calc(100vh - 2040px - 820px - 447px);
 }
 #main .vita-mp,
 #main .vita-zero,
 #main .vita-reh {
-  height: 511px;
+  height: 510px;
 }
 #main .vita-reh {
   height: 820px;
 }
 #main .vita-prod {
-  height: 511px;
+  height: 510px;
 }
 #main .vita-vdo {
   height: 447px;
@@ -71,6 +69,26 @@ body {
 .swiper-bnr img {
   width: 375px;
   height: 608px;
+}
+
+.sec-titbox {
+  text-align: center;
+  padding: 61px 61px 0px 61px;
+}
+.sec-titbox .sec-subtit-bk {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #212126;
+}
+.sec-titbox .sec-tit1 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px; /* 157.143% */
+  letter-spacing: -1.4px;
 }
 
 .video {
@@ -92,7 +110,7 @@ body {
 
 .sec-titbox {
   text-align: center;
-  padding: 61px;
+  padding: 61px 61px 0px 61px;
 }
 .sec-titbox .sec-subtit-bk {
   font-size: 12px;
@@ -110,11 +128,75 @@ body {
   letter-spacing: -1.4px;
 }
 
-.sec-img {
-  width: 253px;
-  height: 253px;
+.sec-text {
+  text-align: center;
 }
-.sec-img img {
+.sec-text ul li {
+  width: 100%;
+  margin-bottom: 1px;
+}
+.sec-text ul li span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
+}
+.sec-text ul li span::before {
+  content: "\e5ca";
+  font-family: "Material Icons";
+  font-size: 17px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  vertical-align: center;
+  margin-right: 5px;
+}
+
+.vita-mp .sec-img {
   width: 253px;
   height: 238px;
+  margin: 0 61px;
+}
+.vita-mp .sec-img img {
+  width: 253px;
+  height: 238px;
+}
+
+.vita-zero .sec-titbox {
+  padding: 55px 61px 0px 61px;
+}
+.vita-zero .sec-img {
+  width: 196px;
+  height: 222px;
+  padding: 0 88px;
+  margin-bottom: 7px;
+}
+.vita-zero .sec-img img {
+  width: 196px;
+  height: 222px;
+}
+
+.vita-reh .sec-titbox .sec-tit2 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+.vita-reh .sec-img {
+  padding: 16px 150px 0px 150px;
+  margin-bottom: 10px;
+}
+.vita-reh .sec-img img {
+  width: 78px;
+  height: 197px;
+}
+.vita-reh .text-reh {
+  text-align: center;
+}
+.vita-reh .text-reh li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
 }/*# sourceMappingURL=comm.css.map */
