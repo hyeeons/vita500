@@ -314,6 +314,10 @@ body {
   height: 185px;
 }
 
+.vita-prod .product-wrap {
+  margin-bottom: 26px;
+}
+
 .prod-box .prod-textbox {
   padding: 0 12px;
 }
@@ -331,5 +335,53 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.4px;
+  color: #57575b;
+}
+
+.vita-prod .goto {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #57575b;
+  box-shadow: 1px 1px 1px 0px #57575b;
+  margin-left: 142px;
+  padding: 4px 14px;
+}
+.vita-prod .goto a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #57575b;
+}
+
+.vita-vdo .swiper-slide {
+  padding: 15px 19px 35px;
+}
+.vita-vdo .swiper-slide img {
+  width: 338px;
+  height: 192px;
+  border-radius: 20px;
+}
+.vita-vdo .goto {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #57575b;
+  box-shadow: 1px 1px 1px 0px #57575b;
+  margin-left: 146px;
+  padding: 4px 25px;
+}
+.vita-vdo .goto a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
   color: #57575b;
 }/*# sourceMappingURL=comm.css.map */

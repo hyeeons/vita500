@@ -225,6 +225,11 @@
     }
   }
 }
+.vita-prod {
+  .product-wrap {
+    margin-bottom: 26px;
+  }
+}
 
 .prod-box {
   .prod-textbox {
@@ -235,6 +240,41 @@
     }
     .prod-text-info {
       @include ft-bdsz10;
+      color: $gray-57B;
+    }
+  }
+}
+
+.vita-prod {
+  .goto {
+    @include goto;
+    margin-left: 142px;
+    padding: 4px 14px;
+    a {
+      @include ft-bdsz12;
+      color: $gray-57B;
+    }
+  }
+}
+
+// sec-video
+
+.vita-vdo {
+  .swiper-slide {
+    padding: 15px 19px 35px;
+    img {
+      width: 338px;
+      height: 192px;
+      border-radius: 20px;
+    }
+  }
+  .goto {
+    @include goto;
+    margin-left: 146px;
+    padding: 4px 25px;
+
+    a {
+      @include ft-bdsz12;
       color: $gray-57B;
     }
   }

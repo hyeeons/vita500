@@ -90,3 +90,13 @@
   border-radius: 10px;
   background-color: $white;
 }
+
+@mixin goto {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 5px;
+  border: 1px solid $gray-57B;
+  box-shadow: 1px 1px 1px 0px $gray-57B;
+}
