@@ -219,9 +219,8 @@ body {
   letter-spacing: -0.56px;
 }
 
-.swiper-history {
-  height: 320px;
-  overflow: hidden;
+.swiper-history .swiper-wrapper {
+  height: 330px;
 }
 
 .his-titbox {
@@ -256,6 +255,7 @@ body {
 .hiscard {
   display: flex;
   padding-bottom: 25px;
+  padding: 0 25px 25px;
 }
 .hiscard .hiscard-year {
   padding: 15px;
@@ -299,17 +299,17 @@ body {
   padding-bottom: 5px;
 }
 
-.swiper-slide {
+.swiper-prod .swiper-slide {
   padding: 0 25px;
 }
-.swiper-slide .prod-box {
+.swiper-prod .swiper-slide .prod-box {
   width: 186px;
   height: 251px;
   border: 1.5px solid #f4f4f4;
   border-radius: 10px;
   background-color: #fff;
 }
-.swiper-slide .prod-imgbox img {
+.swiper-prod .swiper-slide .prod-imgbox img {
   width: 183px;
   height: 185px;
 }
