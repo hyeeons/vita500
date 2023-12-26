@@ -30,7 +30,7 @@ em {
 }
 
 body {
-  background: url("../../모바일_아이폰13미니_메인.png") no-repeat 50% 0;
+  background: url("../../모바일_아이폰13미니_") no-repeat 50% 0;
 }
 
 .wrap {
@@ -49,7 +49,7 @@ body {
 }
 
 #main {
-  min-height: calc(100vh - 2040px - 820px - 447px);
+  min-height: calc(100vh - 2040px - 820px - 460px);
 }
 #main .vita-mp,
 #main .vita-zero,
@@ -63,7 +63,7 @@ body {
   height: 510px;
 }
 #main .vita-vdo {
-  height: 447px;
+  height: 460px;
 }
 
 #footer {
@@ -116,7 +116,7 @@ body {
 
 .video {
   width: 375px;
-  height: 227px;
+  height: 220px;
   background: #ffcc5f;
 }
 .video .video-wraper {
@@ -172,6 +172,11 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   margin-right: 5px;
+}
+
+#main .bg-vita {
+  width: 100%;
+  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
 }
 
 .vita-mp .sec-img {
@@ -304,16 +309,19 @@ body {
   padding-right: 14px;
 }
 
+.vita-prod {
+  background: #ffdc52;
+}
 .vita-prod .sec-titbox {
   padding-top: 70px;
-  padding-bottom: 19px;
+  padding-bottom: 28px;
 }
 .vita-prod .sec-titbox .sec-tit3 {
   padding-bottom: 5px;
 }
 
 .swiper-prod .swiper-slide {
-  padding: 0 25px;
+  padding: 0 19px;
 }
 .swiper-prod .swiper-slide .prod-box {
   width: 186px;
@@ -323,6 +331,7 @@ body {
   background-color: #fff;
 }
 .swiper-prod .swiper-slide .prod-imgbox img {
+  border-radius: 10px;
   width: 183px;
   height: 185px;
 }
@@ -371,6 +380,12 @@ body {
   color: #57575b;
 }
 
+.vita-vdo {
+  background: #fff;
+}
+.vita-vdo .sec-tit3 {
+  padding-bottom: 5px;
+}
 .vita-vdo .swiper-slide {
   padding: 15px 19px 35px;
 }
@@ -402,11 +417,10 @@ body {
 #footer .ft-menu {
   display: flex;
   justify-content: space-between;
+  height: 44px;
 }
 #footer .ft-menu .ft-gotositesub {
-  margin-top: 10px;
   width: 187.5px;
-  height: 44px;
   background-color: #252222;
   border-bottom: 1px solid #7b7b7b;
 }

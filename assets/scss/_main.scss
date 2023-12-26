@@ -33,7 +33,7 @@
 // video
 .video {
   width: 375px;
-  height: 227px;
+  height: 220px;
   background: $primary;
   .video-wraper {
     width: 100%;
@@ -76,6 +76,17 @@
   }
 }
 
+// 그라데이션 배경
+#main {
+  .bg-vita {
+    width: 100%;
+    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+
+    background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
+
+    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffbf37 100%);
+  }
+}
 // vita500
 .vita-mp {
   .sec-img {
@@ -202,9 +213,13 @@
 // section-prod & video 공통
 
 .vita-prod {
+  //   background: $white-bgcFC;
+  background: #ffdc52;
+  //   background: $primary;
+
   .sec-titbox {
     padding-top: 70px;
-    padding-bottom: 19px;
+    padding-bottom: 28px;
     .sec-tit3 {
       padding-bottom: 5px;
     }
@@ -213,12 +228,13 @@
 
 .swiper-prod {
   .swiper-slide {
-    padding: 0 25px;
+    padding: 0 19px;
     .prod-box {
       @include prod-box;
     }
     .prod-imgbox {
       img {
+        border-radius: 10px;
         width: 183px;
         height: 185px;
       }
@@ -260,6 +276,10 @@
 // sec-video
 
 .vita-vdo {
+  .sec-tit3 {
+    padding-bottom: 5px;
+  }
+  background: $white;
   .swiper-slide {
     padding: 15px 19px 35px;
     img {
@@ -285,11 +305,9 @@
   .ft-menu {
     display: flex;
     justify-content: space-between;
-
+    height: 44px;
     .ft-gotositesub {
-      margin-top: 10px;
       width: 187.5px;
-      height: 44px;
       background-color: $bk-ft;
       border-bottom: 1px solid $gray-ft7B;
       span {
