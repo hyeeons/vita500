@@ -244,7 +244,7 @@ body {
 .his-titbox {
   display: block;
   text-align: center;
-  padding: 30px 0 0;
+  padding: 55px 0 0;
 }
 .his-titbox em {
   font-size: 12px;
@@ -310,10 +310,10 @@ body {
 }
 
 .vita-prod {
-  background: #ffdc52;
+  background: #ffcc5f;
 }
 .vita-prod .sec-titbox {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 28px;
 }
 .vita-prod .sec-titbox .sec-tit3 {
@@ -494,6 +494,37 @@ body {
   border-right: 1px solid #57575b;
 }
 
-#footer ul {
+#footer .ft-menu {
+  position: relative;
+}
+#footer .ft-gotolist {
   display: none;
+  color: #7b7b7b;
+  position: absolute;
+  background: #fcfcfc;
+  width: 187px;
+  height: 210px;
+  z-index: 1000;
+  bottom: 44px;
+}
+#footer .ft-gotolist ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  align-items: center;
+}
+#footer .ft-gotolist ul li {
+  padding-top: 13px;
+}
+#footer .ft-gotolist a {
+  display: block;
+  width: 100%;
+}
+#footer .gotolist-sns {
+  left: 0;
+  padding-top: 38px;
+  border-right: 1px solid #7b7b7b;
+}
+#footer .gotolist-family {
+  right: 0;
 }/*# sourceMappingURL=comm.css.map */

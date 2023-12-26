@@ -157,7 +157,7 @@
 .his-titbox {
   display: block;
   text-align: center;
-  padding: 30px 0 0;
+  padding: 55px 0 0;
   em {
     @include ft-bdsz12;
   }
@@ -214,11 +214,11 @@
 
 .vita-prod {
   //   background: $white-bgcFC;
-  background: #ffdc52;
-  //   background: $primary;
+  //   background: #ffdc52;
+  background: $primary;
 
   .sec-titbox {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 28px;
     .sec-tit3 {
       padding-bottom: 5px;
@@ -377,8 +377,45 @@
   }
 }
 
+// footer-오픈메뉴
 #footer {
-  ul {
+  .ft-menu {
+    position: relative;
+  }
+  .ft-gotolist {
     display: none;
+    color: $gray-ft7B;
+    position: absolute;
+    background: $white-bgcFC;
+    width: 187px;
+    height: 210px;
+    z-index: 1000;
+    bottom: 44px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 8px;
+      align-items: center;
+
+      li {
+        padding-top: 13px;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .gotolist-sns {
+    left: 0;
+    padding-top: 38px;
+    border-right: 1px solid $gray-ft7B;
+  }
+
+  .gotolist-family {
+    right: 0;
   }
 }
+
+// footer-active
