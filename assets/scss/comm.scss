@@ -9,8 +9,14 @@ body {
 .wrap {
   width: 375px;
   margin: 0 auto;
+  max-width: 420px;
 }
 
+@media screen and (min-width: 1280px) {
+  .wrap {
+    max-width: none;
+  }
+}
 #header {
   position: absolute;
 }
@@ -38,7 +44,6 @@ body {
 }
 
 #footer {
-  width: 375px;
   height: 233px;
 }
 
