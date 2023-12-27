@@ -25,12 +25,70 @@
   <body>
     <div class="wrap">
       <header id="header">
-        <h1>
-          <a href="#">광동제약 로고</a>
-        </h1>
-        <nav id="gnb">
-          <button class="mobile-menu">모바일메뉴</button>
-        </nav>
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">광동제약 로고</a>
+          </h1>
+          <div class="col-right">
+            <div class="gnb-wrap">
+              <input
+                type="checkbox"
+                name="gnbNav"
+                id="gnbNav"
+                class="inp-burger"
+              />
+              <label for="gnbNav" class="label-burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <div class="blind">전체메뉴 보기</div>
+              </label>
+
+              <nav id="gnb">
+                <div class="blind">전체 메뉴</div>
+                <ul class="nav-list">
+                  <li class="nav-list-depth1">
+                    광동제약
+                    <ul class="nav-list-depth2">
+                      <li><a href="#">회사소개</a></li>
+                      <li><a href="#">CEO소개</a></li>
+                      <li><a href="#">회사연혁</a></li>
+                      <li><a href="#">오시는길</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-depth1">
+                    제품소개
+                    <ul class="nav-list-depth2">
+                      <li><a href="#">비타500</a></li>
+                      <li><a href="#">비타500제로</a></li>
+                      <li><a href="#">캔류</a></li>
+                      <li><a href="#">젤리류</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-depth1">
+                    홍보자료
+                    <ul class="nav-list-depth2">
+                      <li><a href="#">영상광고</a></li>
+                      <li><a href="#">포스터광고</a></li>
+                      <li><a href="#">라디오광고</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-depth1">
+                    보도자료
+                    <ul class="nav-list-depth2">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">보도자료</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-depth1">
+                    고객센터
+                    <a href="#" class="nav-list-depth2">고객센터</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
 
       <!-- Swiper slide-bnr -->
@@ -38,17 +96,23 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#"
-              ><img src="./images/main/banner/mobile_banner_1.png" alt=""
+              ><img
+                src="./images/main/banner/mobile_banner_1.png"
+                alt="제로에 비타민C 가드득 칼로리zero, 당류zero, 비타500zero"
             /></a>
           </div>
           <div class="swiper-slide">
             <a href="#"
-              ><img src="./images/main/banner/mobile_banner_2.png" alt=""
+              ><img
+                src="./images/main/banner/mobile_banner_2.png"
+                alt="오늘도 고생한 나를 위해 하루 한 포 충전타임 비타500 데일리스틱 30포"
             /></a>
           </div>
           <div class="swiper-slide">
             <a href="#"
-              ><img src="./images/main/banner/mobile_banner_3.png" alt=""
+              ><img
+                src="./images/main/banner/mobile_banner_3.png"
+                alt="내몸에 옳타! 카페인 대신 비타! 나를 위한 건강한 비타민C"
             /></a>
           </div>
         </div>
@@ -77,7 +141,7 @@
               <h2 class="sec-tit1">광동제약 비타500</h2>
             </div>
             <div class="sec-img">
-              <img src="./images/main/product/p_vita500_m.png" alt="" />
+              <img src="./images/main/product/p_vita500_m.png" alt="비타500" />
             </div>
             <div class="sec-text">
               <ul>
@@ -96,7 +160,10 @@
               <h2 class="sec-tit1">비타500 ZERO</h2>
             </div>
             <div class="sec-img">
-              <img src="./images/main/product/p_vita500zero_m.png" alt="" />
+              <img
+                src="./images/main/product/p_vita500zero_m.png"
+                alt="비타500 제로"
+              />
             </div>
             <div class="sec-text">
               <ul>
@@ -115,7 +182,10 @@
               </h2>
             </div>
             <div class="sec-img">
-              <img src="./images/main/product/p_vitareh_m.png" alt="" />
+              <img
+                src="./images/main/product/p_vitareh_m.png"
+                alt="마시는 비타민C 비타500"
+              />
             </div>
             <div class="text-reh">
               <ul>
@@ -136,7 +206,10 @@
             <h2 class="sec-tit2">광동제약의 <br />비타500이 걸어온 길</h2>
           </div>
           <div class="hist-img">
-            <img src="./images/main/history/history_all_m.png" />
+            <img
+              src="./images/main/history/history_all_m.png"
+              alt="비타500의 다양한 제품들"
+            />
           </div>
           <!-- swiper -->
           <div class="hiscard-wrap">
@@ -146,7 +219,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2022</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2022.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2022.png"
+                        alt="비타500온에어"
                     /></span>
                     <div class="hiscard-text">
                       <span>국민브랜드 비타500</span>
@@ -157,7 +232,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2021</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2021.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2021.png"
+                        alt="제니의 비타민c"
                     /></span>
                     <div class="hiscard-text">
                       <span>비타500 20주년</span>
@@ -168,7 +245,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2020</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2020.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2020.png"
+                        alt="펭수와 함께 하는 나를 위한 건강한 비타민c"
                     /></span>
                     <div class="hiscard-text">
                       <span>나를 위한 건강한 비타민C</span>
@@ -179,7 +258,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2019</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2019.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2019.png"
+                        alt="비타500 광고"
                     /></span>
                     <div class="hiscard-text">
                       <span>프리미엄 비타500 로열폴리스 출시</span>
@@ -193,7 +274,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2018</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2018.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2018.png"
+                        alt="워너원 비타500광고"
                     /></span>
                     <div class="hiscard-text">
                       <span>비타500 따자마자 이벤트</span>
@@ -205,7 +288,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2017</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2017.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2017.png"
+                        alt="비타500젤리"
                     /></span>
                     <div class="hiscard-text">
                       <span>비타500 젤리 출시</span>
@@ -217,7 +302,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2016</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2016.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2016.png"
+                        alt="수지와 함께하는 비타500"
                     /></span>
                     <div class="hiscard-text">
                       <span>비타500 수지CF 기운이 뿅 활력이 쓩쓩!</span>
@@ -228,7 +315,9 @@
                   <div class="hiscard">
                     <span class="hiscard-year">2015</span>
                     <span class="hiscard-img"
-                      ><img src="./images/main/history/history_2015.png" alt=""
+                      ><img
+                        src="./images/main/history/history_2015.png"
+                        alt="수지와 함께하는 비타500"
                     /></span>
                     <div class="hiscard-text">
                       <span>광동제약 비타500 신규 CF 공개</span>
@@ -259,7 +348,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_1_pc.png"
-                          alt=""
+                          alt="비타500 프레쉬"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -276,7 +365,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_2_pc.png"
-                          alt=""
+                          alt="비타500 부탁해 B군"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -293,7 +382,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_3_pc.png"
-                          alt=""
+                          alt="비타500 광도르방"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -310,7 +399,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_5_pc.png"
-                          alt=""
+                          alt="비타500라임"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -327,7 +416,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_6_pc.png"
-                          alt=""
+                          alt="비타500 자몽"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -344,7 +433,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_7_pc.png"
-                          alt=""
+                          alt="비타500 콜라겐스틱젤리"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -361,7 +450,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_4_pc.png"
-                          alt=""
+                          alt="비타500 젤리"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -378,7 +467,7 @@
                       <a href="#"
                         ><img
                           src="./images/main/product/product_8_pc.png"
-                          alt=""
+                          alt="비타500 로열폴리스"
                       /></a>
                     </div>
                     <div class="prod-textbox">
@@ -410,22 +499,30 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./images/main/video/m_video_1.png" alt=""
+                    ><img
+                      src="./images/main/video/m_video_1.png"
+                      alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 15초"
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./images/main/video/m_video_2.png" alt=""
+                    ><img
+                      src="./images/main/video/m_video_2.png"
+                      alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 30초"
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="../images/main/video/m_video_3.png" alt=""
+                    ><img
+                      src="../images/main/video/m_video_3.png"
+                      alt="비타500 제로 르세라핌 15초"
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./images/main/video/m_video_4.png" alt=""
+                    ><img
+                      src="./images/main/video/m_video_4.png"
+                      alt="비타500 제로 르세라핌 30초"
                   /></a>
                 </div>
               </div>

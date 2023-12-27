@@ -1,5 +1,74 @@
+// header
+#logo {
+  position: relative;
+  z-index: 1100;
+  width: 154px;
+  height: 37px;
+  margin: 15px 20px 10px;
+
+  background-image: url(../../images/comm/m_logo_color.png);
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.gnb-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.gnb-wrap {
+  .inp-burger {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .label-burger {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .bar {
+      display: block;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: $txtDefult;
+    }
+  }
+}
+
+#gnb {
+  .nav-list {
+    background: $white;
+  }
+  .nav-list-depth1 {
+    @include ft-titsz18B;
+    display: block;
+    width: 375px;
+    height: 55px;
+    padding-top: 16px;
+    padding-left: 16px;
+    border-bottom: 1px solid $gray-lineD;
+    // background-color: cadetblue;
+  }
+  .nav-list-depth1:first-child {
+    border-top: 1px solid $gray-lineD;
+  }
+  .nav-list-depth2 {
+    display: none;
+  }
+}
+
 // slide
 .swiper-bnr {
+  opacity: 0;
   width: 375px;
   height: 608px;
   img {
@@ -80,9 +149,9 @@
 #main {
   .bg-vita {
     width: 100%;
-    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+    background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
 
-    background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
+    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
 
     // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffbf37 100%);
   }
@@ -265,8 +334,9 @@
   .goto {
     @include goto;
     margin-left: 142px;
-    padding: 4px 14px;
+
     a {
+      padding: 4px 14px;
       @include ft-bdsz12;
       color: $gray-57B;
     }
@@ -291,9 +361,9 @@
   .goto {
     @include goto;
     margin-left: 146px;
-    padding: 4px 25px;
 
     a {
+      padding: 4px 25px;
       @include ft-bdsz12;
       color: $gray-57B;
     }
@@ -426,3 +496,5 @@
     right: 0;
   }
 }
+
+// footer-active

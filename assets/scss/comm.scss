@@ -2,14 +2,17 @@
 
 // body-디자인이미지
 body {
-  background: url("../../모바일_아이폰13미니_") no-repeat 50% 0;
+  background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
 }
 
 // layout
 .wrap {
   width: 375px;
   margin: 0 auto;
+  min-height: 100vh;
   max-width: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1280px) {

@@ -30,13 +30,16 @@ em {
 }
 
 body {
-  background: url("../../모바일_아이폰13미니_") no-repeat 50% 0;
+  background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
 }
 
 .wrap {
   width: 375px;
   margin: 0 auto;
+  min-height: 100vh;
   max-width: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1280px) {
@@ -70,7 +73,72 @@ body {
   height: 233px;
 }
 
+#logo {
+  position: relative;
+  z-index: 1100;
+  width: 154px;
+  height: 37px;
+  margin: 15px 20px 10px;
+  background-image: url(../../images/comm/m_logo_color.png);
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.gnb-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.gnb-wrap .inp-burger {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.gnb-wrap .label-burger {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.gnb-wrap .label-burger .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #212126;
+}
+
+#gnb .nav-list {
+  background: #fff;
+}
+#gnb .nav-list-depth1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  display: block;
+  width: 375px;
+  height: 55px;
+  padding-top: 16px;
+  padding-left: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+#gnb .nav-list-depth1:first-child {
+  border-top: 1px solid #dddddd;
+}
+#gnb .nav-list-depth2 {
+  display: none;
+}
+
 .swiper-bnr {
+  opacity: 0;
   width: 375px;
   height: 608px;
 }
@@ -176,7 +244,7 @@ body {
 
 #main .bg-vita {
   width: 100%;
-  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
+  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
 }
 
 .vita-mp .sec-img {
@@ -362,16 +430,15 @@ body {
 
 .vita-prod .goto {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #57575b;
   box-shadow: 1px 1px 1px 0px #57575b;
   margin-left: 142px;
-  padding: 4px 14px;
 }
 .vita-prod .goto a {
+  padding: 4px 14px;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -396,16 +463,15 @@ body {
 }
 .vita-vdo .goto {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #57575b;
   box-shadow: 1px 1px 1px 0px #57575b;
   margin-left: 146px;
-  padding: 4px 25px;
 }
 .vita-vdo .goto a {
+  padding: 4px 25px;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
