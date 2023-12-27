@@ -28,6 +28,7 @@
   }
   .label-burger {
     position: absolute;
+    z-index: 1100;
     top: 22px;
     right: 20px;
     display: flex;
@@ -68,7 +69,6 @@
 
 // slide
 .swiper-bnr {
-  opacity: 0;
   width: 375px;
   height: 608px;
   img {
@@ -385,7 +385,7 @@
     justify-content: space-between;
     height: 44px;
     .ft-gotositesub {
-      width: 187.5px;
+      width: 50%;
       background-color: $bk-ft;
       border-bottom: 1px solid $gray-ft7B;
       span {

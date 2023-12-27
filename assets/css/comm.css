@@ -34,12 +34,11 @@ body {
 }
 
 .wrap {
-  width: 375px;
-  margin: 0 auto;
   min-height: 100vh;
   max-width: 420px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -100,6 +99,7 @@ body {
 }
 .gnb-wrap .label-burger {
   position: absolute;
+  z-index: 1100;
   top: 22px;
   right: 20px;
   display: flex;
@@ -138,7 +138,6 @@ body {
 }
 
 .swiper-bnr {
-  opacity: 0;
   width: 375px;
   height: 608px;
 }
@@ -490,7 +489,7 @@ body {
   height: 44px;
 }
 #footer .ft-menu .ft-gotositesub {
-  width: 187.5px;
+  width: 50%;
   background-color: #252222;
   border-bottom: 1px solid #7b7b7b;
 }

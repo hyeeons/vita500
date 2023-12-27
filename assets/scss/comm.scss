@@ -7,12 +7,11 @@ body {
 
 // layout
 .wrap {
-  width: 375px;
-  margin: 0 auto;
   min-height: 100vh;
   max-width: 420px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
