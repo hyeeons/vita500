@@ -414,6 +414,10 @@ body {
   color: #57575b;
 }
 
+.goto:hover, .goto:active {
+  background-color: #faf3d7;
+}
+
 #footer .ft-menu {
   display: flex;
   justify-content: space-between;

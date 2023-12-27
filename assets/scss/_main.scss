@@ -300,6 +300,14 @@
   }
 }
 
+// goto 버튼 활성
+.goto {
+  &:hover,
+  &:active {
+    background-color: #faf3d7;
+  }
+}
+
 // footer
 #footer {
   .ft-menu {
