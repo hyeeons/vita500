@@ -271,13 +271,13 @@ legend {
   content: "";
 }
 
-body {
-  background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
+* {
+  font-family: "Pretendard", "pretendard-regular";
 }
 
 .wrap {
   min-height: 100vh;
-  max-width: 420px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
 }
@@ -377,18 +377,18 @@ body {
   display: none;
 }
 
-.swiper-wrapper {
-  padding: 0;
-  margin: 0;
-  height: 681px;
+.swiper-bnr {
+  width: 100%;
 }
-
-.swiper-slide a {
-  height: 681px;
+.swiper-bnr .swiper-slide {
+  height: 680px;
 }
-.swiper-slide img {
-  height: 681px;
+.swiper-bnr .swiper-slide img {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video {
@@ -408,28 +408,51 @@ body {
 }
 
 #main .bg-vita {
-  width: 100%;
   background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
 }
 
-.vita-mp img {
+.vita-mp .sec-titbox {
+  padding-top: 70px;
+}
+.vita-mp .sec-img {
   height: 238px;
 }
+.vita-mp img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
-.vita-zero img {
+.vita-zero .sec-titbox {
+  padding-top: 65px;
+}
+.vita-zero .sec-img {
   height: 222px;
 }
+.vita-zero img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.vita-zero .sec-text {
+  padding-top: 8px;
+}
 
+.vita-reh .sec-titbox {
+  padding-top: 15px;
+}
 .vita-reh .sec-img {
   text-align: center;
-  padding: 16px 150px 0px 150px;
-  margin-bottom: 10px;
+  height: 197px;
 }
 .vita-reh .sec-img img {
-  height: 197px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .vita-reh .text-reh {
   text-align: center;
+  padding-top: 30px;
 }
 .vita-reh .text-reh li {
   font-size: 14px;
@@ -438,6 +461,41 @@ body {
   line-height: 20px; /* 142.857% */
   letter-spacing: -0.56px;
 }
+.vita-reh .sec-tit2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.hiscard-wrap {
+  display: flex;
+}
+
+.vita-hist {
+  padding: 30px 0;
+}
+.vita-hist .his-titbox {
+  display: block;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 18px;
+}
+.vita-hist .his-titbox em {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.vita-hist .hist-img {
+  text-align: center;
+  height: 244px;
+}
+.vita-hist .hist-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
 
 .swiper-history {
   height: 320px;
@@ -445,88 +503,74 @@ body {
 .swiper-history .swiper-slide {
   width: auto;
   height: auto;
-}
-
-.his-titbox {
-  display: block;
-  text-align: center;
-  padding: 55px 0 0;
-}
-.his-titbox em {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.48px;
-}
-
-.vita-hist .hist-img {
-  text-align: center;
-  padding: 11px 0 23px;
-}
-.vita-hist .hist-img img {
-  height: 244px;
-  border-radius: 10px;
-}
-
-.hiscard-wrap {
-  display: flex;
-}
-.hiscard-wrap .hiscard {
-  display: flex;
-  padding-bottom: 25px;
-  padding: 0 25px 25px;
-}
-.hiscard-wrap .hiscard .hiscard-year {
-  padding: 15px;
-}
-.hiscard-wrap .hiscard .hiscard-text {
   display: flex;
   flex-direction: column;
-  padding-top: 6px;
-  padding-left: 14px;
+  padding-top: 30px;
 }
-.hiscard-wrap .hiscard .hiscard-text span {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.56px;
-  padding-bottom: 5px;
+.swiper-history .hiscard {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding-bottom: 30px;
 }
-.hiscard-wrap .hiscard .hiscard-img {
-  padding-left: 3px;
-}
-.hiscard-wrap .hiscard .hiscard-img img {
-  height: 48px;
-}
-.hiscard-wrap .hiscard .hiscard-year {
+.swiper-history .hiscard .hiscard-year {
+  padding-top: 13px;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.72px;
-  padding-left: 0px;
-  padding-right: 14px;
+}
+.swiper-history .hiscard .hiscard-text {
+  display: flex;
+  flex-direction: column;
+}
+.swiper-history .hiscard .hiscard-text span {
+  padding-top: 6px;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.swiper-history .hiscard-img {
+  text-align: center;
+  height: 48px;
+}
+.swiper-history .hiscard-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vita-prod {
   background: #ffcc5f;
 }
+.vita-prod .sec-titbox {
+  padding-top: 72px;
+  padding-bottom: 22px;
+}
 
 .swiper-prod .swiper-slide {
-  padding: 0 19px;
+  padding: 0 25px;
 }
 .swiper-prod .swiper-slide .prod-box {
-  width: 189px;
-  height: 270px;
+  width: 195px;
+  height: 265px;
   border: 1.5px solid #f4f4f4;
   border-radius: 10px;
   background-color: #fff;
 }
-.swiper-prod .swiper-slide .prod-imgbox img {
-  border-radius: 10px;
+.swiper-prod .swiper-slide .prod-imgbox {
   height: 185px;
+  border-radius: 10px;
+  text-align: center;
+}
+.swiper-prod .swiper-slide .prod-imgbox img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vita-prod .product-wrap {
@@ -554,16 +598,19 @@ body {
   color: #57575b;
 }
 
-.vita-prod .goto {
+.vita-prod .goto-wrap {
+  display: flex;
+  justify-content: center;
+}
+.vita-prod .goto-wrap .goto {
   display: inline-flex;
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #57575b;
   box-shadow: 1px 1px 1px 0px #57575b;
-  margin-left: 142px;
 }
-.vita-prod .goto a {
+.vita-prod .goto-wrap .goto a {
   padding: 4px 14px;
   font-size: 12px;
   font-style: normal;
@@ -573,37 +620,43 @@ body {
   color: #57575b;
 }
 
-.vita-vdo {
-  background: #fff;
+.vita-vdo .sec-titbox {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.vita-vdo .swiper-wrapper {
+  padding-bottom: 50px;
 }
 .vita-vdo .swiper-slide {
-  padding: 15px 19px 35px;
+  height: 183px;
+  text-align: center;
 }
 .vita-vdo .swiper-slide img {
-  height: 192px;
-  border-radius: 20px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.vita-vdo .goto {
+.vita-vdo .goto-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.vita-vdo .goto-wrap .goto {
   display: inline-flex;
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #57575b;
   box-shadow: 1px 1px 1px 0px #57575b;
-  margin-left: 146px;
 }
-.vita-vdo .goto a {
-  padding: 4px 25px;
+.vita-vdo .goto-wrap .goto a {
+  padding: 4px 27px;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
   color: #57575b;
-}
-
-.goto:hover, .goto:active {
-  background-color: #faf3d7;
 }
 
 #footer .ft-menu {
@@ -724,6 +777,7 @@ body {
 .vita-wrap .sec-titbox {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .vita-wrap .sec-titbox .sec-tit1 {
   font-size: 35px;
@@ -731,7 +785,6 @@ body {
   font-weight: 600;
   line-height: 55px; /* 157.143% */
   letter-spacing: -1.4px;
-  color: #212126;
 }
 .vita-wrap .sec-titbox .sec-subtit-bk {
   font-size: 12px;
@@ -739,14 +792,13 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
-  color: #212126;
 }
 .vita-wrap .sec-text {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .vita-wrap .sec-text ul li {
-  width: 100%;
   margin-bottom: 1px;
 }
 .vita-wrap .sec-text ul li span {
@@ -768,7 +820,9 @@ body {
   text-align: center;
 }
 
-.sec-tit2 {
+.vita-reh .sec-tit2,
+.vita-hist .sec-tit2 {
+  text-align: center;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -776,12 +830,29 @@ body {
   letter-spacing: -1px;
 }
 
-.vita-prod .sec-titbox,
-.vita-vdo .sec-titbox {
-  padding-top: 65px;
-  padding-bottom: 28px;
-}
 .vita-prod .sec-titbox .sec-tit3,
 .vita-vdo .sec-titbox .sec-tit3 {
-  padding-bottom: 5px;
+  text-align: center;
+  padding-bottom: 9px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+.vita-prod .sec-titbox .sec-subtit-gray,
+.vita-vdo .sec-titbox .sec-subtit-gray {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #57575b;
+}
+.vita-prod .goto:hover, .vita-prod .goto:active,
+.vita-vdo .goto:hover,
+.vita-vdo .goto:active {
+  background-color: #faf3d7;
 }/*# sourceMappingURL=comm.css.map */

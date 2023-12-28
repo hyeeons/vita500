@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper-bnr", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   loop: true,
 });
 
@@ -17,7 +17,7 @@ var swiper = new Swiper(".swiper-history", {
 
 var swiper = new Swiper(".swiper-prod", {
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 10,
   loop: true,
   breakpoints: {
     640: {

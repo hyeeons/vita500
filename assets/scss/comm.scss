@@ -2,13 +2,16 @@
 
 // body-디자인이미지
 body {
-  background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
+  //   background: url("../../모바일_아이폰13미니_메인.png") no-repeat 50% 0;
 }
 
+* {
+  font-family: "Pretendard", "pretendard-regular";
+}
 // layout
 .wrap {
   min-height: 100vh;
-  max-width: 420px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
 }
@@ -55,25 +58,24 @@ body {
   .sec-titbox {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .sec-tit1 {
       @include ft-titsz35;
-      color: $txtDefult;
     }
 
     .sec-subtit-bk {
       @include ft-bdsz12;
-      color: $txtDefult;
     }
   }
 
   .sec-text {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     ul {
       li {
-        width: 100%;
         margin-bottom: 1px;
         span {
           @include icon-check;
@@ -87,19 +89,36 @@ body {
   }
 }
 
-.sec-tit2 {
-  @include ft-titsz25B;
+.vita-reh,
+.vita-hist {
+  .sec-tit2 {
+    text-align: center;
+    @include ft-titsz25B;
+  }
 }
-
 // section-prod & video 공통
 
 .vita-prod,
 .vita-vdo {
   .sec-titbox {
-    padding-top: 65px;
-    padding-bottom: 28px;
     .sec-tit3 {
-      padding-bottom: 5px;
+      text-align: center;
+      padding-bottom: 9px;
+      @include ft-titsz25;
+    }
+    .sec-subtit-gray {
+      display: block;
+      text-align: center;
+      @include ft-bdsz12;
+      color: $gray-57B;
+    }
+  }
+
+  // goto 버튼 활성
+  .goto {
+    &:hover,
+    &:active {
+      background-color: #faf3d7;
     }
   }
 }
