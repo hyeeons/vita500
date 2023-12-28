@@ -54,7 +54,6 @@
   .nav-list-depth1 {
     @include ft-titsz18B;
     display: block;
-    width: 375px;
     height: 55px;
     padding-top: 16px;
     padding-left: 16px;
@@ -70,40 +69,23 @@
 }
 
 // slide
-.swiper-bnr {
-  width: 375px;
-  height: 608px;
-  img {
-    width: 375px;
-    height: 608px;
-  }
+.swiper-wrapper {
+  padding: 0;
+  margin: 0;
+  height: 681px;
 }
-// section-tit 공통부분
-.sec-titbox {
-  text-align: center;
-  padding: 61px 61px 0px 61px;
-
-  .sec-subtit-bk {
-    @include ft-bdsz12;
-    color: $txtDefult;
+.swiper-slide {
+  a {
+    height: 681px;
   }
-
-  .sec-tit1 {
-    @include ft-titsz35;
-  }
-  .sec-tit3 {
-    @include ft-titsz25;
-  }
-
-  .sec-subtit-gray {
-    @include ft-bdsz12;
-    color: $gray-57B;
+  img {
+    height: 681px;
+    text-align: center;
   }
 }
 
 // video
 .video {
-  width: 375px;
   height: 220px;
   background: $primary;
   .video-wraper {
@@ -114,35 +96,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-  }
-}
-
-// section-vita 공통부분
-.sec-titbox {
-  text-align: center;
-  padding: 61px 61px 0px 61px;
-
-  .sec-subtit-bk {
-    @include ft-bdsz12;
-    color: $txtDefult;
-  }
-
-  .sec-tit1 {
-    @include ft-titsz35;
-  }
-}
-
-.sec-text {
-  text-align: center;
-  ul {
-    li {
-      width: 100%;
-      margin-bottom: 1px;
-      span {
-        @include icon-check;
-        @include ft-bdsz14H;
-      }
     }
   }
 }
@@ -160,51 +113,27 @@
 }
 // vita500
 .vita-mp {
-  .sec-img {
-    width: 253px;
+  img {
     height: 238px;
-    margin: 0 61px;
-    //   translate: (60px -60px);
-    //   margin 이용
-    // translate는 자리에서 움직일 때 주로 사용
-    img {
-      width: 253px;
-      height: 238px;
-    }
   }
 }
+
 // vita-500 zero
 
 .vita-zero {
-  .sec-titbox {
-    padding: 55px 61px 0px 61px;
-  }
-  .sec-img {
-    width: 196px;
+  img {
     height: 222px;
-    padding: 0 88px;
-    margin-bottom: 7px;
-    img {
-      width: 196px;
-      height: 222px;
-    }
   }
 }
 
 // vita500 reh
 
 .vita-reh {
-  margin: 0;
-  .sec-titbox {
-    .sec-tit2 {
-      @include ft-titsz25B;
-    }
-  }
   .sec-img {
+    text-align: center;
     padding: 16px 150px 0px 150px;
     margin-bottom: 10px;
     img {
-      width: 78px;
       height: 197px;
     }
   }
@@ -216,8 +145,8 @@
   }
 }
 
+// section-history
 .swiper-history {
-  width: 100%;
   height: 320px;
   .swiper-slide {
     width: auto;
@@ -232,71 +161,60 @@
   em {
     @include ft-bdsz12;
   }
-  .sec-tit2 {
-    @include ft-titsz25B;
-  }
 }
 
 .vita-hist {
   .hist-img {
-    padding: 11px 19px 23px;
+    text-align: center;
+    padding: 11px 0 23px;
     img {
-      width: 338px;
       height: 244px;
       border-radius: 10px;
     }
   }
 }
-
-.hiscard {
+.hiscard-wrap {
   display: flex;
-  padding-bottom: 25px;
-  padding: 0 25px 25px;
-  .hiscard-year {
-    padding: 15px;
-  }
-  .hiscard-text {
+  .hiscard {
     display: flex;
-    flex-direction: column;
-    padding-top: 6px;
-    padding-left: 14px;
-
-    span {
-      @include ft-bdsz14;
-      padding-bottom: 5px;
+    padding-bottom: 25px;
+    padding: 0 25px 25px;
+    .hiscard-year {
+      padding: 15px;
     }
-  }
-  .hiscard-img {
-    padding-left: 3px;
-    img {
-      width: 44px;
-      height: 48px;
-    }
-  }
+    .hiscard-text {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6px;
+      padding-left: 14px;
 
-  .hiscard-year {
-    @include ft-titsz18B;
-    padding-left: 0px;
-    padding-right: 14px;
+      span {
+        @include ft-bdsz14;
+        padding-bottom: 5px;
+      }
+    }
+    .hiscard-img {
+      padding-left: 3px;
+      img {
+        height: 48px;
+      }
+    }
+
+    .hiscard-year {
+      @include ft-titsz18B;
+      padding-left: 0px;
+      padding-right: 14px;
+    }
   }
 }
 
-// section-prod & video 공통
+// section-prod
 
 .vita-prod {
   //   background: $white-bgcFC;
   //   background: #ffdc52;
   background: $primary;
-
-  .sec-titbox {
-    padding-top: 65px;
-    padding-bottom: 28px;
-    .sec-tit3 {
-      padding-bottom: 5px;
-    }
-  }
 }
-
 .swiper-prod {
   .swiper-slide {
     padding: 0 19px;
@@ -306,7 +224,6 @@
     .prod-imgbox {
       img {
         border-radius: 10px;
-        width: 183px;
         height: 185px;
       }
     }
@@ -320,12 +237,13 @@
 
 .prod-box {
   .prod-textbox {
-    padding: 0 12px;
+    padding: 0 15px;
     .prod-text-tit {
       padding-bottom: 9px;
       @include ft-bdsz16;
     }
     .prod-text-info {
+      padding: 0;
       @include ft-bdsz10;
       color: $gray-57B;
     }
@@ -348,14 +266,10 @@
 // sec-video
 
 .vita-vdo {
-  .sec-tit3 {
-    padding-bottom: 5px;
-  }
   background: $white;
   .swiper-slide {
     padding: 15px 19px 35px;
     img {
-      width: 338px;
       height: 192px;
       border-radius: 20px;
     }
@@ -468,7 +382,6 @@
     color: $gray-ft7B;
     position: absolute;
     background: $white-bgcFC;
-    width: 187px;
     height: 210px;
     z-index: 1000;
     bottom: 44px;

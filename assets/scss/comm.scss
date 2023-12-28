@@ -49,3 +49,57 @@ body {
 }
 
 @import "main", "sub1";
+
+// section-vita-wrap 공통
+.vita-wrap {
+  .sec-titbox {
+    display: flex;
+    flex-direction: column;
+
+    .sec-tit1 {
+      @include ft-titsz35;
+      color: $txtDefult;
+    }
+
+    .sec-subtit-bk {
+      @include ft-bdsz12;
+      color: $txtDefult;
+    }
+  }
+
+  .sec-text {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      li {
+        width: 100%;
+        margin-bottom: 1px;
+        span {
+          @include icon-check;
+          @include ft-bdsz14H;
+        }
+      }
+    }
+  }
+  .sec-img {
+    text-align: center;
+  }
+}
+
+.sec-tit2 {
+  @include ft-titsz25B;
+}
+
+// section-prod & video 공통
+
+.vita-prod,
+.vita-vdo {
+  .sec-titbox {
+    padding-top: 65px;
+    padding-bottom: 28px;
+    .sec-tit3 {
+      padding-bottom: 5px;
+    }
+  }
+}
