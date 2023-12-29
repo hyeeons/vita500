@@ -280,6 +280,7 @@ legend {
   max-width: 430px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -288,7 +289,10 @@ legend {
   }
 }
 #header {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-216px);
 }
 
 #main {
@@ -313,8 +317,18 @@ legend {
   height: 233px;
 }
 
-#logo {
+#header {
+  width: 430px;
+  z-index: 1100;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+#header .inner #logo {
   position: relative;
+  top: 0;
+  left: 0;
   z-index: 1100;
   width: 154px;
   height: 37px;
@@ -323,13 +337,10 @@ legend {
   background-size: cover;
   text-indent: -9999px;
 }
-
-.gnb-wrap {
-  display: flex;
-  flex-direction: row-reverse;
+#header .inner .gnb-wrap .menu-burger {
+  padding-right: 20px;
 }
-
-.gnb-wrap .inp-burger {
+#header .inner .gnb-wrap .menu-burger .inp-burger {
   top: 0;
   left: 0;
   width: 0;
@@ -338,46 +349,55 @@ legend {
   opacity: 0;
   visibility: hidden;
 }
-.gnb-wrap .label-burger {
-  position: absolute;
-  z-index: 1100;
-  top: 22px;
-  right: 20px;
+#header .inner .gnb-wrap .menu-burger .label-burger {
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-.gnb-wrap .label-burger .bar {
+#header .inner .gnb-wrap .menu-burger .label-burger .bar {
   display: block;
   width: 20px;
   height: 3px;
   border-radius: 3px;
   background-color: #212126;
 }
-
-#gnb .nav-list {
-  background: #fff;
+#header .inner .gnb-wrap #gnb {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
 }
-#gnb .nav-list-depth1 {
+#header .inner .gnb-wrap #gnb .nav-list-depth1 {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.72px;
-  display: block;
+  width: 100%;
   height: 55px;
+  display: block;
   padding-top: 16px;
-  padding-left: 16px;
+  padding-left: 20px;
   border-bottom: 1px solid #dddddd;
+  position: relative;
 }
-#gnb .nav-list-depth1:first-child {
+#header .inner .gnb-wrap #gnb .nav-list-depth1::before {
+  content: "\f107";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 23px;
+  position: absolute;
+  right: 3%;
+}
+#header .inner .gnb-wrap #gnb .nav-list-depth1:first-child {
   border-top: 1px solid #dddddd;
 }
-#gnb .nav-list-depth2 {
+#header .inner .gnb-wrap #gnb .nav-list-depth2 {
   display: none;
 }
 
 .swiper-bnr {
+  opacity: 0;
   width: 100%;
 }
 .swiper-bnr .swiper-slide {
