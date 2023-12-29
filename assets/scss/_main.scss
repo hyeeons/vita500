@@ -101,7 +101,7 @@
   }
 }
 
-// video
+// video - 모바일
 
 .video {
   .video-wraper {
@@ -118,6 +118,27 @@
       //   height: 90%;
       //   left: 5%;
       background: $primary;
+    }
+  }
+}
+
+// video - PC버전
+@media screen and (min-width: 430px) {
+  .video {
+    background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0
+      no-repeat;
+    padding-top: 130px;
+    background-size: 1920px;
+    .video-wraper {
+      background: none;
+      margin: 0 auto;
+      iframe {
+        width: 1000px;
+        height: 563px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -197,6 +218,7 @@
   display: flex;
 }
 .vita-hist {
+  background: $white-bgcFC;
   padding: 30px 0;
   .his-titbox {
     display: block;
@@ -325,7 +347,7 @@
 // sec-video
 
 .vita-vdo {
-  //   background: $white;
+  background: $white-bgcFC;
   .sec-titbox {
     padding-top: 60px;
     padding-bottom: 20px;
@@ -476,5 +498,3 @@
     right: 0;
   }
 }
-
-// footer-active

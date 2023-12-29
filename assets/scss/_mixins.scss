@@ -111,3 +111,33 @@
   border: 1px solid $gray-57B;
   box-shadow: 1px 1px 1px 0px $gray-57B;
 }
+
+@mixin posX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin posY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin posXY {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin ani-s {
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+@mixin ani-e {
+  transform: translateY(0);
+  opacity: 1;
+}

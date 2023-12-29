@@ -271,6 +271,10 @@ legend {
   content: "";
 }
 
+body {
+  background: url(../../PC_웹페이지1920_메인.png);
+}
+
 * {
   font-family: "Pretendard", "pretendard-regular";
 }
@@ -425,6 +429,24 @@ legend {
   background: #ffcc5f;
 }
 
+@media screen and (min-width: 430px) {
+  .video {
+    background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0 no-repeat;
+    padding-top: 130px;
+    background-size: 1920px;
+  }
+  .video .video-wraper {
+    background: none;
+    margin: 0 auto;
+  }
+  .video .video-wraper iframe {
+    width: 1000px;
+    height: 563px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 #main .bg-vita {
   background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
 }
@@ -489,6 +511,7 @@ legend {
 }
 
 .vita-hist {
+  background: #fcfcfc;
   padding: 30px 0;
 }
 .vita-hist .his-titbox {
@@ -638,6 +661,9 @@ legend {
   color: #57575b;
 }
 
+.vita-vdo {
+  background: #fcfcfc;
+}
 .vita-vdo .sec-titbox {
   padding-top: 60px;
   padding-bottom: 20px;
