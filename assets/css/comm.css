@@ -362,9 +362,11 @@ legend {
   background-color: #212126;
 }
 #header .inner .gnb-wrap #gnb {
+  display: none;
   position: absolute;
   top: 65px;
   left: 0;
+  background: #fff;
   width: 100%;
 }
 #header .inner .gnb-wrap #gnb .nav-list-depth1 {
@@ -397,7 +399,6 @@ legend {
 }
 
 .swiper-bnr {
-  opacity: 0;
   width: 100%;
 }
 .swiper-bnr .swiper-slide {
