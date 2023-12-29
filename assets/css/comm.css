@@ -272,7 +272,7 @@ legend {
 }
 
 body {
-  background: url(../../PC_웹페이지1920_메인.png);
+  background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
 }
 
 * {
@@ -429,7 +429,7 @@ body {
   background: #ffcc5f;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 1280px) {
   .video {
     background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0 no-repeat;
     padding-top: 130px;
@@ -586,7 +586,7 @@ body {
 }
 
 .vita-prod {
-  background: #ffcc5f;
+  background: #fcfcfc;
 }
 .vita-prod .sec-titbox {
   padding-top: 72px;

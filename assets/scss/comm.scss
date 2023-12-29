@@ -2,7 +2,7 @@
 
 // body-디자인이미지
 body {
-  background: url(../../PC_웹페이지1920_메인.png);
+  background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
   //   background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
 }
 
@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $breakpoint-xl) {
   .wrap {
     max-width: none;
   }

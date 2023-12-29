@@ -123,7 +123,7 @@
 }
 
 // video - PC버전
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 1280px) {
   .video {
     background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0
       no-repeat;
@@ -283,9 +283,9 @@
 // section-prod
 
 .vita-prod {
-  //   background: $white-bgcFC;
+  background: $white-bgcFC;
   //   background: #ffdc52;
-  background: $primary;
+  //   background: $primary;
   .sec-titbox {
     padding-top: 72px;
     padding-bottom: 22px;
