@@ -391,20 +391,17 @@ legend {
      object-fit: cover;
 }
 
-.video {
-  height: 220px;
+.video .video-wraper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
   background: #ffcc5f;
 }
-.video .video-wraper {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-}
 .video .video-wraper iframe {
+  position: absolute;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: #ffcc5f;
 }
 
 #main .bg-vita {
@@ -715,14 +712,14 @@ legend {
 #footer .ft-container .ft-info .ft-link a {
   border-right: 1px solid #7b7b7b;
 }
-#footer .ft-container .ft-info .ft-link .a1 {
+#footer .ft-container .ft-info .ft-link a:nth-child(1) {
   padding-right: 24px;
 }
-#footer .ft-container .ft-info .ft-link .a2 {
-  padding: 0 24px;
+#footer .ft-container .ft-info .ft-link a:nth-child(2) {
+  padding-right: 30px;
 }
-#footer .ft-container .ft-info .ft-link .a3 {
-  padding-left: 24px;
+#footer .ft-container .ft-info .ft-link a:nth-child(3) {
+  padding-right: 20px;
   border: none;
 }
 #footer .ft-container a,

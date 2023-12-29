@@ -81,17 +81,22 @@
 }
 
 // video
+
 .video {
-  height: 220px;
-  background: $primary;
   .video-wraper {
+    position: relative;
     width: 100%;
-    height: 100%;
-    padding: 15px;
+    padding-bottom: 56.25%;
+    background: $primary;
+
     iframe {
+      position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      //   width: 90%;
+      //   height: 90%;
+      //   left: 5%;
+      background: $primary;
     }
   }
 }
@@ -379,18 +384,19 @@
         display: flex;
         justify-content: space-between;
         padding: 7px 0;
+
         a {
           border-right: 1px solid $gray-ft7B;
-        }
-        .a1 {
-          padding-right: 24px;
-        }
-        .a2 {
-          padding: 0 24px;
-        }
-        .a3 {
-          padding-left: 24px;
-          border: none;
+          &:nth-child(1) {
+            padding-right: 24px;
+          }
+          &:nth-child(2) {
+            padding-right: 30px;
+          }
+          &:nth-child(3) {
+            padding-right: 20px;
+            border: none;
+          }
         }
       }
     }
