@@ -23,6 +23,7 @@ body {
     max-width: none;
   }
 }
+
 #header {
   position: fixed;
   top: 0;
@@ -59,8 +60,12 @@ body {
 
 @import "main", "sub1";
 
-// section-vita-wrap 공통
+// section-vita-wrap 공통 - mobile
 .vita-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .sec-titbox {
     display: flex;
     flex-direction: column;
@@ -90,9 +95,6 @@ body {
       }
     }
   }
-  .sec-img {
-    text-align: center;
-  }
 }
 
 .vita-reh,
@@ -102,6 +104,37 @@ body {
     @include ft-titsz25B;
   }
 }
+
+// pc - vita wrap
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-wrap {
+    .sec-titbox {
+      .sec-subtit-bk {
+        @include ft-titsz25;
+      }
+      .sec-tit1 {
+        @include ft-titsz62;
+        padding-top: 5px;
+        padding-bottom: 12px;
+      }
+      .sec-subtit2 {
+        @include ft-titsz18;
+        color: $gray-57B;
+      }
+    }
+    .sec-text {
+      ul {
+        li {
+          padding-bottom: 12px;
+          span {
+            @include ft-bdsz23;
+          }
+        }
+      }
+    }
+  }
+}
+
 // section-prod & video 공통
 
 .vita-prod,

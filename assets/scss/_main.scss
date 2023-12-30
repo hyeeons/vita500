@@ -123,7 +123,7 @@
 }
 
 // video - PC버전
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $breakpoint-xl) {
   .video {
     background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0
       no-repeat;
@@ -132,6 +132,7 @@
     .video-wraper {
       background: none;
       margin: 0 auto;
+      padding-bottom: 835px;
       iframe {
         width: 1000px;
         height: 563px;
@@ -154,7 +155,10 @@
   // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffbf37 100%);
 }
 
-// vita500
+// vita500 - mobile
+.vita-intro {
+  display: none;
+}
 .vita-mp {
   .sec-titbox {
     padding-top: 70px;
@@ -165,6 +169,50 @@
   img {
     height: 100%;
     object-fit: cover;
+  }
+}
+
+// vita500 - pc
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    em {
+      @include ft-titsz40;
+    }
+    h2 {
+      @include ft-titsz62;
+    }
+    padding-top: 179px;
+    padding-bottom: 150px;
+  }
+  .vita-mp {
+    position: relative;
+    .vita-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 50px;
+      padding-left: 440px;
+      .sec-titbox {
+        align-items: flex-start;
+      }
+      .sec-text {
+        padding-top: 38px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .sec-img {
+        position: absolute;
+        height: 526px;
+        bottom: 7%;
+        right: 21%;
+      }
+    }
   }
 }
 

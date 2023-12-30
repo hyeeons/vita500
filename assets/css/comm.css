@@ -438,6 +438,7 @@ body {
   .video .video-wraper {
     background: none;
     margin: 0 auto;
+    padding-bottom: 835px;
   }
   .video .video-wraper iframe {
     width: 1000px;
@@ -447,6 +448,10 @@ body {
     transform: translateX(-50%);
   }
 }
+.vita-intro {
+  display: none;
+}
+
 .vita-mp .sec-titbox {
   padding-top: 70px;
 }
@@ -459,6 +464,55 @@ body {
      object-fit: cover;
 }
 
+@media screen and (min-width: 1280px) {
+  .vita-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 179px;
+    padding-bottom: 150px;
+  }
+  .vita-intro em {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px; /* 137.5% */
+    letter-spacing: -1.6px;
+  }
+  .vita-intro h2 {
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .vita-mp {
+    position: relative;
+  }
+  .vita-mp .vita-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 440px;
+  }
+  .vita-mp .vita-wrap .sec-titbox {
+    align-items: flex-start;
+  }
+  .vita-mp .vita-wrap .sec-text {
+    padding-top: 38px;
+  }
+  .vita-mp .vita-wrap ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .vita-mp .vita-wrap .sec-img {
+    position: absolute;
+    height: 526px;
+    bottom: 7%;
+    right: 21%;
+  }
+}
 .vita-zero .sec-titbox {
   padding-top: 65px;
 }
@@ -814,6 +868,11 @@ body {
   right: 0;
 }
 
+.vita-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .vita-wrap .sec-titbox {
   display: flex;
   flex-direction: column;
@@ -856,9 +915,6 @@ body {
   vertical-align: middle;
   margin-right: 5px;
 }
-.vita-wrap .sec-img {
-  text-align: center;
-}
 
 .vita-reh .sec-tit2,
 .vita-hist .sec-tit2 {
@@ -870,6 +926,41 @@ body {
   letter-spacing: -1px;
 }
 
+@media screen and (min-width: 1280px) {
+  .vita-wrap .sec-titbox .sec-subtit-bk {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+  }
+  .vita-wrap .sec-titbox .sec-tit1 {
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
+  .vita-wrap .sec-titbox .sec-subtit2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    color: #57575b;
+  }
+  .vita-wrap .sec-text ul li {
+    padding-bottom: 12px;
+  }
+  .vita-wrap .sec-text ul li span {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.92px;
+  }
+}
 .vita-prod .sec-titbox .sec-tit3,
 .vita-vdo .sec-titbox .sec-tit3 {
   text-align: center;
