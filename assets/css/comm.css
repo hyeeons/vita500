@@ -447,10 +447,6 @@ body {
     transform: translateX(-50%);
   }
 }
-#main .bg-vita {
-  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
-}
-
 .vita-mp .sec-titbox {
   padding-top: 70px;
 }

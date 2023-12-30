@@ -72,6 +72,80 @@
   letter-spacing: -1.4px;
 }
 
+// pc 폰트
+
+@mixin ft-bdsz14B {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
+}
+
+@mixin ft-bdsz16R {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+@mixin ft-navsz18 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+@mixin ft-titsz20 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+@mixin ft-bdsz23 {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.92px;
+}
+
+@mixin ft-titsz25 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+@mixin ft-titsz30 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+@mixin ft-titsz40 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px; /* 137.5% */
+  letter-spacing: -1.6px;
+}
+
+@mixin ft-titsz62 {
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+// icon
 @mixin icon-check {
   &::before {
     content: "\e5ca";
