@@ -271,10 +271,6 @@ legend {
   content: "";
 }
 
-body {
-  background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
-}
-
 * {
   font-family: "Pretendard", "pretendard-regular";
 }
@@ -448,6 +444,10 @@ body {
     transform: translateX(-50%);
   }
 }
+#main .bg-vita {
+  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+}
+
 .vita-intro {
   display: none;
 }
