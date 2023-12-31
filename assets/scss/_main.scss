@@ -212,7 +212,7 @@
       .sec-img {
         position: absolute;
         height: 526px;
-        bottom: 7%;
+        bottom: 33%;
         right: 21%;
       }
       .goto-wrap {
@@ -280,7 +280,7 @@
     .sec-img {
       position: absolute;
       height: 526px;
-      top: 18%;
+      top: 10%;
       left: 21%;
     }
     .goto-wrap {
@@ -291,7 +291,7 @@
   }
 }
 
-// vita500 reh
+// vita500 reh - mobile
 
 .vita-reh {
   .sec-titbox {
@@ -312,13 +312,33 @@
       @include ft-bdsz14H;
     }
   }
-  .sec-tit2 {
+  .sec-tit2-mobile {
     padding-top: 50px;
     padding-bottom: 20px;
   }
+  .sec-tit2-pc {
+    display: none;
+  }
 }
 
-// section-history
+// vita500 - reh - PC
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-reh {
+    .sec-titbox {
+      padding-top: 280px;
+      padding-bottom: 130px;
+      .sec-tit2-mobile {
+        display: none;
+      }
+      .sec-tit2-pc {
+        display: block;
+        @include ft-titsz62;
+      }
+    }
+  }
+}
+
+// section-history - mobile
 .hiscard-wrap {
   display: flex;
 }

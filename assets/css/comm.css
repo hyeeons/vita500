@@ -287,11 +287,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1280px) {
-  .wrap {
-    max-width: none;
-  }
-}
 #header {
   position: fixed;
   top: 0;
@@ -512,7 +507,7 @@ body {
   .vita-mp .vita-wrap .sec-img {
     position: absolute;
     height: 526px;
-    bottom: 7%;
+    bottom: 33%;
     right: 21%;
   }
   .vita-mp .vita-wrap .goto-wrap {
@@ -574,7 +569,7 @@ body {
   .vita-zero .sec-img {
     position: absolute;
     height: 526px;
-    top: 18%;
+    top: 10%;
     left: 21%;
   }
   .vita-zero .goto-wrap .goto {
@@ -604,11 +599,30 @@ body {
   line-height: 20px; /* 142.857% */
   letter-spacing: -0.56px;
 }
-.vita-reh .sec-tit2 {
+.vita-reh .sec-tit2-mobile {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+.vita-reh .sec-tit2-pc {
+  display: none;
+}
 
+@media screen and (min-width: 1280px) {
+  .vita-reh .sec-titbox {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
+  .vita-reh .sec-titbox .sec-tit2-mobile {
+    display: none;
+  }
+  .vita-reh .sec-titbox .sec-tit2-pc {
+    display: block;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
 .hiscard-wrap {
   display: flex;
 }
@@ -892,6 +906,34 @@ body {
   right: 0;
 }
 
+@media screen and (min-width: 1280px) {
+  .wrap {
+    min-height: 100vh;
+    max-width: none;
+  }
+  #main {
+    min-height: calc(100vh - 300px - 1400px - 1153px - 700px - 810px);
+  }
+  #main .vitag-intro {
+    height: 300px;
+  }
+  #main .vita-mp,
+  #main .vita-zero {
+    height: 700px;
+  }
+  #main .vita-reh {
+    height: 1153px;
+  }
+  #main .vita-prod {
+    height: 700px;
+  }
+  #main .vita-vdo {
+    height: 810px;
+  }
+  #footer {
+    height: 312px;
+  }
+}
 .vita-wrap {
   display: flex;
   flex-direction: column;
