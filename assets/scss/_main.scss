@@ -426,6 +426,57 @@
   }
 }
 
+// section-history - PC
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-hist {
+    padding-top: 110px;
+    .his-titbox {
+      .sec-subtit-bk {
+        @include ft-titsz40;
+      }
+      .sec-tit2 {
+        @include ft-titsz62;
+      }
+      .sec-tit2-mobile {
+        display: none;
+      }
+      padding-bottom: 140px;
+    }
+    .hist-container {
+      display: flex;
+      padding-left: 425px;
+      gap: 66px;
+
+      .hist-img {
+        height: 463px;
+      }
+      .swiper-history {
+        height: 463px;
+        .swiper-slide {
+          padding: 0;
+          .hiscard {
+            gap: 19px;
+            .hiscard-text {
+              span {
+                @include ft-bdsz16R;
+              }
+            }
+          }
+        }
+      }
+      .hiscard-wrap {
+        .hiscard-year {
+          padding-top: 20px;
+          @include ft-titsz20;
+        }
+        .hiscard-img {
+          height: 74px;
+        }
+      }
+    }
+  }
+}
+
 // section-prod
 
 .vita-prod {

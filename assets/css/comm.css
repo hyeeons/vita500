@@ -728,6 +728,65 @@ body {
      object-fit: cover;
 }
 
+@media screen and (min-width: 1280px) {
+  .vita-hist {
+    padding-top: 110px;
+  }
+  .vita-hist .his-titbox {
+    padding-bottom: 140px;
+  }
+  .vita-hist .his-titbox .sec-subtit-bk {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px; /* 137.5% */
+    letter-spacing: -1.6px;
+  }
+  .vita-hist .his-titbox .sec-tit2 {
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .vita-hist .his-titbox .sec-tit2-mobile {
+    display: none;
+  }
+  .vita-hist .hist-container {
+    display: flex;
+    padding-left: 425px;
+    gap: 66px;
+  }
+  .vita-hist .hist-container .hist-img {
+    height: 463px;
+  }
+  .vita-hist .hist-container .swiper-history {
+    height: 463px;
+  }
+  .vita-hist .hist-container .swiper-history .swiper-slide {
+    padding: 0;
+  }
+  .vita-hist .hist-container .swiper-history .swiper-slide .hiscard {
+    gap: 19px;
+  }
+  .vita-hist .hist-container .swiper-history .swiper-slide .hiscard .hiscard-text span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+  .vita-hist .hist-container .hiscard-wrap .hiscard-year {
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.8px;
+  }
+  .vita-hist .hist-container .hiscard-wrap .hiscard-img {
+    height: 74px;
+  }
+}
 .vita-prod .sec-titbox {
   padding-top: 72px;
   padding-bottom: 22px;
