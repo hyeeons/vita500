@@ -614,7 +614,6 @@ body {
 }
 
 .vita-hist {
-  background: #fff;
   padding: 30px 0;
 }
 .vita-hist .his-titbox {
@@ -688,9 +687,6 @@ body {
      object-fit: cover;
 }
 
-.vita-prod {
-  background: #fcfcfc;
-}
 .vita-prod .sec-titbox {
   padding-top: 72px;
   padding-bottom: 22px;
