@@ -525,6 +525,9 @@ body {
 .vita-zero .sec-titbox {
   padding-top: 65px;
 }
+.vita-zero .sec-titbox .subtit-pc {
+  display: none;
+}
 .vita-zero .sec-img {
   height: 222px;
 }
@@ -537,6 +540,47 @@ body {
   padding-top: 8px;
 }
 
+@media screen and (min-width: 1280px) {
+  .vita-zero {
+    position: relative;
+  }
+  .vita-zero .vita-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 179px;
+    padding-right: 450px;
+  }
+  .vita-zero .vita-wrap .sec-titbox {
+    align-items: flex-end;
+  }
+  .vita-zero .vita-wrap .sec-titbox .sec-subtit-bk {
+    display: none;
+  }
+  .vita-zero .vita-wrap .sec-titbox .subtit-pc {
+    display: block;
+  }
+  .vita-zero .vita-wrap .sec-titbox .sec-subtit2 {
+    display: block;
+  }
+  .vita-zero .vita-wrap .sec-text {
+    padding-top: 38px;
+  }
+  .vita-zero .vita-wrap .sec-text ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .vita-zero .sec-img {
+    position: absolute;
+    height: 526px;
+    top: 18%;
+    left: 21%;
+  }
+  .vita-zero .goto-wrap .goto {
+    padding: 0 15px;
+  }
+}
 .vita-reh .sec-titbox {
   padding-top: 15px;
 }

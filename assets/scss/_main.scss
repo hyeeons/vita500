@@ -230,6 +230,9 @@
 .vita-zero {
   .sec-titbox {
     padding-top: 65px;
+    .subtit-pc {
+      display: none;
+    }
   }
   .sec-img {
     height: 222px;
@@ -240,6 +243,51 @@
   }
   .sec-text {
     padding-top: 8px;
+  }
+}
+
+// vita500 zero - PC버전
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-zero {
+    position: relative;
+    .vita-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 179px;
+      padding-right: 450px;
+      .sec-titbox {
+        align-items: flex-end;
+        .sec-subtit-bk {
+          display: none;
+        }
+        .subtit-pc {
+          display: block;
+        }
+        .sec-subtit2 {
+          display: block;
+        }
+      }
+      .sec-text {
+        padding-top: 38px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+    }
+    .sec-img {
+      position: absolute;
+      height: 526px;
+      top: 18%;
+      left: 21%;
+    }
+    .goto-wrap {
+      .goto {
+        padding: 0 15px;
+      }
+    }
   }
 }
 
