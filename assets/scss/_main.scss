@@ -147,7 +147,7 @@
 // 그라데이션 배경
 #main {
   .bg-vita {
-    background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
   }
 
   // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
@@ -197,20 +197,29 @@
       padding-left: 440px;
       .sec-titbox {
         align-items: flex-start;
+        .sec-subtit2 {
+          display: block;
+        }
       }
       .sec-text {
         padding-top: 38px;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
       .sec-img {
         position: absolute;
         height: 526px;
         bottom: 7%;
         right: 21%;
+      }
+      .goto-wrap {
+        padding-left: 31px;
+        .goto {
+          padding: 0 15px;
+        }
       }
     }
   }
@@ -266,7 +275,7 @@
   display: flex;
 }
 .vita-hist {
-  background: $white-bgcFC;
+  background: $white;
   padding: 30px 0;
   .his-titbox {
     display: block;
@@ -379,15 +388,10 @@
 
 .vita-prod {
   .goto-wrap {
-    display: flex;
-    justify-content: center;
-    .goto {
-      @include goto;
-      a {
-        padding: 4px 14px;
-        @include ft-bdsz12;
-        color: $gray-57B;
-      }
+    a {
+      padding: 4px 14px;
+      @include ft-bdsz12;
+      color: $gray-57B;
     }
   }
 }
@@ -395,7 +399,7 @@
 // sec-video
 
 .vita-vdo {
-  background: $white-bgcFC;
+  background: $white;
   .sec-titbox {
     padding-top: 60px;
     padding-bottom: 20px;
@@ -412,13 +416,7 @@
     }
   }
   .goto-wrap {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-
     .goto {
-      @include goto;
-
       a {
         padding: 4px 27px;
         @include ft-bdsz12;

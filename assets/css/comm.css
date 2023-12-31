@@ -271,6 +271,10 @@ legend {
   content: "";
 }
 
+body {
+  background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
+}
+
 * {
   font-family: "Pretendard", "pretendard-regular";
 }
@@ -444,10 +448,6 @@ legend {
     transform: translateX(-50%);
   }
 }
-#main .bg-vita {
-  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
-}
-
 .vita-intro {
   display: none;
 }
@@ -498,10 +498,13 @@ legend {
   .vita-mp .vita-wrap .sec-titbox {
     align-items: flex-start;
   }
+  .vita-mp .vita-wrap .sec-titbox .sec-subtit2 {
+    display: block;
+  }
   .vita-mp .vita-wrap .sec-text {
     padding-top: 38px;
   }
-  .vita-mp .vita-wrap ul {
+  .vita-mp .vita-wrap .sec-text ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -511,6 +514,12 @@ legend {
     height: 526px;
     bottom: 7%;
     right: 21%;
+  }
+  .vita-mp .vita-wrap .goto-wrap {
+    padding-left: 31px;
+  }
+  .vita-mp .vita-wrap .goto-wrap .goto {
+    padding: 0 15px;
   }
 }
 .vita-zero .sec-titbox {
@@ -561,7 +570,7 @@ legend {
 }
 
 .vita-hist {
-  background: #fcfcfc;
+  background: #fff;
   padding: 30px 0;
 }
 .vita-hist .his-titbox {
@@ -689,19 +698,7 @@ legend {
   color: #57575b;
 }
 
-.vita-prod .goto-wrap {
-  display: flex;
-  justify-content: center;
-}
-.vita-prod .goto-wrap .goto {
-  display: inline-flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #57575b;
-  box-shadow: 1px 1px 1px 0px #57575b;
-}
-.vita-prod .goto-wrap .goto a {
+.vita-prod .goto-wrap a {
   padding: 4px 14px;
   font-size: 12px;
   font-style: normal;
@@ -712,7 +709,7 @@ legend {
 }
 
 .vita-vdo {
-  background: #fcfcfc;
+  background: #fff;
 }
 .vita-vdo .sec-titbox {
   padding-top: 60px;
@@ -729,19 +726,6 @@ legend {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.vita-vdo .goto-wrap {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-.vita-vdo .goto-wrap .goto {
-  display: inline-flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #57575b;
-  box-shadow: 1px 1px 1px 0px #57575b;
 }
 .vita-vdo .goto-wrap .goto a {
   padding: 4px 27px;
@@ -892,6 +876,12 @@ legend {
   line-height: normal;
   letter-spacing: -0.48px;
 }
+.vita-wrap .sec-titbox .sec-subtit2 {
+  display: none;
+}
+.vita-wrap .goto-wrap {
+  display: none;
+}
 .vita-wrap .sec-text {
   display: flex;
   justify-content: center;
@@ -908,12 +898,11 @@ legend {
   letter-spacing: -0.56px;
 }
 .vita-wrap .sec-text ul li span::before {
-  content: "\e5ca";
-  font-family: "Material Icons";
-  font-size: 17px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  vertical-align: middle;
+  content: "\f00c";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .vita-reh .sec-tit2,
@@ -960,6 +949,12 @@ legend {
     line-height: normal;
     letter-spacing: -0.92px;
   }
+  .vita-wrap .sec-text ul li span::before {
+    margin-right: 10px;
+  }
+  .vita-wrap .goto-wrap {
+    display: block;
+  }
 }
 .vita-prod .sec-titbox .sec-tit3,
 .vita-vdo .sec-titbox .sec-tit3 {
@@ -982,8 +977,20 @@ legend {
   letter-spacing: -0.48px;
   color: #57575b;
 }
-.vita-prod .goto:hover, .vita-prod .goto:active,
-.vita-vdo .goto:hover,
-.vita-vdo .goto:active {
-  background-color: #faf3d7;
+
+.goto-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.goto-wrap .goto {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #57575b;
+  box-shadow: 1px 1px 1px 0px #57575b;
+}
+.goto-wrap .goto:hover, .goto-wrap .goto:active {
+  background: #faf3d7;
 }/*# sourceMappingURL=comm.css.map */
