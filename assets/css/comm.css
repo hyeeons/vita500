@@ -465,7 +465,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 179px;
-    padding-bottom: 150px;
   }
   .vita-intro em {
     font-size: 40px;
@@ -482,12 +481,12 @@ body {
   }
   .vita-mp {
     position: relative;
+    padding-top: 205px;
   }
   .vita-mp .vita-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 50px;
     padding-left: 440px;
   }
   .vita-mp .vita-wrap .sec-titbox {
@@ -507,7 +506,7 @@ body {
   .vita-mp .vita-wrap .sec-img {
     position: absolute;
     height: 526px;
-    bottom: 33%;
+    top: 14%;
     right: 21%;
   }
   .vita-mp .vita-wrap .goto-wrap {
@@ -538,12 +537,12 @@ body {
 @media screen and (min-width: 1280px) {
   .vita-zero {
     position: relative;
+    padding-top: 150px;
   }
   .vita-zero .vita-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 179px;
     padding-right: 450px;
   }
   .vita-zero .vita-wrap .sec-titbox {
@@ -570,7 +569,7 @@ body {
     position: absolute;
     height: 526px;
     top: 10%;
-    left: 21%;
+    left: 20.5%;
   }
   .vita-zero .goto-wrap .goto {
     padding: 0 15px;
@@ -606,11 +605,16 @@ body {
 .vita-reh .sec-tit2-pc {
   display: none;
 }
+.vita-reh .text-reh-pc {
+  display: none;
+}
 
 @media screen and (min-width: 1280px) {
+  .vita-reh {
+    padding-top: 36px;
+  }
   .vita-reh .sec-titbox {
-    padding-top: 280px;
-    padding-bottom: 130px;
+    padding-bottom: 85px;
   }
   .vita-reh .sec-titbox .sec-tit2-mobile {
     display: none;
@@ -621,6 +625,29 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  .vita-reh .sec-img {
+    height: 574px;
+  }
+  .vita-reh .sec-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .vita-reh .text-reh-mobile {
+    display: none;
+  }
+  .vita-reh .text-reh-pc {
+    display: block;
+    padding-top: 70px;
+  }
+  .vita-reh .text-reh-pc li {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    padding-bottom: 8px;
   }
 }
 .hiscard-wrap {
@@ -914,7 +941,7 @@ body {
   #main {
     min-height: calc(100vh - 300px - 1400px - 1153px - 700px - 810px);
   }
-  #main .vitag-intro {
+  #main .vita-intro {
     height: 300px;
   }
   #main .vita-mp,

@@ -185,15 +185,15 @@
       @include ft-titsz62;
     }
     padding-top: 179px;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
   }
   .vita-mp {
     position: relative;
+    padding-top: 205px;
     .vita-wrap {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-top: 50px;
       padding-left: 440px;
       .sec-titbox {
         align-items: flex-start;
@@ -212,7 +212,7 @@
       .sec-img {
         position: absolute;
         height: 526px;
-        bottom: 33%;
+        top: 14%;
         right: 21%;
       }
       .goto-wrap {
@@ -250,11 +250,11 @@
 @media screen and (min-width: $breakpoint-xl) {
   .vita-zero {
     position: relative;
+    padding-top: 150px;
     .vita-wrap {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-top: 179px;
       padding-right: 450px;
       .sec-titbox {
         align-items: flex-end;
@@ -281,7 +281,7 @@
       position: absolute;
       height: 526px;
       top: 10%;
-      left: 21%;
+      left: 20.5%;
     }
     .goto-wrap {
       .goto {
@@ -319,20 +319,41 @@
   .sec-tit2-pc {
     display: none;
   }
+  .text-reh-pc {
+    display: none;
+  }
 }
 
 // vita500 - reh - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-reh {
+    padding-top: 36px;
     .sec-titbox {
-      padding-top: 280px;
-      padding-bottom: 130px;
+      padding-bottom: 85px;
       .sec-tit2-mobile {
         display: none;
       }
       .sec-tit2-pc {
         display: block;
         @include ft-titsz62;
+      }
+    }
+    .sec-img {
+      height: 574px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .text-reh-mobile {
+      display: none;
+    }
+    .text-reh-pc {
+      display: block;
+      padding-top: 70px;
+      li {
+        @include ft-titsz30;
+        padding-bottom: 8px;
       }
     }
   }
