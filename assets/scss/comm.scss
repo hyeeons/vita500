@@ -61,8 +61,8 @@ body {
   }
   #main {
     min-height: calc(
-      100vh - $vitaintro-PC - 2 * $vitaH-PC - $vitarehH-PC - $vitaprodH-PC -
-        $vitavdoH-PC
+      100vh - $vitaintro-PC - 2 * $vitaH-PC - $vitarehH-PC - $vitahisH-PC -
+        $vitaprodH-PC - $vitavdoH-PC
     );
 
     .vita-intro {
@@ -74,6 +74,10 @@ body {
     }
     .vita-reh {
       height: $vitarehH-PC;
+    }
+
+    .vita-hist {
+      height: $vitahisH-PC;
     }
     .vita-prod {
       height: $vitaprodH-PC;

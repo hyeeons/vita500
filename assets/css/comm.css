@@ -998,7 +998,7 @@ body {
     max-width: none;
   }
   #main {
-    min-height: calc(100vh - 300px - 1400px - 1153px - 700px - 810px);
+    min-height: calc(100vh - 300px - 1400px - 1153px - 1014px - 700px - 810px);
   }
   #main .vita-intro {
     height: 300px;
@@ -1009,6 +1009,9 @@ body {
   }
   #main .vita-reh {
     height: 1153px;
+  }
+  #main .vita-hist {
+    height: 1014px;
   }
   #main .vita-prod {
     height: 700px;
