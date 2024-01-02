@@ -59,8 +59,8 @@ body {
 @media screen and (min-width: $breakpoint-xl) {
   .wrap {
     min-height: 100vh;
-    max-width: none;
-    margin: auto;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   #main {
     min-height: calc(
@@ -214,8 +214,15 @@ body {
   }
 }
 
-// goto
-.goto-wrap {
+// goto - mobile
+.vita-prod,
+.vita-vdo {
+  .goto-wrap-pc {
+    display: none;
+  }
+}
+
+.goto-wrap-mobile {
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -228,6 +235,50 @@ body {
     &:hover,
     &:active {
       background: #faf3d7;
+    }
+  }
+}
+
+// goto-pc
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-prod,
+  .vita-vdo {
+    .goto-wrap-mobile {
+      display: none;
+
+      .goto-wrap-pc {
+		pd
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .goto {
+          @include goto;
+          a {
+            color: $gray-57B;
+            padding: 8px 15px;
+            @include ft-bdsz14B;
+          }
+        }
+      }
+    }
+  }
+
+  //페이지 버튼 - mobile
+
+  .swiper-prod,
+  .swiper-vdo {
+    .swiper-pg-pc {
+      display: none;
+    }
+  }
+
+  //페이지 아이콘 - pc
+  @media screen and (min-width: $breakpoint-xl) {
+    .swiper-prod,
+    .siwper-vdo {
+      .swiper-pg-pc {
+        display: block;
+      }
     }
   }
 }

@@ -26,15 +26,16 @@ var swiper = new Swiper(".swiper-prod", {
     },
 
     1280: {
-      slidesPerView: 6,
-      spaceBetween: 20,
+      slidesPerView: 4,
+      spaceBetween: 0,
     },
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
+
 //   breakpoints: {
 //     640: {
 //       slidesPerView: 2,
@@ -54,6 +55,12 @@ var swiper = new Swiper(".swiper-vdo", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  breakpoints: {
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: -50,
+    },
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

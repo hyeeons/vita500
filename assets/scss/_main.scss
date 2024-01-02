@@ -194,7 +194,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 440px;
+      padding-left: 10px;
       .sec-titbox {
         align-items: flex-start;
         .sec-subtit2 {
@@ -213,7 +213,7 @@
         position: absolute;
         height: 526px;
         top: 14%;
-        right: 21%;
+        right: 1%;
       }
       .goto-wrap {
         padding-left: 31px;
@@ -255,7 +255,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-right: 450px;
+      padding-right: 10px;
       .sec-titbox {
         align-items: flex-end;
         .sec-subtit-bk {
@@ -281,7 +281,7 @@
       position: absolute;
       height: 526px;
       top: 10%;
-      left: 20.5%;
+      left: 0%;
     }
     .goto-wrap {
       .goto {
@@ -377,8 +377,8 @@
   }
   .hist-img {
     text-align: center;
-    // padding: 11px 0 23px;
     height: 244px;
+    padding-right: 68px;
     img {
       height: 100%;
       object-fit: cover;
@@ -445,12 +445,10 @@
     }
     .hist-container {
       display: flex;
-      padding-left: 175px;
-
-      gap: 66px;
+      gap: 6px;
 
       .hist-img {
-        height: 463px;
+        height: 453px;
       }
       .swiper-history {
         height: 463px;
@@ -529,7 +527,7 @@
 }
 
 .vita-prod {
-  .goto-wrap {
+  .goto-wrap-mobile {
     a {
       padding: 4px 14px;
       @include ft-bdsz12;
@@ -540,40 +538,47 @@
 
 // section-prod - PC
 @media screen and (min-width: $breakpoint-xl) {
-  .swiper-prod {
-    .swiper-slide {
-      .prod-box {
-        @include prod-box-pc;
-      }
-      .prod-imgbox {
-        height: 276px;
-        border-radius: 16px;
-      }
-    }
-  }
-  .prod-box {
-    .prod-textbox {
-      padding-bottom: 23px;
-      .prod-text-tit {
-        padding-bottom: 26px;
-        @include ft-bdsz16;
-      }
-      .prod-text-info {
-        @include ft-bdsz12;
+  .vita-prod {
+    .swiper-prod {
+      padding: 0 31px;
+      .swiper-slide {
+        .prod-box {
+          @include prod-box-pc;
+        }
+        .prod-imgbox {
+          height: 276px;
+          border-radius: 16px;
+        }
       }
     }
+    .prod-box {
+      .prod-textbox {
+        padding-bottom: 23px;
+        .prod-text-tit {
+          padding-bottom: 26px;
+          @include ft-bdsz16;
+        }
+        .prod-text-info {
+          @include ft-bdsz12;
+        }
+      }
+    }
+    .product-wrap {
+      width: 1280px;
+      margin: auto;
+      padding-bottom: 10px;
+    }
   }
-  .product-wrap {
-    width: 1280px;
-    margin: auto;
-    overflow: hidden;
+  .goto-wrap {
+    padding-top: 30px;
   }
 }
 
-// sec-video
+// sec-video - mobile
 
 .vita-vdo {
   //   background: $white;
+  padding-top: 34px;
   .sec-titbox {
     padding-top: 60px;
     padding-bottom: 20px;
@@ -589,12 +594,24 @@
       object-fit: cover;
     }
   }
-  .goto-wrap {
+  .goto-wrap-pc {
     .goto {
       a {
         padding: 4px 27px;
-        @include ft-bdsz12;
+        @include ft-bdsz14B;
         color: $gray-57B;
+      }
+    }
+  }
+}
+
+// sec-video - PC
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-vdo {
+    .swiper-wrapper {
+      padding-top: 27px;
+      .swiper-slide {
+        height: 303px;
       }
     }
   }
