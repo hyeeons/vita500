@@ -54,10 +54,13 @@ body {
 
 @import "main", "sub1";
 
+// PC
+
 @media screen and (min-width: $breakpoint-xl) {
   .wrap {
     min-height: 100vh;
     max-width: none;
+    margin: auto;
   }
   #main {
     min-height: calc(
@@ -177,21 +180,36 @@ body {
   }
 }
 
-// section-prod & video 공통
+// section-prod & video 공통 - mobile
 
 .vita-prod,
 .vita-vdo {
   .sec-titbox {
     .sec-tit3 {
       text-align: center;
-      padding-bottom: 9px;
       @include ft-titsz25;
     }
     .sec-subtit-gray {
       display: block;
+      padding-bottom: 9px;
       text-align: center;
       @include ft-bdsz12;
       color: $gray-57B;
+    }
+  }
+}
+
+// section-prod & video 공통 - PC
+@media screen and (min-width: $breakpoint-xl) {
+  .vita-prod,
+  .vita-vdo {
+    .sec-titbox {
+      .sec-tit3 {
+        @include ft-titsz40;
+      }
+      .sec-subtit-gray {
+        @include ft-titsz18;
+      }
     }
   }
 }

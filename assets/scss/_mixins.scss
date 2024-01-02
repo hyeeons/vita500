@@ -177,6 +177,14 @@
   background-color: $white;
 }
 
+@mixin prod-box-pc {
+  width: 276px;
+  height: 383px;
+  border: 1.5px solid $gray-lineF4;
+  border-radius: 16px;
+  background-color: $white;
+}
+
 @mixin goto {
   display: inline-flex;
   align-items: center;

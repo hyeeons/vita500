@@ -430,6 +430,7 @@
 @media screen and (min-width: $breakpoint-xl) {
   .vita-hist {
     padding-top: 110px;
+    margin: auto;
     .his-titbox {
       .sec-subtit-bk {
         @include ft-titsz40;
@@ -444,7 +445,8 @@
     }
     .hist-container {
       display: flex;
-      padding-left: 425px;
+      padding-left: 175px;
+
       gap: 66px;
 
       .hist-img {
@@ -477,7 +479,7 @@
   }
 }
 
-// section-prod
+// section-prod - mobile
 
 .vita-prod {
   //   background: $white-bgcFC;
@@ -536,10 +538,42 @@
   }
 }
 
+// section-prod - PC
+@media screen and (min-width: $breakpoint-xl) {
+  .swiper-prod {
+    .swiper-slide {
+      .prod-box {
+        @include prod-box-pc;
+      }
+      .prod-imgbox {
+        height: 276px;
+        border-radius: 16px;
+      }
+    }
+  }
+  .prod-box {
+    .prod-textbox {
+      padding-bottom: 23px;
+      .prod-text-tit {
+        padding-bottom: 26px;
+        @include ft-bdsz16;
+      }
+      .prod-text-info {
+        @include ft-bdsz12;
+      }
+    }
+  }
+  .product-wrap {
+    width: 1280px;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+
 // sec-video
 
 .vita-vdo {
-  background: $white;
+  //   background: $white;
   .sec-titbox {
     padding-top: 60px;
     padding-bottom: 20px;

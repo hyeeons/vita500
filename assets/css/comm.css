@@ -731,6 +731,7 @@ body {
 @media screen and (min-width: 1280px) {
   .vita-hist {
     padding-top: 110px;
+    margin: auto;
   }
   .vita-hist .his-titbox {
     padding-bottom: 140px;
@@ -753,7 +754,7 @@ body {
   }
   .vita-hist .hist-container {
     display: flex;
-    padding-left: 425px;
+    padding-left: 175px;
     gap: 66px;
   }
   .vita-hist .hist-container .hist-img {
@@ -848,8 +849,41 @@ body {
   color: #57575b;
 }
 
-.vita-vdo {
-  background: #fff;
+@media screen and (min-width: 1280px) {
+  .swiper-prod .swiper-slide .prod-box {
+    width: 276px;
+    height: 383px;
+    border: 1.5px solid #f4f4f4;
+    border-radius: 16px;
+    background-color: #fff;
+  }
+  .swiper-prod .swiper-slide .prod-imgbox {
+    height: 276px;
+    border-radius: 16px;
+  }
+  .prod-box .prod-textbox {
+    padding-bottom: 23px;
+  }
+  .prod-box .prod-textbox .prod-text-tit {
+    padding-bottom: 26px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+  .prod-box .prod-textbox .prod-text-info {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+  .product-wrap {
+    width: 1280px;
+    margin: auto;
+    overflow: hidden;
+  }
 }
 .vita-vdo .sec-titbox {
   padding-top: 60px;
@@ -996,6 +1030,7 @@ body {
   .wrap {
     min-height: 100vh;
     max-width: none;
+    margin: auto;
   }
   #main {
     min-height: calc(100vh - 300px - 1400px - 1153px - 1014px - 700px - 810px);
@@ -1130,7 +1165,6 @@ body {
 .vita-prod .sec-titbox .sec-tit3,
 .vita-vdo .sec-titbox .sec-tit3 {
   text-align: center;
-  padding-bottom: 9px;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -1140,6 +1174,7 @@ body {
 .vita-prod .sec-titbox .sec-subtit-gray,
 .vita-vdo .sec-titbox .sec-subtit-gray {
   display: block;
+  padding-bottom: 9px;
   text-align: center;
   font-size: 12px;
   font-style: normal;
@@ -1149,6 +1184,24 @@ body {
   color: #57575b;
 }
 
+@media screen and (min-width: 1280px) {
+  .vita-prod .sec-titbox .sec-tit3,
+  .vita-vdo .sec-titbox .sec-tit3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px; /* 137.5% */
+    letter-spacing: -1.6px;
+  }
+  .vita-prod .sec-titbox .sec-subtit-gray,
+  .vita-vdo .sec-titbox .sec-subtit-gray {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+  }
+}
 .goto-wrap {
   display: flex;
   justify-content: center;
