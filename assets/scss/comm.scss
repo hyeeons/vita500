@@ -78,13 +78,16 @@ body {
     }
     .vita-reh {
       height: $vitarehH-PC;
+      margin-top: -10px;
     }
 
     .vita-hist {
       height: $vitahisH-PC;
+      margin-top: -12px;
     }
     .vita-prod {
       height: $vitaprodH-PC;
+      margin-top: -10px;
     }
     .vita-vdo {
       height: $vitavdoH-PC;
@@ -216,11 +219,8 @@ body {
 }
 
 // goto - mobile
-.vita-prod,
-.vita-vdo {
-  .goto-wrap-pc {
-    display: none;
-  }
+.goto-wrap-pc {
+  display: none;
 }
 
 .goto-wrap-mobile {
@@ -242,29 +242,25 @@ body {
 
 // goto-pc
 @media screen and (min-width: $breakpoint-xl) {
-  .vita-prod,
-  .vita-vdo {
-    .goto-wrap-mobile {
-      display: none;
-
-      .goto-wrap-pc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .goto {
-          @include goto;
-          a {
-            color: $gray-57B;
-            padding: 8px 15px;
-            @include ft-bdsz14B;
-          }
-        }
+  .goto-wrap-mobile {
+    display: none;
+  }
+  .goto-wrap-pc {
+    display: flex;
+    justify-content: center;
+    .goto {
+      @include goto;
+      a {
+        color: $gray-57B;
+        padding: 8px 15px;
+        @include ft-bdsz14B;
       }
     }
   }
+}
 
-  //페이지 버튼 - mobile
-
+//페이지 버튼 - mobile
+@media screen and (min-width: $breakpoint-xl) {
   .swiper-prod,
   .swiper-vdo {
     .swiper-pg-pc {

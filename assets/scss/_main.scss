@@ -188,15 +188,17 @@
     padding-top: 147px;
     // padding-bottom: 150px;
   }
+
   .vita-mp {
     position: relative;
-    padding-top: 205px;
-    left: 16.5%;
+    padding-top: 176px;
+    width: 1280px;
+    margin: 0 auto;
     .vita-wrap {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 10px;
+
       .sec-titbox {
         align-items: flex-start;
         .sec-subtit2 {
@@ -215,7 +217,7 @@
         position: absolute;
         height: 526px;
         top: 14%;
-        right: 34%;
+        right: 0;
       }
       .goto-wrap {
         padding-left: 31px;
@@ -253,13 +255,15 @@
   .vita-zero {
     position: relative;
     padding-top: 150px;
-    right: 16.5%;
+    width: 1280px;
+    margin: 0 auto;
+
     .vita-wrap {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-right: 10px;
       .sec-titbox {
+        padding-top: 35px;
         align-items: flex-end;
         .sec-subtit-bk {
           display: none;
@@ -284,7 +288,7 @@
       position: absolute;
       height: 526px;
       top: 10%;
-      left: 34%;
+      left: 0;
     }
     .goto-wrap {
       .goto {
@@ -297,9 +301,6 @@
 // vita500 reh - mobile
 
 .vita-reh {
-  .sec-titbox {
-    padding-top: 15px;
-  }
   .sec-img {
     text-align: center;
     height: 197px;
@@ -433,7 +434,9 @@
 @media screen and (min-width: $breakpoint-xl) {
   .vita-hist {
     padding-top: 110px;
-    margin: auto;
+    width: 1280px;
+    margin: 0 auto;
+
     .his-titbox {
       .sec-subtit-bk {
         @include ft-titsz40;
@@ -449,7 +452,6 @@
     .hist-container {
       display: flex;
       gap: 6px;
-      padding-left: 16.5%;
 
       .hist-img {
         height: 453px;
@@ -543,6 +545,8 @@
 // section-prod - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-prod {
+    width: 1280px;
+    margin: 0 auto;
     .swiper-prod {
       padding: 0 31px;
       .swiper-slide {
@@ -598,13 +602,14 @@
       object-fit: cover;
     }
   }
-  .goto-wrap-pc {
-    .goto {
-      a {
-        padding: 4px 27px;
-        @include ft-bdsz14B;
-        color: $gray-57B;
-      }
+}
+
+.vita-vdo {
+  .goto-wrap-mobile {
+    a {
+      padding: 4px 18px;
+      @include ft-bdsz12;
+      color: $gray-57B;
     }
   }
 }
@@ -612,11 +617,17 @@
 // sec-video - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-vdo {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 60px;
     .swiper-wrapper {
       padding-top: 27px;
       .swiper-slide {
         height: 303px;
       }
+    }
+    .goto-wrap-pc {
+      padding-top: 5px;
     }
   }
 }

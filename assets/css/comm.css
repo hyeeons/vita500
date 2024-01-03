@@ -482,14 +482,14 @@ body {
   }
   .vita-mp {
     position: relative;
-    padding-top: 205px;
-    left: 16.5%;
+    padding-top: 176px;
+    width: 1280px;
+    margin: 0 auto;
   }
   .vita-mp .vita-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 10px;
   }
   .vita-mp .vita-wrap .sec-titbox {
     align-items: flex-start;
@@ -509,7 +509,7 @@ body {
     position: absolute;
     height: 526px;
     top: 14%;
-    right: 34%;
+    right: 0;
   }
   .vita-mp .vita-wrap .goto-wrap {
     padding-left: 31px;
@@ -540,15 +540,16 @@ body {
   .vita-zero {
     position: relative;
     padding-top: 150px;
-    right: 16.5%;
+    width: 1280px;
+    margin: 0 auto;
   }
   .vita-zero .vita-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 10px;
   }
   .vita-zero .vita-wrap .sec-titbox {
+    padding-top: 35px;
     align-items: flex-end;
   }
   .vita-zero .vita-wrap .sec-titbox .sec-subtit-bk {
@@ -572,14 +573,11 @@ body {
     position: absolute;
     height: 526px;
     top: 10%;
-    left: 34%;
+    left: 0;
   }
   .vita-zero .goto-wrap .goto {
     padding: 0 15px;
   }
-}
-.vita-reh .sec-titbox {
-  padding-top: 15px;
 }
 .vita-reh .sec-img {
   text-align: center;
@@ -735,7 +733,8 @@ body {
 @media screen and (min-width: 1280px) {
   .vita-hist {
     padding-top: 110px;
-    margin: auto;
+    width: 1280px;
+    margin: 0 auto;
   }
   .vita-hist .his-titbox {
     padding-bottom: 140px;
@@ -759,7 +758,6 @@ body {
   .vita-hist .hist-container {
     display: flex;
     gap: 6px;
-    padding-left: 16.5%;
   }
   .vita-hist .hist-container .hist-img {
     height: 453px;
@@ -854,6 +852,10 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
+  .vita-prod {
+    width: 1280px;
+    margin: 0 auto;
+  }
   .vita-prod .swiper-prod {
     padding: 0 31px;
   }
@@ -914,22 +916,31 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.vita-vdo .goto-wrap-pc .goto a {
-  padding: 4px 27px;
-  font-size: 14px;
+
+.vita-vdo .goto-wrap-mobile a {
+  padding: 4px 18px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 20px; /* 142.857% */
-  letter-spacing: -0.56px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
   color: #57575b;
 }
 
 @media screen and (min-width: 1280px) {
+  .vita-vdo {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 60px;
+  }
   .vita-vdo .swiper-wrapper {
     padding-top: 27px;
   }
   .vita-vdo .swiper-wrapper .swiper-slide {
     height: 303px;
+  }
+  .vita-vdo .goto-wrap-pc {
+    padding-top: 5px;
   }
 }
 #footer .ft-menu {
@@ -1066,12 +1077,15 @@ body {
   }
   #main .vita-reh {
     height: 1153px;
+    margin-top: -10px;
   }
   #main .vita-hist {
     height: 1014px;
+    margin-top: -12px;
   }
   #main .vita-prod {
     height: 700px;
+    margin-top: -10px;
   }
   #main .vita-vdo {
     height: 810px;
@@ -1224,8 +1238,7 @@ body {
     letter-spacing: 0.54px;
   }
 }
-.vita-prod .goto-wrap-pc,
-.vita-vdo .goto-wrap-pc {
+.goto-wrap-pc {
   display: none;
 }
 
@@ -1247,18 +1260,14 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .vita-prod .goto-wrap-mobile,
-  .vita-vdo .goto-wrap-mobile {
+  .goto-wrap-mobile {
     display: none;
   }
-  .vita-prod .goto-wrap-mobile .goto-wrap-pc,
-  .vita-vdo .goto-wrap-mobile .goto-wrap-pc {
+  .goto-wrap-pc {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .vita-prod .goto-wrap-mobile .goto-wrap-pc .goto,
-  .vita-vdo .goto-wrap-mobile .goto-wrap-pc .goto {
+  .goto-wrap-pc .goto {
     display: inline-flex;
     align-items: center;
     background-color: #fff;
@@ -1266,8 +1275,7 @@ body {
     border: 1px solid #57575b;
     box-shadow: 1px 1px 1px 0px #57575b;
   }
-  .vita-prod .goto-wrap-mobile .goto-wrap-pc .goto a,
-  .vita-vdo .goto-wrap-mobile .goto-wrap-pc .goto a {
+  .goto-wrap-pc .goto a {
     color: #57575b;
     padding: 8px 15px;
     font-size: 14px;
@@ -1276,6 +1284,8 @@ body {
     line-height: 20px; /* 142.857% */
     letter-spacing: -0.56px;
   }
+}
+@media screen and (min-width: 1280px) {
   .swiper-prod .swiper-pg-pc,
   .swiper-vdo .swiper-pg-pc {
     display: none;
