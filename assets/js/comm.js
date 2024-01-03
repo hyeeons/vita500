@@ -58,7 +58,7 @@ var swiper = new Swiper(".swiper-vdo", {
   breakpoints: {
     1280: {
       slidesPerView: 2,
-      spaceBetween: -50,
+      spaceBetween: 30,
     },
   },
   pagination: {

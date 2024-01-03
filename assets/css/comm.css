@@ -482,6 +482,7 @@ body {
   .vita-mp {
     position: relative;
     padding-top: 205px;
+    left: 16.5%;
   }
   .vita-mp .vita-wrap {
     display: flex;
@@ -507,7 +508,7 @@ body {
     position: absolute;
     height: 526px;
     top: 14%;
-    right: 1%;
+    right: 34%;
   }
   .vita-mp .vita-wrap .goto-wrap {
     padding-left: 31px;
@@ -538,6 +539,7 @@ body {
   .vita-zero {
     position: relative;
     padding-top: 150px;
+    right: 16.5%;
   }
   .vita-zero .vita-wrap {
     display: flex;
@@ -569,7 +571,7 @@ body {
     position: absolute;
     height: 526px;
     top: 10%;
-    left: 0%;
+    left: 34%;
   }
   .vita-zero .goto-wrap .goto {
     padding: 0 15px;
@@ -756,6 +758,7 @@ body {
   .vita-hist .hist-container {
     display: flex;
     gap: 6px;
+    padding-left: 16.5%;
   }
   .vita-hist .hist-container .hist-img {
     height: 453px;
@@ -1046,7 +1049,7 @@ body {
 @media screen and (min-width: 1280px) {
   .wrap {
     min-height: 100vh;
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
   }
   #main {
@@ -1248,7 +1251,6 @@ body {
   }
   .vita-prod .goto-wrap-mobile .goto-wrap-pc,
   .vita-vdo .goto-wrap-mobile .goto-wrap-pc {
-    padding-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;

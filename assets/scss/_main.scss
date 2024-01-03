@@ -190,6 +190,7 @@
   .vita-mp {
     position: relative;
     padding-top: 205px;
+    left: 16.5%;
     .vita-wrap {
       display: flex;
       flex-direction: column;
@@ -213,7 +214,7 @@
         position: absolute;
         height: 526px;
         top: 14%;
-        right: 1%;
+        right: 34%;
       }
       .goto-wrap {
         padding-left: 31px;
@@ -251,6 +252,7 @@
   .vita-zero {
     position: relative;
     padding-top: 150px;
+    right: 16.5%;
     .vita-wrap {
       display: flex;
       flex-direction: column;
@@ -281,7 +283,7 @@
       position: absolute;
       height: 526px;
       top: 10%;
-      left: 0%;
+      left: 34%;
     }
     .goto-wrap {
       .goto {
@@ -446,6 +448,7 @@
     .hist-container {
       display: flex;
       gap: 6px;
+      padding-left: 16.5%;
 
       .hist-img {
         height: 453px;
