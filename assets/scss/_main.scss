@@ -86,6 +86,28 @@
   }
 }
 
+// head - pc
+@media screen and (min-width: $breakpoint-xl) {
+  #header {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    background: $white;
+    width: 1920px;
+    height: 104px;
+    .menu-burger {
+      display: none;
+    }
+    .inner {
+      #logo {
+        width: 207px;
+        height: 50px;
+        margin: 25px 0 0 322px;
+      }
+    }
+  }
+}
+
 //slide
 .swiper-bnr {
   //   opacity: 0;
@@ -219,10 +241,14 @@
         top: 14%;
         right: 0;
       }
-      .goto-wrap {
-        padding-left: 31px;
+      .goto-wrap-pc {
+        display: block;
+        padding-top: 12px;
+        padding-left: 43px;
         .goto {
-          padding: 0 15px;
+          a {
+            padding: 5px 24px;
+          }
         }
       }
     }
@@ -290,9 +316,14 @@
       top: 10%;
       left: 0;
     }
-    .goto-wrap {
+    .goto-wrap-pc {
+      display: block;
+      padding-top: 12px;
+      padding-left: 43px;
       .goto {
-        padding: 0 15px;
+        a {
+          padding: 5px 24px;
+        }
       }
     }
   }
@@ -368,7 +399,7 @@
   display: flex;
 }
 .vita-hist {
-  //   background: $white;
+  background: $white;
   padding: 30px 0;
   .his-titbox {
     display: block;
@@ -382,7 +413,7 @@
   .hist-img {
     text-align: center;
     height: 244px;
-    padding-right: 68px;
+
     img {
       height: 100%;
       object-fit: cover;
@@ -455,6 +486,7 @@
 
       .hist-img {
         height: 453px;
+        padding-right: 68px;
       }
       .swiper-history {
         height: 463px;
@@ -486,7 +518,7 @@
 // section-prod - mobile
 
 .vita-prod {
-  //   background: $white-bgcFC;
+  background: $white-bgcFC;
   //   background: #ffdc52;
   //   background: $primary;
   .sec-titbox {
@@ -585,7 +617,7 @@
 // sec-video - mobile
 
 .vita-vdo {
-  //   background: $white;
+  background: $white;
   padding-top: 34px;
   .sec-titbox {
     padding-top: 60px;
@@ -627,7 +659,7 @@
       }
     }
     .goto-wrap-pc {
-      padding-top: 5px;
+      padding-top: 17px;
     }
   }
 }
@@ -658,7 +690,7 @@
 
 #footer {
   .ft-container {
-    // background-color: $bk-ft;
+    background-color: $bk-ft;
     height: 189px;
     padding: 30px 14px 0;
 

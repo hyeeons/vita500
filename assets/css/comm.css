@@ -648,6 +648,24 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 1280px) {
+  #header {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    background: #fff;
+    width: 1920px;
+    height: 104px;
+  }
+  #header .menu-burger {
+    display: none;
+  }
+  #header .inner #logo {
+    width: 207px;
+    height: 50px;
+    margin: 25px 0 0 322px;
+  }
+}
 .swiper-bnr {
   padding-top: 104px;
   width: 100%;
@@ -762,11 +780,13 @@ body {
     top: 14%;
     right: 0;
   }
-  .vita-mp .vita-wrap .goto-wrap {
-    padding-left: 31px;
+  .vita-mp .vita-wrap .goto-wrap-pc {
+    display: block;
+    padding-top: 12px;
+    padding-left: 43px;
   }
-  .vita-mp .vita-wrap .goto-wrap .goto {
-    padding: 0 15px;
+  .vita-mp .vita-wrap .goto-wrap-pc .goto a {
+    padding: 5px 24px;
   }
 }
 .vita-zero .sec-titbox {
@@ -826,8 +846,13 @@ body {
     top: 10%;
     left: 0;
   }
-  .vita-zero .goto-wrap .goto {
-    padding: 0 15px;
+  .vita-zero .goto-wrap-pc {
+    display: block;
+    padding-top: 12px;
+    padding-left: 43px;
+  }
+  .vita-zero .goto-wrap-pc .goto a {
+    padding: 5px 24px;
   }
 }
 .vita-reh .sec-img {
@@ -907,6 +932,7 @@ body {
 }
 
 .vita-hist {
+  background: #fff;
   padding: 30px 0;
 }
 .vita-hist .his-titbox {
@@ -925,7 +951,6 @@ body {
 .vita-hist .hist-img {
   text-align: center;
   height: 244px;
-  padding-right: 68px;
 }
 .vita-hist .hist-img img {
   height: 100%;
@@ -1012,6 +1037,7 @@ body {
   }
   .vita-hist .hist-container .hist-img {
     height: 453px;
+    padding-right: 68px;
   }
   .vita-hist .hist-container .swiper-history {
     height: 463px;
@@ -1040,6 +1066,9 @@ body {
   .vita-hist .hist-container .hiscard-wrap .hiscard-img {
     height: 74px;
   }
+}
+.vita-prod {
+  background: #fcfcfc;
 }
 .vita-prod .sec-titbox {
   padding-top: 72px;
@@ -1149,6 +1178,7 @@ body {
   }
 }
 .vita-vdo {
+  background: #fff;
   padding-top: 34px;
 }
 .vita-vdo .sec-titbox {
@@ -1191,7 +1221,7 @@ body {
     height: 303px;
   }
   .vita-vdo .goto-wrap-pc {
-    padding-top: 5px;
+    padding-top: 17px;
   }
 }
 #footer .ft-menu {
@@ -1228,6 +1258,7 @@ body {
 }
 
 #footer .ft-container {
+  background-color: #252222;
   height: 189px;
   padding: 30px 14px 0;
 }
