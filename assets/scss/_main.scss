@@ -681,17 +681,7 @@
         padding: 7px 0;
 
         a {
-          border-right: 1px solid $gray-ft7B;
-          &:nth-child(1) {
-            padding-right: 24px;
-          }
-          &:nth-child(2) {
-            padding-right: 30px;
-          }
-          &:nth-child(3) {
-            padding-right: 20px;
-            border: none;
-          }
+          @include ft-goto-line;
         }
       }
     }
@@ -703,11 +693,8 @@
       @include ft-bdsz14;
     }
   }
-}
-
-#footer {
   .ft-gotosns {
-    border-right: 1px solid $gray-57B;
+    border-right: 1px solid $gray-ft7B;
   }
 }
 
@@ -756,7 +743,7 @@
   #footer {
     .ft-wrap-pc {
       height: 312px;
-      //   background: $bk-ft;
+      background: $bk-ft;
       .ft-container {
         width: 1280px;
         margin: 0 auto;
@@ -793,6 +780,80 @@
             width: 70px;
             height: 17px;
           }
+        }
+      }
+    }
+    // ft-goto
+    .ft-wrap-pc {
+      position: relative;
+      .ft-container {
+        width: 1280px;
+        margin: 0 auto;
+      }
+
+      .ft-link {
+        display: flex;
+        padding-left: 515px;
+        padding-right: 110px;
+
+        a {
+          display: block;
+          @include ft-bdsz14;
+          color: $gray-ft7B;
+          @include ft-goto-line;
+          padding-left: 30px;
+        }
+      }
+
+      .ft-goto-wrap {
+        position: absolute;
+        left: 0;
+        width: 1920px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+
+        border-top: 1px solid $gray-ft7B;
+        border-bottom: 1px solid $gray-ft7B;
+      }
+
+      .ft-goto-menu {
+        display: flex;
+        // border-bottom: 1px solid $gray-ft7B;
+
+        span {
+          display: block;
+          color: $white;
+          text-align: center;
+          width: 176px;
+          height: 42px;
+          @include icon-down;
+          padding-top: 10px;
+        }
+        .ft-gotosns {
+          border-left: 1px solid $gray-ft7B;
+        }
+        .ft-gotosite {
+          border-right: 1px solid $gray-ft7B;
+        }
+      }
+
+      //   ft-info
+      .ft-info-wrap {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 90px;
+        gap: 20px;
+        .ft-logo {
+          text-indent: -9999px;
+          width: 184px;
+          height: 44px;
+          background-image: url(../../images/comm/m_logo_gray.png);
+          background-size: cover;
+        }
+        .ft-info-wrap {
+          display: flex;
+          flex-direction: column;
         }
       }
     }

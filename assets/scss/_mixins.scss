@@ -194,6 +194,19 @@
   box-shadow: 1px 1px 1px 0px $gray-57B;
 }
 
+@mixin ft-goto-line {
+  border-right: 1px solid $gray-ft7B;
+  &:nth-child(1) {
+    padding-right: 24px;
+  }
+  &:nth-child(2) {
+    padding-right: 30px;
+  }
+  &:nth-child(3) {
+    padding-right: 20px;
+    border: none;
+  }
+}
 @mixin posX {
   position: absolute;
   left: 50%;
