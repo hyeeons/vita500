@@ -52,8 +52,6 @@ body {
   height: 233px;
 }
 
-@import "main", "sub1";
-
 // PC
 
 @media screen and (min-width: $breakpoint-xl) {
@@ -259,6 +257,21 @@ body {
   }
 }
 
+// footer - mobile
+.ft-wrap-pc {
+  display: none;
+}
+
+// footer- pc
+@media screen and (min-width: $breakpoint-xl) {
+  .ft-wrap-mobile {
+    display: none;
+  }
+  .ft-wrap-pc {
+    display: block;
+  }
+}
+
 //페이지 버튼 - mobile
 @media screen and (min-width: $breakpoint-xl) {
   .swiper-prod,
@@ -278,3 +291,5 @@ body {
     }
   }
 }
+
+@import "main", "sub1";
