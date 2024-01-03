@@ -398,6 +398,7 @@ body {
 }
 
 .swiper-bnr {
+  padding-top: 104px;
   width: 100%;
 }
 .swiper-bnr .swiper-slide {
@@ -464,7 +465,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 179px;
+    padding-top: 147px;
   }
   .vita-intro em {
     font-size: 40px;
@@ -1053,6 +1054,7 @@ body {
     margin: 0 auto;
   }
   #main {
+    margin-top: -76px;
     min-height: calc(100vh - 300px - 1400px - 1153px - 1014px - 700px - 810px);
   }
   #main .vita-intro {

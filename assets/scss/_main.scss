@@ -89,6 +89,7 @@
 //slide
 .swiper-bnr {
   //   opacity: 0;
+  padding-top: 104px;
   width: 100%;
   .swiper-slide {
     height: 680px;
@@ -184,7 +185,7 @@
     h2 {
       @include ft-titsz62;
     }
-    padding-top: 179px;
+    padding-top: 147px;
     // padding-bottom: 150px;
   }
   .vita-mp {

@@ -63,6 +63,7 @@ body {
     margin: 0 auto;
   }
   #main {
+    margin-top: -76px;
     min-height: calc(
       100vh - $vitaintro-PC - 2 * $vitaH-PC - $vitarehH-PC - $vitahisH-PC -
         $vitaprodH-PC - $vitavdoH-PC
