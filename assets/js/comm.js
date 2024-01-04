@@ -27,7 +27,7 @@ var swiper = new Swiper(".swiper-prod", {
 
     1280: {
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
   },
   navigation: {
@@ -36,33 +36,20 @@ var swiper = new Swiper(".swiper-prod", {
   },
 });
 
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     // 768: {
-//     //   slidesPerView: 4,
-//     //   spaceBetween: 40,
-//     // },
-//     // 1280: {
-//     //   slidesPerView: 5,
-//     //   spaceBetween: 50,
-//     // },
-//   },
-
 var swiper = new Swiper(".swiper-vdo", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  breakpoints: {
-    1280: {
-      slidesPerView: 2,
-      spaceBetween: 0,
-    },
-  },
+  autoplay: { delay: 2500, disableOnInteraction: false },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: -50,
+    },
   },
 });
