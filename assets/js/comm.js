@@ -53,3 +53,5 @@ var swiper = new Swiper(".swiper-vdo", {
     },
   },
 });
+
+AOS.init();
