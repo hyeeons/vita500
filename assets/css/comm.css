@@ -320,7 +320,7 @@ legend {
   }
   #main {
     margin-top: -76px;
-    min-height: calc(100vh - 300px - 1400px - 1153px - 1014px - 700px - 810px);
+    min-height: calc(100vh - 300px - 1400px - 1153px - 830px - 700px - 810px);
   }
   #main .vita-intro {
     height: 300px;
@@ -334,7 +334,7 @@ legend {
     margin-top: 0px;
   }
   #main .vita-hist {
-    height: 1014px;
+    height: 830px;
   }
   #main .vita-prod {
     height: 700px;
@@ -469,6 +469,7 @@ legend {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -1px;
+  padding-bottom: 5px;
 }
 .vita-prod .sec-titbox .sec-subtit-gray,
 .vita-vdo .sec-titbox .sec-subtit-gray {
@@ -661,8 +662,7 @@ legend {
   #header {
     position: fixed;
     top: 0;
-    left: 0;
-    background: #fff;
+    left: 10%;
     width: 1920px;
     height: 104px;
   }
@@ -905,7 +905,7 @@ legend {
 
 @media screen and (min-width: 1280px) {
   .vita-reh {
-    padding-top: 36px;
+    padding-top: 100px;
   }
   .sec-titbox-reh {
     padding-bottom: 85px;
@@ -921,7 +921,7 @@ legend {
     line-height: normal;
   }
   .sec-img-reh {
-    height: 574px;
+    height: 474px;
   }
   .sec-img-reh img {
     height: 100%;
@@ -1031,22 +1031,25 @@ legend {
 
 @media screen and (min-width: 1280px) {
   .vita-hist {
-    padding-top: 110px;
+    padding: 70px 0;
     width: 1280px;
     margin: 0 auto;
   }
   .his-titbox {
-    padding-bottom: 140px;
+    padding-bottom: 80px;
   }
   .his-titbox .sec-subtit-bk {
-    font-size: 40px;
+    display: block;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    line-height: 55px; /* 137.5% */
-    letter-spacing: -1.6px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    padding-bottom: 5px;
   }
   .his-titbox .sec-tit2 {
-    font-size: 62px;
+    font-family: Pretendard;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1056,11 +1059,12 @@ legend {
   }
   .hist-container {
     display: flex;
+    justify-content: center;
     gap: 6px;
   }
   .hist-img {
-    height: 453px;
-    padding-right: 68px;
+    height: 350px;
+    padding-right: 65px;
   }
   .swiper-history {
     height: 463px;
@@ -1435,10 +1439,17 @@ legend {
     width: 1280px;
     margin: 0 auto;
   }
+  .ft-goto-wrap-pc {
+    display: flex;
+    width: 1180px;
+    align-items: center;
+    padding-left: 115px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
   .ft-link {
     display: flex;
-    padding-left: 515px;
-    padding-right: 110px;
+    justify-content: flex-start;
   }
   .ft-link a {
     display: block;
@@ -1449,7 +1460,7 @@ legend {
     letter-spacing: -0.56px;
     color: #7b7b7b;
     border-right: 1px solid #7b7b7b;
-    padding-left: 30px;
+    padding-left: 10px;
   }
   .ft-link a:nth-child(1) {
     padding-right: 24px;
@@ -1461,9 +1472,11 @@ legend {
     padding-right: 20px;
     border: none;
   }
-  .ft-goto-wrap {
+  .ft-goto-wrap-bg {
     position: absolute;
-    left: 0;
+    top: 43%;
+    left: 0%;
+    right: 10%;
     width: 1920px;
     display: flex;
     align-items: center;

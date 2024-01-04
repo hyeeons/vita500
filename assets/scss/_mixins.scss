@@ -138,6 +138,14 @@
   letter-spacing: -1.6px;
 }
 
+@mixin ft-titsz50 {
+  font-family: Pretendard;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @mixin ft-titsz62 {
   font-size: 62px;
   font-style: normal;

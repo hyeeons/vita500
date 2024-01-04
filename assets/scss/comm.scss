@@ -203,6 +203,7 @@ body {
     .sec-tit3 {
       text-align: center;
       @include ft-titsz25;
+      padding-bottom: 5px;
     }
     .sec-subtit-gray {
       display: block;

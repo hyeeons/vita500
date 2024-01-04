@@ -93,8 +93,8 @@
   #header {
     position: fixed;
     top: 0;
-    left: 0;
-    background: $white;
+    left: 10%;
+    // background: $white;
     width: 1920px;
     height: 104px;
     .menu-burger {
@@ -368,7 +368,7 @@
 // vita500 - reh - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-reh {
-    padding-top: 36px;
+    padding-top: 100px;
   }
 
   .sec-titbox-reh {
@@ -383,7 +383,7 @@
   }
 
   .sec-img-reh {
-    height: 574px;
+    height: 474px;
     img {
       height: 100%;
       object-fit: cover;
@@ -482,18 +482,20 @@
 // section-history - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-hist {
-    padding-top: 110px;
+    padding: 70px 0;
     width: 1280px;
     margin: 0 auto;
   }
 
   .his-titbox {
-    padding-bottom: 140px;
+    padding-bottom: 80px;
     .sec-subtit-bk {
-      @include ft-titsz40;
+      display: block;
+      @include ft-titsz30;
+      padding-bottom: 5px;
     }
     .sec-tit2 {
-      @include ft-titsz62;
+      @include ft-titsz50;
     }
     .sec-tit2-mobile {
       display: none;
@@ -502,12 +504,13 @@
 
   .hist-container {
     display: flex;
+    justify-content: center;
     gap: 6px;
   }
 
   .hist-img {
-    height: 453px;
-    padding-right: 68px;
+    height: 350px;
+    padding-right: 65px;
   }
 
   .swiper-history {
@@ -861,23 +864,33 @@
     }
   }
 
+  .ft-goto-wrap-pc {
+    display: flex;
+    width: 1180px;
+    align-items: center;
+    padding-left: 115px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  // padding-left: 540px;
   .ft-link {
     display: flex;
-    padding-left: 515px;
-    padding-right: 110px;
+    justify-content: flex-start;
 
     a {
       display: block;
       @include ft-bdsz14;
       color: $gray-ft7B;
       @include ft-goto-line;
-      padding-left: 30px;
+      padding-left: 10px;
     }
   }
 
-  .ft-goto-wrap {
+  .ft-goto-wrap-bg {
     position: absolute;
-    left: 0;
+    top: 43%;
+    left: 0%;
+    right: 10%;
     width: 1920px;
     display: flex;
     align-items: center;
