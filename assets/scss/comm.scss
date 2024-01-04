@@ -272,24 +272,15 @@ body {
   }
 }
 
-//페이지 버튼 - mobile
-@media screen and (min-width: $breakpoint-xl) {
-  .swiper-prod,
-  .swiper-vdo {
-    .swiper-pg-pc {
-      display: none;
-    }
-  }
-
-  //페이지 아이콘 - pc
-  @media screen and (min-width: $breakpoint-xl) {
-    .swiper-prod,
-    .siwper-vdo {
-      .swiper-pg-pc {
-        display: block;
-      }
-    }
-  }
+// pagination - mobile
+.swiper-pg-pc {
+  display: none;
 }
 
+//pagination - pc
+@media screen and (min-width: $breakpoint-xl) {
+  .swiper-pg-pc {
+    display: block;
+  }
+}
 @import "main", "sub1";

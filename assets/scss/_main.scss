@@ -91,7 +91,7 @@
   #header {
     position: fixed;
     top: 0;
-    left: 25%;
+    left: 30.5%;
     background: $white;
     width: 1920px;
     height: 104px;
@@ -170,7 +170,7 @@
 // 그라데이션 배경
 #main {
   .bg-vita {
-    // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+    background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
   }
 
   // background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffe554 100%);
@@ -651,7 +651,7 @@
   .vita-vdo {
     width: 1280px;
     margin: 0 auto;
-    padding: 40px 60px;
+    padding: 40px 0;
     .swiper-wrapper {
       padding-top: 27px;
       .swiper-slide {

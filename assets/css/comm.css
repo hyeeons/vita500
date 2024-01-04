@@ -555,15 +555,12 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 1280px) {
-  .swiper-prod .swiper-pg-pc,
-  .swiper-vdo .swiper-pg-pc {
-    display: none;
-  }
+.swiper-pg-pc {
+  display: none;
 }
-@media screen and (min-width: 1280px) and (min-width: 1280px) {
-  .swiper-prod .swiper-pg-pc,
-  .siwper-vdo .swiper-pg-pc {
+
+@media screen and (min-width: 1280px) {
+  .swiper-pg-pc {
     display: block;
   }
 }
@@ -652,7 +649,7 @@ body {
   #header {
     position: fixed;
     top: 0;
-    left: 25%;
+    left: 30.5%;
     background: #fff;
     width: 1920px;
     height: 104px;
@@ -713,6 +710,10 @@ body {
     transform: translateX(-50%);
   }
 }
+#main .bg-vita {
+  background: linear-gradient(180deg, #fff 0.01%, #fff 32.29%, #ffcc5f 100%);
+}
+
 .vita-intro {
   display: none;
 }
@@ -1212,7 +1213,7 @@ body {
   .vita-vdo {
     width: 1280px;
     margin: 0 auto;
-    padding: 40px 60px;
+    padding: 40px 0;
   }
   .vita-vdo .swiper-wrapper {
     padding-top: 27px;
