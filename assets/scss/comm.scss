@@ -22,7 +22,12 @@ body {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-216px);
+  width: 430px;
+  height: 63px;
+  z-index: 1100;
+  transform: translateX(-215px);
+  background: $primary;
+  transition: background-color 0.5s ease;
   //   right: 0;
 }
 
@@ -241,14 +246,6 @@ body {
   padding-top: 10px;
   .goto {
     @include goto;
-  }
-
-  //   goto 활성
-  .goto {
-    &:hover,
-    &:active {
-      background: #faf3d7;
-    }
   }
 }
 

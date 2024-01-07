@@ -19,6 +19,7 @@ var swiper = new Swiper(".swiper-prod", {
   slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
+  autoplay: { delay: 2500, disableOnInteraction: true },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -55,3 +56,14 @@ var swiper = new Swiper(".swiper-vdo", {
 });
 
 AOS.init();
+
+$(document).ready(function () {
+  var scrollHeader = $("#header");
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      scrollHeader.css("background-color", "#fff");
+    } else {
+      scrollHeader.css("background-color", "#ffcc5f");
+    }
+  });
+});

@@ -287,11 +287,16 @@ legend {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-216px);
+  width: 430px;
+  height: 63px;
+  z-index: 1100;
+  transform: translateX(-215px);
+  background: #ffcc5f;
+  transition: background-color 0.5s ease;
 }
 
 #main {
-  min-height: calc(100vh - 2040px - 820px - 460px);
+  min-height: calc(100vh - 2040px - 850px - 490px);
 }
 #main .vita-mp,
 #main .vita-zero,
@@ -299,13 +304,13 @@ legend {
   height: 510px;
 }
 #main .vita-hist {
-  height: 820px;
+  height: 850px;
 }
 #main .vita-prod {
   height: 510px;
 }
 #main .vita-vdo {
-  height: 460px;
+  height: 490px;
 }
 
 #footer {
@@ -519,9 +524,6 @@ legend {
   border: 1px solid #57575b;
   box-shadow: 1px 1px 1px 0px #57575b;
 }
-.goto-wrap-mobile .goto:hover, .goto-wrap-mobile .goto:active {
-  background: #faf3d7;
-}
 
 @media screen and (min-width: 1280px) {
   .goto-wrap-mobile {
@@ -570,11 +572,6 @@ legend {
     display: block;
   }
 }
-#header {
-  width: 430px;
-  z-index: 1100;
-}
-
 .inner {
   display: flex;
   justify-content: space-between;
@@ -662,25 +659,28 @@ legend {
   #header {
     position: fixed;
     top: 0;
-    left: 10%;
+    left: 0;
     width: 1920px;
+    background-color: #fff;
     height: 104px;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
   }
   #header .menu-burger {
     display: none;
   }
-  #header #logo {
+  #logo {
     width: 207px;
     height: 50px;
-    margin: 25px 0 0 322px;
+    margin: 25px 0px 320px 322px;
   }
 }
 .swiper-bnr {
-  padding-top: 104px;
+  padding-top: 63px;
   width: 100%;
 }
 .swiper-bnr .swiper-slide {
-  height: 680px;
+  height: 642.93px;
 }
 .swiper-bnr .swiper-slide img {
   text-align: center;
@@ -690,6 +690,14 @@ legend {
      object-fit: cover;
 }
 
+@media screen and (min-width: 1280px) {
+  .swiper-bnr {
+    padding-top: 104px;
+  }
+  picture {
+    min-width: 1px;
+  }
+}
 .video-wraper {
   position: relative;
   width: 100%;
@@ -790,8 +798,8 @@ legend {
   }
   .sec-img-mp {
     position: absolute;
-    height: 526px;
-    top: 20%;
+    height: 500px;
+    top: 22%;
     right: 0;
   }
   .vita-mp .goto-wrap-pc {
@@ -858,8 +866,8 @@ legend {
   }
   .sec-img-zero {
     position: absolute;
-    height: 526px;
-    top: 10%;
+    height: 500px;
+    top: 13%;
     left: 0;
   }
   .vita-zero .goto-wrap-pc {
@@ -951,7 +959,7 @@ legend {
 
 .bg-hist {
   background: #fff;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .his-titbox {
@@ -1219,7 +1227,7 @@ legend {
 }
 
 .sec-titbox-vdo {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -1444,7 +1452,7 @@ legend {
     display: flex;
     width: 1180px;
     align-items: center;
-    padding-left: 115px;
+    padding-left: 175px;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -1477,8 +1485,8 @@ legend {
     position: absolute;
     top: 43%;
     left: 0%;
-    right: 10%;
-    width: 1920px;
+    right: 0%;
+    max-width: 1920px;
     display: flex;
     align-items: center;
     margin-top: 30px;

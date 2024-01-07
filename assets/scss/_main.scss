@@ -1,11 +1,5 @@
 // header
 
-#header {
-  width: 430px;
-  z-index: 1100;
-  //   background: gray;
-}
-
 .inner {
   display: flex;
   justify-content: space-between;
@@ -88,40 +82,52 @@
   display: none;
 }
 
-// head - pc
+// header - pc
 @media screen and (min-width: $breakpoint-xl) {
   #header {
     position: fixed;
     top: 0;
-    left: 10%;
-    // background: $white;
+    left: 0;
     width: 1920px;
+    background-color: $white;
     height: 104px;
     .menu-burger {
       display: none;
     }
-
-    #logo {
-      width: 207px;
-      height: 50px;
-      margin: 25px 0 0 322px;
-    }
+    $scroll-header-background: $white;
+    background-color: $scroll-header-background;
+    transition: background-color 0.5s ease;
+  }
+  #logo {
+    width: 207px;
+    height: 50px;
+    margin: 25px 0px 320px 322px;
   }
 }
 
-//slide
+//slide - 모바일
 .swiper-bnr {
   //   opacity: 0;
-  padding-top: 104px;
+  padding-top: 63px;
   width: 100%;
   .swiper-slide {
-    height: 680px;
+    height: 642.93px;
     img {
       text-align: center;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+// slide - pc
+@media screen and (min-width: $breakpoint-xl) {
+  .swiper-bnr {
+    padding-top: 104px;
+  }
+  picture {
+    min-width: 1px;
   }
 }
 
@@ -236,8 +242,8 @@
 
   .sec-img-mp {
     position: absolute;
-    height: 526px;
-    top: 20%;
+    height: 500px;
+    top: 22%;
     right: 0;
   }
 
@@ -315,8 +321,8 @@
 
   .sec-img-zero {
     position: absolute;
-    height: 526px;
-    top: 10%;
+    height: 500px;
+    top: 13%;
     left: 0;
   }
 
@@ -414,7 +420,7 @@
 
 .bg-hist {
   background: $white;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .his-titbox {
@@ -659,7 +665,7 @@
 }
 
 .sec-titbox-vdo {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -869,7 +875,7 @@
     display: flex;
     width: 1180px;
     align-items: center;
-    padding-left: 115px;
+    padding-left: 175px;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -891,8 +897,8 @@
     position: absolute;
     top: 43%;
     left: 0%;
-    right: 10%;
-    width: 1920px;
+    right: 0%;
+    max-width: 1920px;
     display: flex;
     align-items: center;
     margin-top: 30px;
