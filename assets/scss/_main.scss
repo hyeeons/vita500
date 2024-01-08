@@ -269,9 +269,11 @@
     .goto-wrap-pc {
       display: block;
       padding-top: 12px;
-      padding-left: 43px;
+      padding-left: 32px;
       .goto {
         a {
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease;
           padding: 5px 24px;
         }
       }
@@ -351,6 +353,8 @@
       padding-left: 43px;
       .goto {
         a {
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease;
           padding: 5px 24px;
         }
       }
@@ -747,7 +751,7 @@
   background-color: $bk-ft;
   border-bottom: 1px solid $gray-ft7B;
   span {
-    @include ft-bdsz14;
+    @include ft-bdsz16R;
     display: block;
     width: 100%;
     height: 100%;
@@ -798,18 +802,20 @@
   border-right: 1px solid $gray-ft7B;
 }
 
-// footer-오픈메뉴#footer
+// footer-오픈메뉴 - mobile
 .ft-menu {
   position: relative;
 }
+
 .ft-gotolist {
-  display: none;
+  //   display: none;
   color: $gray-ft7B;
   position: absolute;
-  background: $white-bgcFC;
+  background: $white;
+  width: 50%;
   height: 210px;
   z-index: 1000;
-  bottom: 44px;
+  bottom: 40px;
   ul {
     display: flex;
     flex-direction: column;
@@ -828,12 +834,12 @@
 
 .gotolist-sns {
   left: 0;
-  padding-top: 38px;
-  border-right: 1px solid $gray-ft7B;
+  //   border-right: 1px solid $gray-ft7B;
 }
 
 .gotolist-family {
   right: 0;
+  //   border-left: 1px solid $gray-ft7B;
 }
 
 // footer- pc

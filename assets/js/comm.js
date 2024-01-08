@@ -56,13 +56,28 @@ var swiper = new Swiper(".swiper-vdo", {
 });
 
 $(document).ready(function () {
-  var scrollHeader = $("#header");
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-      scrollHeader.css("background-color", "#fff");
-    } else {
-      scrollHeader.css("background-color", "#ffcc5f");
-    }
+  const $gotosnsWrap = $(".ft-gotosns-wrap");
+  $gotosnsWrap.click(function () {
+    $(this).toggleClass("active");
+  });
+
+  const $gotositeWrap = $(".ft-gotosite-wrap");
+  $gotositeWrap.click(function () {
+    $(this).toggleClass("active");
+  });
+
+  const $gotosnsSpan = $(".ft-gotosns span");
+  const $gotosns = $(".gotolist-sns");
+  $gotosnsSpan.click(function () {
+    $gotosnsSpan.toggleClass("active");
+    $gotosns.slideToggle();
+  });
+
+  const $gotositeSpan = $(".ft-gotosite span");
+  const $gotosite = $(".gotolist-family");
+  $gotositeSpan.click(function () {
+    $gotositeSpan.toggleClass("active");
+    $gotosite.slideToggle();
   });
 });
 

@@ -184,6 +184,18 @@
   }
 }
 
+@mixin icon-up {
+  &::after {
+    content: "\f139";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    font-size: 18px;
+    vertical-align: middle;
+    color: $white;
+    margin-left: 10px;
+  }
+}
+
 @mixin prod-box {
   width: 195px;
   height: 265px;
@@ -205,8 +217,8 @@
   align-items: center;
   background-color: $white;
   border-radius: 5px;
-  border: 1px solid $gray-57B;
-  box-shadow: 1px 1px 1px 0px $gray-57B;
+  border: 1px solid $gray-ft7B;
+  box-shadow: 1px 1px 1px 0px $gray-ft7B;
 }
 
 @mixin ft-goto-line {

@@ -10,6 +10,7 @@
 }
 // layout
 .wrap {
+  position: relative;
   min-height: 100vh;
   max-width: 430px;
   display: flex;
@@ -303,5 +304,22 @@
 @media screen and (min-width: $breakpoint-xl) {
   .swiper {
     --swiper-theme-color: rgba(116, 116, 116, 0.8);
+  }
+}
+
+// goto
+
+.goto {
+  background: $white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.goto {
+  &:hover {
+    background: $orange-goto;
+    border: none;
+    a {
+      color: $white;
+    }
   }
 }
