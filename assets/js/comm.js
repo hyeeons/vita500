@@ -55,8 +55,6 @@ var swiper = new Swiper(".swiper-vdo", {
   },
 });
 
-AOS.init();
-
 $(document).ready(function () {
   var scrollHeader = $("#header");
   $(window).scroll(function () {
@@ -67,3 +65,5 @@ $(document).ready(function () {
     }
   });
 });
+
+AOS.init({ duration: 1000, easing: "ease-in-out", once: true, dealy: 0 });

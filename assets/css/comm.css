@@ -325,7 +325,7 @@ legend {
   }
   #main {
     margin-top: -76px;
-    min-height: calc(100vh - 150px - 1400px - 1153px - 830px - 700px - 810px);
+    min-height: calc(100vh - 150px - 1400px - 1200px - 830px - 700px - 810px);
   }
   #main .vita-intro {
     height: 150px;
@@ -335,7 +335,7 @@ legend {
     height: 700px;
   }
   #main .vita-reh {
-    height: 1153px;
+    height: 1200px;
     margin-top: 0px;
   }
   #main .vita-hist {
@@ -932,7 +932,7 @@ legend {
 
 @media screen and (min-width: 1280px) {
   .vita-reh {
-    padding-top: 100px;
+    padding-top: 110px;
   }
   .sec-titbox-reh {
     padding-bottom: 85px;
@@ -942,7 +942,7 @@ legend {
   }
   .sec-titbox-reh .sec-tit2-pc {
     display: block;
-    font-size: 62px;
+    font-size: 57px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

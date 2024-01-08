@@ -153,6 +153,13 @@
   line-height: normal;
 }
 
+@mixin ft-titsz57 {
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 // icon
 @mixin icon-check {
   &::before {

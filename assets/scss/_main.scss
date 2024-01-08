@@ -393,7 +393,7 @@
 // vita500 - reh - PC
 @media screen and (min-width: $breakpoint-xl) {
   .vita-reh {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   .sec-titbox-reh {
@@ -403,7 +403,7 @@
     }
     .sec-tit2-pc {
       display: block;
-      @include ft-titsz62;
+      @include ft-titsz57;
     }
   }
 
