@@ -1,10 +1,9 @@
 @import "variables", "mixins", "fonts", "resets";
 
 // body-디자인이미지
-body {
-  //   background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
-  //   background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
-}
+
+//   background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
+//   background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
 
 * {
   font-family: "Pretendard", "pretendard-regular";
@@ -65,6 +64,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
   }
+
   #main {
     margin-top: -76px;
     min-height: calc(

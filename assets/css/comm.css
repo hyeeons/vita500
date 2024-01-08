@@ -657,22 +657,26 @@ legend {
 
 @media screen and (min-width: 1280px) {
   #header {
-    position: fixed;
+    position: absolute;
+    z-index: 1100;
+    transform: translateX(0px);
+    min-width: 1920px;
     top: 0;
     left: 0;
-    width: 1920px;
     background-color: #fff;
-    height: 104px;
-    background-color: #fff;
-    transition: background-color 0.5s ease;
+    height: 80px;
   }
   #header .menu-burger {
     display: none;
   }
   #logo {
-    width: 207px;
-    height: 50px;
-    margin: 25px 0px 320px 322px;
+    width: 185px;
+    height: 45px;
+    margin: 18px 0px 320px 322px;
+  }
+  .inner {
+    width: 1920px;
+    height: 100%;
   }
 }
 .swiper-bnr {
@@ -682,7 +686,10 @@ legend {
 .swiper-bnr .swiper-slide {
   height: 642.93px;
 }
-.swiper-bnr .swiper-slide img {
+.swiper-bnr .swiper-slide .bnr-pc {
+  display: none;
+}
+.swiper-bnr .swiper-slide .bnr-mobile {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -692,10 +699,21 @@ legend {
 
 @media screen and (min-width: 1280px) {
   .swiper-bnr {
-    padding-top: 104px;
+    padding-top: 80px;
   }
-  picture {
-    min-width: 1px;
+  .swiper-bnr .swiper-slide {
+    width: 1920px;
+  }
+  .swiper-bnr .swiper-slide .bnr-mobile {
+    display: none;
+  }
+  .swiper-bnr .swiper-slide .bnr-pc {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .video-wraper {
