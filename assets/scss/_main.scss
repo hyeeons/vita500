@@ -29,9 +29,11 @@
     border: none;
     opacity: 0;
     visibility: hidden;
+
     &:checked {
       & + .label-burger {
         & ~ #gnb {
+          opacity: 1;
           left: 0%;
         }
         .bar {
@@ -67,18 +69,18 @@
     }
   }
 }
+
 #gnb {
-  //   visibility: hidden;
-  //   opacity: 0;
   position: absolute;
   padding-top: 70px;
   top: 0;
   left: 100%;
+  opacity: 0;
   background: $white;
   height: 700px;
   z-index: 800;
   width: 100%;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .nav-list-depth1 {
