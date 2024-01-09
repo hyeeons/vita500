@@ -56,6 +56,8 @@ var swiper = new Swiper(".swiper-vdo", {
 });
 
 $(document).ready(function () {
+  const $gotowrap = $(".ft-goto-wrap");
+
   const $gotosnsWrap = $(".ft-gotosns-wrap");
   $gotosnsWrap.click(function () {
     $(this).toggleClass("active");
