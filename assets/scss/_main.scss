@@ -91,14 +91,11 @@
     min-width: 1920px;
     top: 0;
     left: 0;
-    background-color: $white;
+    // background-color: $white;
     height: 80px;
     .menu-burger {
       display: none;
     }
-    $scroll-header-background: $white;
-    // background-color: $scroll-header-background;
-    // transition: background-color 0.5s ease;
   }
   #logo {
     width: 185px;
@@ -113,10 +110,9 @@
 
 //slide - 모바일
 .swiper-bnr {
-  padding-top: 63px;
   width: 100%;
   .swiper-slide {
-    height: 642.93px;
+    height: 690px;
     .bnr-pc {
       display: none;
     }
@@ -132,7 +128,6 @@
 // slide - pc
 @media screen and (min-width: $breakpoint-xl) {
   .swiper-bnr {
-    padding-top: 80px;
     .swiper-slide {
       width: 1920px;
       .bnr-mobile {
@@ -171,7 +166,7 @@
 // video - PC버전
 @media screen and (min-width: $breakpoint-xl) {
   .video {
-    background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0
+    background: url(../../images/main/banner/main_video_bg_pc_ad.png) 50% 0
       no-repeat;
     height: 938px;
     background-size: 1920px;

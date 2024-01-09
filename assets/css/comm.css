@@ -292,7 +292,6 @@ legend {
   height: 63px;
   z-index: 1100;
   transform: translateX(-215px);
-  background: #ffcc5f;
   transition: background-color 0.5s ease;
 }
 
@@ -664,7 +663,6 @@ legend {
     min-width: 1920px;
     top: 0;
     left: 0;
-    background-color: #fff;
     height: 80px;
   }
   #header .menu-burger {
@@ -681,11 +679,10 @@ legend {
   }
 }
 .swiper-bnr {
-  padding-top: 63px;
   width: 100%;
 }
 .swiper-bnr .swiper-slide {
-  height: 642.93px;
+  height: 690px;
 }
 .swiper-bnr .swiper-slide .bnr-pc {
   display: none;
@@ -699,9 +696,6 @@ legend {
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-bnr {
-    padding-top: 80px;
-  }
   .swiper-bnr .swiper-slide {
     width: 1920px;
   }
@@ -732,7 +726,7 @@ legend {
 
 @media screen and (min-width: 1280px) {
   .video {
-    background: url(../../images/main/banner/main_video_bg_pc.png) 50% 0 no-repeat;
+    background: url(../../images/main/banner/main_video_bg_pc_ad.png) 50% 0 no-repeat;
     height: 938px;
     background-size: 1920px;
   }
