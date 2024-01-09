@@ -55,32 +55,28 @@ var swiper = new Swiper(".swiper-vdo", {
   },
 });
 
-$(document).ready(function () {
-  const $gotowrap = $(".ft-goto-wrap");
-
-  const $gotosnsWrap = $(".ft-gotosns-wrap");
-  $gotosnsWrap.click(function () {
-    $(this).toggleClass("active");
-  });
-
-  const $gotositeWrap = $(".ft-gotosite-wrap");
-  $gotositeWrap.click(function () {
-    $(this).toggleClass("active");
-  });
-
-  const $gotosnsSpan = $(".ft-gotosns span");
-  const $gotosns = $(".gotolist-sns");
-  $gotosnsSpan.click(function () {
-    $gotosnsSpan.toggleClass("active");
-    $gotosns.slideToggle();
-  });
-
-  const $gotositeSpan = $(".ft-gotosite span");
-  const $gotosite = $(".gotolist-family");
-  $gotositeSpan.click(function () {
-    $gotositeSpan.toggleClass("active");
-    $gotosite.slideToggle();
-  });
-});
-
 AOS.init({ duration: 1000, easing: "ease-in-out", once: true, dealy: 0 });
+
+$(document).ready(function () {
+  const ftSns = $(".ft-gotosns-wrap");
+  const ftSnsList = $(".gotolist-sns");
+  ftSns.click(function () {
+    ftSnsList.slideToggle();
+    ftSns.toggleClass("active");
+  });
+  const ftSite = $(".ft-gotosite-wrap");
+  const ftSiteList = $(".gotolist-family");
+  ftSite.click(function () {
+    ftSiteList.slideToggle();
+    ftSite.toggleClass("active");
+  });
+
+  const btnGoto = $(".goto-wrap");
+  btnGoto.click(function () {
+    $(this).toggleClass("orange");
+  });
+
+  $("a").attr("href", "javascript:void(0)");
+
+  //header-mobile
+});
