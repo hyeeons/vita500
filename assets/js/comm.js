@@ -79,4 +79,11 @@ $(document).ready(function () {
   $("a").attr("href", "javascript:void(0)");
 
   //header-mobile
+  const mbDepth1 = $(".nav-list-depth1");
+  const mbDepth2 = $(".nav-list-depth2");
+
+  mbDepth1.click(function () {
+    const currentDepth2 = $(this).find(mbDepth2);
+    currentDepth2.slideToggle();
+  });
 });

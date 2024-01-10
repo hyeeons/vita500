@@ -2,8 +2,10 @@
 
 // body-디자인이미지
 
-//   background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
+// body {
 //   background: url("../../모바일_아이폰13미니_오픈.png") no-repeat 50% 0;
+// }
+//   background: url(../../PC_웹페이지1920_메인.png) no-repeat 50% 0;
 
 * {
   font-family: "Pretendard", "pretendard-regular";
@@ -16,19 +18,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-
-#header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 430px;
-  height: 63px;
-  z-index: 1100;
-  transform: translateX(-215px);
-
-  transition: background-color 0.5s ease;
-  //   right: 0;
 }
 
 #main {
