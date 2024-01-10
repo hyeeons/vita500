@@ -685,6 +685,10 @@ legend {
   display: none;
 }
 
+.gnb-pc-bg {
+  height: 0;
+}
+
 @media screen and (min-width: 1280px) {
   #header {
     position: fixed;
@@ -739,6 +743,10 @@ legend {
     visibility: visible;
     opacity: 1;
   }
+  .gnb-pc-bg img {
+    margin: 70px 0 0 250px;
+    width: 200px;
+  }
   .nav-list {
     display: flex;
   }
@@ -759,6 +767,9 @@ legend {
     line-height: normal;
     letter-spacing: 0.54px;
   }
+  .nav-list .nav-list-depth1 a.active {
+    color: #ef4023;
+  }
   .nav-list-depth2 {
     visibility: hidden;
     opacity: 0;
@@ -777,6 +788,9 @@ legend {
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.64px;
+  }
+  .nav-list-depth2 a.active {
+    color: #ef4023;
   }
 }
 .swiper-bnr {

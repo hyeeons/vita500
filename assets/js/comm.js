@@ -88,6 +88,16 @@ $(document).ready(function () {
     gnbBg.addClass("active");
     navDepth2.addClass("active");
 
+    const listName = $(".nav-list").find("a");
+
+    listName.mouseenter(function () {
+      $(this).addClass("active");
+    });
+
+    listName.mouseleave(function () {
+      $(this).removeClass("active");
+    });
+
     gnbBg.mouseleave(function () {
       gnbBg.removeClass("active");
       navDepth2.removeClass("active");

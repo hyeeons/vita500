@@ -128,6 +128,9 @@
 .gnb-pc {
   display: none;
 }
+.gnb-pc-bg {
+  height: 0;
+}
 
 // header - pc
 @media screen and (min-width: $breakpoint-xl) {
@@ -187,6 +190,10 @@
       visibility: visible;
       opacity: 1;
     }
+    img {
+      margin: 70px 0 0 250px;
+      width: 200px;
+    }
   }
 
   .nav-list {
@@ -204,6 +211,11 @@
         padding: 30px 0;
         @include ft-titsz18;
       }
+      a {
+        &.active {
+          color: $red-4023;
+        }
+      }
     }
   }
   .nav-list-depth2 {
@@ -218,6 +230,11 @@
       padding: 8px 0;
       > a {
         @include ft-bdsz16R;
+      }
+    }
+    a {
+      &.active {
+        color: $red-4023;
       }
     }
   }
