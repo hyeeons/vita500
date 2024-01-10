@@ -78,12 +78,28 @@ $(document).ready(function () {
 
   $("a").attr("href", "javascript:void(0)");
 
-  //header-mobile
-  const mbDepth1 = $(".nav-list-depth1");
-  const mbDepth2 = $(".nav-list-depth2");
+  //header-pc
 
-  mbDepth1.click(function () {
-    const currentDepth2 = $(this).find(mbDepth2);
-    currentDepth2.slideToggle();
+  const pcNav = $(".gnb-pc .nav-list");
+  const gnbBg = $(".gnb-pc-bg");
+  const navDepth2 = $(".gnb-pc .nav-list-depth2");
+
+  pcNav.mouseenter(function () {
+    gnbBg.addClass("active");
+    navDepth2.addClass("active");
+
+    gnbBg.mouseleave(function () {
+      gnbBg.removeClass("active");
+      navDepth2.removeClass("active");
+    });
   });
 });
+
+//   //header-mobile
+//   const mbDepth1 = $(".nav-list-depth1");
+//   const mbDepth2 = $(".nav-list-depth2");
+
+//   mbDepth1.click(function () {
+//     const currentDepth2 = $(this).find(mbDepth2);
+//     currentDepth2.slideToggle();
+//   });

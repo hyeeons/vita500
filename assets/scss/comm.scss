@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 #main {
@@ -52,7 +53,6 @@
   .wrap {
     min-height: 100vh;
     max-width: 1920px;
-    margin: 0 auto;
   }
 
   #main {

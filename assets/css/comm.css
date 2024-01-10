@@ -282,6 +282,7 @@ legend {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 #main {
@@ -310,7 +311,6 @@ legend {
   .wrap {
     min-height: 100vh;
     max-width: 1920px;
-    margin: 0 auto;
   }
   #main {
     margin-top: -76px;
@@ -565,11 +565,12 @@ legend {
   position: fixed;
   top: 0;
   left: 50%;
-  width: 430px;
+  width: 100%;
   height: 63px;
   z-index: 1100;
-  transform: translateX(-215px);
+  transform: translateX(-50%);
   transition: background-color 0.5s ease;
+  max-width: 430px;
 }
 
 #logo {
@@ -686,30 +687,32 @@ legend {
 
 @media screen and (min-width: 1280px) {
   #header {
-    position: absolute;
+    position: fixed;
     top: 0;
+    right: 0;
+    margin: 0 auto;
     left: 0;
+    transform: none;
     height: 80px;
+    display: flex;
+    justify-content: center;
     z-index: 1100;
-    transform: translateX(0px);
-    min-width: 1920px;
+    max-width: none;
   }
-  #header .menu-burger {
+  #header .label-burger {
     display: none;
   }
   .inner {
-    position: absolute;
-    top: 0;
     display: flex;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    max-width: 1280px;
     align-items: center;
-    padding: 0 10%;
+    justify-content: space-between;
   }
   #logo {
     width: 185px;
     height: 45px;
-    margin: 0;
   }
   .label-burger {
     display: none;
@@ -720,21 +723,60 @@ legend {
   .gnb-pc {
     display: block;
   }
+  .gnb-pc-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    z-index: 500;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .gnb-pc-bg.active {
+    visibility: visible;
+    opacity: 1;
+  }
   .nav-list {
     display: flex;
-    gap: 100px;
   }
   .nav-list a {
+    color: #1c1c1b;
+  }
+  .nav-list .nav-list-depth1 {
+    width: 140px;
+    height: 80px;
+    text-align: center;
+  }
+  .nav-list .nav-list-depth1 > a {
     display: block;
+    padding: 30px 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.54px;
-    color: #1c1c1b;
   }
   .nav-list-depth2 {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .nav-list-depth2.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-list-depth2 li {
+    padding: 8px 0;
+  }
+  .nav-list-depth2 li > a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
   }
 }
 .swiper-bnr {
