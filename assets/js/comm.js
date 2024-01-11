@@ -58,6 +58,7 @@ var swiper = new Swiper(".swiper-vdo", {
 AOS.init({ duration: 1000, easing: "ease-in-out", once: true, dealy: 0 });
 
 $(document).ready(function () {
+  // footer
   const ftSns = $(".ft-gotosns-wrap");
   const ftSnsList = $(".gotolist-sns");
   ftSns.click(function () {
@@ -105,6 +106,33 @@ $(document).ready(function () {
   });
 });
 
+// gsap
+$(document).ready(function () {
+  const flowerFirst = $(".flower-first");
+  const flowerSecond = $(".flower-second");
+  const flowerthird = $(".flower-third");
+  const flowerFourth = $(".flower-fourth");
+  gsap.fromTo(
+    flowerFirst,
+    { scale: 1 },
+    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+  );
+  gsap.fromTo(
+    flowerSecond,
+    { scale: 1 },
+    { scale: 1.3, duration: 1, repeat: -1, yoyo: true }
+  );
+  gsap.fromTo(
+    flowerthird,
+    { scale: 1 },
+    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+  );
+  gsap.fromTo(
+    flowerFourth,
+    { scale: 1 },
+    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+  );
+});
 //   //header-mobile
 //   const mbDepth1 = $(".nav-list-depth1");
 //   const mbDepth2 = $(".nav-list-depth2");
