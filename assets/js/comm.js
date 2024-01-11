@@ -132,6 +132,19 @@ $(document).ready(function () {
     { scale: 1 },
     { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
   );
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const hd = document.querySelector("#header");
+  window.addEventListener("scroll", _.throttle(hdScroll, 300));
+
+  function hdScroll() {
+    if (window.scrollY > 100) {
+      gsap.to(hd, { opacity: 0, display: "none", duration: 0.5 });
+    } else {
+      gsap.to(hd, { opacity: 1, display: "flex", duration: 0.5 });
+    }
+  }
 });
 //   //header-mobile
 //   const mbDepth1 = $(".nav-list-depth1");
