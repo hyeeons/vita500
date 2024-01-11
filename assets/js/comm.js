@@ -85,22 +85,22 @@ $(document).ready(function () {
   const navDepth2 = $(".gnb-pc .nav-list-depth2");
 
   pcNav.mouseenter(function () {
-    gnbBg.addClass("active");
-    navDepth2.addClass("active");
+    gnbBg.addClass("hover");
+    navDepth2.addClass("hover");
 
     const listName = $(".nav-list").find("a");
 
     listName.mouseenter(function () {
-      $(this).addClass("active");
+      $(this).addClass("hover");
     });
 
     listName.mouseleave(function () {
-      $(this).removeClass("active");
+      $(this).removeClass("hover");
     });
 
     gnbBg.mouseleave(function () {
-      gnbBg.removeClass("active");
-      navDepth2.removeClass("active");
+      gnbBg.removeClass("hover");
+      navDepth2.removeClass("hover");
     });
   });
 });

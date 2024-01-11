@@ -186,7 +186,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
-    &.active {
+    &.hover {
       visibility: visible;
       opacity: 1;
     }
@@ -212,7 +212,7 @@
         @include ft-titsz18;
       }
       a {
-        &.active {
+        &.hover {
           color: $red-4023;
         }
       }
@@ -222,7 +222,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
-    &.active {
+    &.hover {
       visibility: visible;
       opacity: 1;
     }
@@ -233,7 +233,7 @@
       }
     }
     a {
-      &.active {
+      &.hover {
         color: $red-4023;
       }
     }
@@ -294,15 +294,17 @@
     background: $primary;
   }
 }
-
+.flower-pc {
+  display: none;
+}
 // video - PC버전
 @media screen and (min-width: $breakpoint-xl) {
   .video {
-    background: url(../../images/main/banner/main_video_bg_pc_ad.png) 50% 0
-      no-repeat;
+    background: $white;
     height: 938px;
     background-size: 1920px;
     .video-wraper {
+      opacity: 0;
       background: none;
       margin: 0 auto;
       padding-bottom: 938px;
@@ -314,6 +316,29 @@
         transform: translateX(-50%);
       }
     }
+  }
+  .flower-pc {
+    display: block;
+    width: 1920px;
+  }
+  .flower {
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+  .flower-first {
+    background-image: url(..//..//images/main/icon/flower_1.png);
+    background-size: cover;
+  }
+  .flower-second {
+    background-image: url(../..//images/main/icon/flower_2.png) no-repeat;
+  }
+  .flower-third {
+    background-image: url(../..//images/main/icon/flower_3.png) no-repeat;
+  }
+  .flower-fourth {
+    background-image: url(../..//images/main/icon/flower_4.png) no-repeat;
   }
 }
 
