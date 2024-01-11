@@ -294,51 +294,68 @@
     background: $primary;
   }
 }
-.flower-pc {
+.flower {
   display: none;
 }
 // video - PC버전
 @media screen and (min-width: $breakpoint-xl) {
   .video {
-    background: $white;
+    // background: $white;
+    background: url(../../images/main/video/main_video_pc_md.png) 50% no-repeat;
     height: 938px;
     background-size: 1920px;
     .video-wraper {
-      opacity: 0;
+      position: static;
       background: none;
       margin: 0 auto;
       padding-bottom: 938px;
       iframe {
         width: 1280px;
         height: 693px;
-        top: 12%;
+        top: 11.5%;
         left: 50%;
         transform: translateX(-50%);
       }
     }
   }
-  .flower-pc {
+  .flower {
     display: block;
-    width: 1920px;
+    width: 100%;
+    height: 938px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .flower {
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
   }
   .flower-first {
-    background-image: url(..//..//images/main/icon/flower_1.png);
-    background-size: cover;
+    background-image: url(../../images/main/icon/flower_1.png);
+    background-size: contain;
+    width: 72px;
+    height: 70px;
+    transform: translate(-770px, 375px);
   }
   .flower-second {
-    background-image: url(../..//images/main/icon/flower_2.png) no-repeat;
+    background-image: url(../../images/main/icon/flower_2.png);
+    background-size: contain;
+    width: 77px;
+    height: 74px;
+    transform: translate(765px, 225px);
   }
   .flower-third {
-    background-image: url(../..//images/main/icon/flower_3.png) no-repeat;
+    background-image: url(../../images/main/icon/flower_3.png);
+    background-size: contain;
+    width: 53px;
+    height: 44px;
+    transform: translate(650px, 450px);
   }
   .flower-fourth {
-    background-image: url(../..//images/main/icon/flower_4.png) no-repeat;
+    background-image: url(../../images/main/icon/flower_4.png);
+    background-size: contain;
+    width: 56.3px;
+    height: 54px;
+    transform: translate(-713px, 680px);
   }
 }
 
