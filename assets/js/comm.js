@@ -114,23 +114,23 @@ $(document).ready(function () {
   const flowerFourth = $(".flower-fourth");
   gsap.fromTo(
     flowerFirst,
-    { scale: 1 },
-    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+    { scale: 0.8 },
+    { scale: 1.5, duration: 0.5, repeat: -1, yoyo: true }
   );
   gsap.fromTo(
     flowerSecond,
-    { scale: 1 },
-    { scale: 1.3, duration: 1, repeat: -1, yoyo: true }
+    { scale: 0.5 },
+    { scale: 1.3, duration: 0.7, repeat: -1, yoyo: true }
   );
   gsap.fromTo(
     flowerthird,
-    { scale: 1 },
-    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+    { scale: 0.8 },
+    { scale: 1.7, duration: 0.9, repeat: -1, yoyo: true }
   );
   gsap.fromTo(
     flowerFourth,
     { scale: 1 },
-    { scale: 1.5, duration: 1, repeat: -1, yoyo: true }
+    { scale: 1.5, duration: 0.7, repeat: -1, yoyo: true }
   );
 
   gsap.registerPlugin(ScrollTrigger);
