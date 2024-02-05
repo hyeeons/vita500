@@ -310,8 +310,8 @@
       margin: 0 auto;
       padding-bottom: 938px;
       iframe {
-        width: 1280px;
-        height: 718px;
+        width: 1000px;
+        height: 561px;
         top: 11.5%;
         left: 50%;
         transform: translateX(-50%);
@@ -333,28 +333,29 @@
     background-size: contain;
     width: 72px;
     height: 70px;
-    transform: translate(-770px, 375px);
+    // transform: translate(-630px, 176px);
+    transform: translate(-878%, 310%);
   }
   .flower-second {
     background-image: url(../../images/main/icon/flower_2.png);
     background-size: contain;
     width: 77px;
     height: 74px;
-    transform: translate(765px, 225px);
+    transform: translate(595px, 195px);
   }
   .flower-third {
     background-image: url(../../images/main/icon/flower_3.png);
     background-size: contain;
     width: 53px;
     height: 44px;
-    transform: translate(650px, 450px);
+    transform: translate(504px, 400px);
   }
   .flower-fourth {
     background-image: url(../../images/main/icon/flower_4.png);
     background-size: contain;
     width: 56.3px;
     height: 54px;
-    transform: translate(-713px, 680px);
+    transform: translate(-603px, 390px);
   }
 }
 
