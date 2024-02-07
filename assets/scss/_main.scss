@@ -157,6 +157,7 @@
     width: 100%;
     max-width: 1280px;
     align-items: center;
+
     // padding: 0 10%;
     justify-content: space-between;
   }
@@ -241,6 +242,9 @@
 }
 
 //slide - 모바일
+.u-skip {
+  display: none;
+}
 .swiper-bnr {
   width: 100%;
   .swiper-slide {
@@ -259,6 +263,9 @@
 
 // slide - pc
 @media screen and (min-width: $breakpoint-xl) {
+  .u-skip {
+    margin-top: -24px;
+  }
   .swiper-bnr {
     .swiper-slide {
       width: 1920px;
