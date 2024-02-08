@@ -146,6 +146,13 @@
   line-height: normal;
 }
 
+@mixin ft-titsz58 {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @mixin ft-titsz62 {
   font-size: 62px;
   font-style: normal;
@@ -164,11 +171,12 @@
 @mixin icon-check {
   &::before {
     content: "\f00c";
-    font-family: "Line Awesome Free";
+    font-family: "Font Awesome 6 Pro";
     font-weight: 900;
     // vertical-align: middle;
     margin-right: 5px;
     margin-bottom: 5px;
+    color: $orange-goto;
   }
 }
 

@@ -159,16 +159,16 @@
     .sec-titbox-mp,
     .sec-titbox-zero {
       .sec-subtit-bk {
-        @include ft-titsz25;
+        @include ft-titsz20;
       }
       .sec-tit1 {
-        @include ft-titsz62;
-        padding-top: 5px;
-        padding-bottom: 12px;
+        @include ft-titsz58;
+        margin: 5px 0 10px;
+        background: linear-gradient(to bottom, transparent 60%, $primary 40%);
       }
       .sec-subtit2 {
         display: block;
-        @include ft-titsz18;
+        @include ft-bdsz16R;
         color: $gray-57B;
       }
     }
@@ -180,7 +180,9 @@
         li {
           padding-bottom: 12px;
           span {
-            @include ft-bdsz23;
+            @include ft-titsz20;
+            font-weight: 500;
+
             &::before {
               margin-right: 10px;
             }
@@ -215,6 +217,7 @@
 }
 
 // section-prod & video 공통 - PC
+
 @media screen and (min-width: $breakpoint-xl) {
   .vita-prod,
   .vita-vdo {
