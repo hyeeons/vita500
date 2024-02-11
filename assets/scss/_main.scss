@@ -922,272 +922,83 @@
 }
 
 // footer - mobile
-.ft-menu {
-  display: flex;
-  justify-content: space-between;
-  height: 44px;
-}
-
-// footer-바로가기
-.ft-goto-wrap {
-  width: 50%;
-}
-.ft-gotositesub {
-  background-color: $bk-ft;
-  border-bottom: 1px solid $gray-ft7B;
-  span {
-    @include ft-bdsz16R;
-    @include icon-down;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: $white;
-    text-align: center;
-    padding: 15px;
-  }
-}
-
-// footer-오픈메뉴 - mobile
-.ft-menu {
-  position: relative;
-}
-
-.ft-gotolist {
-  display: none;
+.ft-wrap {
+  background: $bk-ft;
+  height: 100%;
   color: $gray-ft7B;
-  position: absolute;
-  background: $white-bgcFC;
-  width: 50%;
-  height: 210px;
-  z-index: 1000;
-  bottom: 45px;
-  ul {
-    display: flex;
-    flex-direction: column;
-    padding-top: 8px;
-    align-items: center;
+  @include ft-bdsz14;
+  padding: 0 14px 14px 14px;
 
-    li {
-      padding-top: 13px;
+  .goto-container {
+    height: 44px;
+    .goto-site-box {
+      display: flex;
+      .goto-site {
+        width: 50%;
+        span {
+          color: $white;
+          display: block;
+          text-align: center;
+          padding: 15px 0;
+          @include icon-down;
+        }
+      }
     }
   }
-  a {
-    display: block;
-    width: 100%;
-    color: $txtDefult;
+  .goto-box a {
+    color: $gray-ft7B;
   }
-}
+  .goto-box-pc {
+    display: none;
+  }
 
-.gotolist-sns {
-  left: 0;
-  //   border-right: 1px solid $gray-ft7B;
-}
+  .pc-menu {
+    display: none;
+  }
 
-.gotolist-family {
-  right: 0;
-  //   border-left: 0.5px solid $gray-ft7B;
-}
+  .ft-info {
+    .ft-logo {
+      text-indent: -9999px;
+      width: 173px;
+      height: 42px;
+      background-image: url(../../images/comm/m_logo_gray.png);
+      background-size: cover;
+      margin: 30px 0 12px;
+    }
+    .goto-box-mb {
+      margin: 10px 0 10px;
+      height: 27px;
+      border-bottom: 1px solid $gray-ft7B;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      a {
+        display: block;
+        margin-bottom: 10px;
 
-.ft-goto-wrap {
-  cursor: pointer;
-  &.active {
-    .ft-gotositesub {
-      transition: all 0.3s ease;
-      background: $white-bgcFC;
-      span {
-        color: $txtDefult;
-        @include icon-up;
+        &:nth-child(2) {
+          &::before {
+            @include icon-bar;
+            position: absolute;
+            top: 5%;
+            left: 30%;
+          }
+          &::after {
+            @include icon-bar;
+            position: absolute;
+            top: 5%;
+
+            right: 26%;
+          }
+        }
+        &:nth-child(3) {
+          padding: 0 22px 0 6px;
+        }
       }
     }
   }
 }
-
-// ft-container
-.ft-container {
-  background-color: $bk-ft;
-  height: 189px;
-  padding: 30px 14px 0;
-}
-
-.ft-logo {
-  text-indent: -9999px;
-  width: 173px;
-  height: 42px;
-  background-image: url(../../images/comm/m_logo_gray.png);
-  background-size: cover;
-}
-
-.ft-logoinfo {
-  padding-top: 12px;
-}
-
-.ft-link {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px 0;
-  a {
-    @include ft-goto-line;
-  }
-}
-
-.ft-container {
-  a,
-  p,
-  .ft-copyright {
-    color: $gray-ft7B;
-    @include ft-bdsz14;
-  }
-}
-
-.ft-goto-menu {
-  a {
-    @include ft-bdsz16R;
-    color: $txtDefult;
-  }
-}
-.ft-gotosns {
-  border-right: 1px solid $gray-ft7B;
-}
 // footer- pc
 @media screen and (min-width: $breakpoint-xl) {
-  .ft-wrap-pc {
-    height: 312px;
-    background: $bk-ft;
-  }
-
-  .ft-container {
-    width: 1280px;
-    margin: 0 auto;
-  }
-  .ft-menu-pc {
-    display: flex;
-    a {
-      @include ft-bdsz14;
-      color: $white;
-    }
-  }
-  .ft-menu-tit {
-    display: flex;
-    flex-direction: column;
-    padding-left: 115px;
-    padding-right: 60px;
-    gap: 25px;
-    a {
-      color: $red-4023;
-    }
-  }
-
-  .ft-menu-site-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .ft-menu-site {
-    display: flex;
-    justify-content: flex-start;
-    gap: 85px;
-    a {
-      display: block;
-      width: 70px;
-      height: 17px;
-    }
-  }
-  .ft-wrap-pc {
-    position: relative;
-    .ft-container {
-      width: 1280px;
-      margin: 0 auto;
-    }
-  }
-
-  .ft-goto-wrap-pc {
-    display: flex;
-    width: 1180px;
-    align-items: center;
-    padding-left: 175px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-  // padding-left: 540px;
-  .ft-link {
-    display: flex;
-    justify-content: flex-start;
-
-    a {
-      display: block;
-      @include ft-bdsz14;
-      color: $gray-ft7B;
-      @include ft-goto-line;
-      padding-left: 10px;
-    }
-  }
-
-  .ft-goto-wrap-bg {
-    position: absolute;
-    top: 43%;
-    left: 0%;
-    right: 0%;
-    max-width: 1920px;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    border-top: 1px solid $gray-ft7B;
-    border-bottom: 1px solid $gray-ft7B;
-  }
-
-  .ft-goto-menu {
-    display: flex;
-    // border-bottom: 1px solid $gray-ft7B;
-    span {
-      display: block;
-      color: $white;
-      text-align: center;
-      width: 176px;
-      height: 42px;
-      @include icon-down;
-      padding-top: 10px;
-    }
-  }
-
-  .ft-gotosns {
-    border-left: 1px solid $gray-ft7B;
-  }
-  .ft-gotosite {
-    border-right: 1px solid $gray-ft7B;
-  }
-  //   ft-info
-  .ft-info-wrap {
-    display: flex;
-    padding-left: 20px;
-    padding-top: 90px;
-    gap: 20px;
-  }
-
-  .ft-logo {
-    text-indent: -9999px;
-    width: 184px;
-    height: 44px;
-    background-image: url(../../images/comm/m_logo_gray.png);
-    background-size: cover;
-  }
-
-  .ft-info-wrap {
-    display: flex;
-    align-items: center;
-  }
-
-  .ft-goto-wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .ft-gotolist {
-    width: 100%;
-    height: 166px;
-    bottom: 42px;
-    ul {
-      padding-top: 0;
-    }
-  }
 }

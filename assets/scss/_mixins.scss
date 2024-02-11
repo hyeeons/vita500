@@ -204,6 +204,13 @@
   }
 }
 
+@mixin icon-bar {
+  content: "\f068";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  transform: rotate(90deg);
+  display: inline-block;
+}
 @mixin prod-box {
   width: 195px;
   height: 265px;

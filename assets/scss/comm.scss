@@ -9,7 +9,7 @@
 
 // body {
 //   background: url(../../PC_웹페이지1920_메인.png);
-// }
+//
 
 * {
   font-family: "Pretendard", "pretendard-regular";
@@ -45,10 +45,6 @@
   .vita-vdo {
     height: $vitavdoH;
   }
-}
-
-#footer {
-  height: 233px;
 }
 
 // PC
@@ -266,19 +262,8 @@
 }
 
 // footer - mobile
-.ft-wrap-pc {
-  display: none;
-}
 
 // footer- pc
-@media screen and (min-width: $breakpoint-xl) {
-  .ft-wrap-mobile {
-    display: none;
-  }
-  .ft-wrap-pc {
-    display: block;
-  }
-}
 
 // pagination - mobile
 .swiper-pg-pc {
