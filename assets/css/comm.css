@@ -1567,21 +1567,23 @@ legend {
 }
 .ft-wrap .goto-list-sns {
   left: 0;
+  border-right: 1px solid #7b7b7b;
 }
 .ft-wrap .goto-list-family {
   right: 0;
+  border-left: 1px solid #7b7b7b;
 }
-.ft-wrap .goto-site-box {
+.ft-wrap .goto-container .goto-site-box .goto-site {
   cursor: pointer;
 }
-.ft-wrap .goto-site-box.active .goto-list {
+.ft-wrap .goto-container .goto-site-box .goto-site.active {
   transition: all 0.3s ease;
   background: #fcfcfc;
 }
-.ft-wrap .goto-site-box.active .goto-list span {
+.ft-wrap .goto-container .goto-site-box .goto-site.active span {
   color: #212126;
 }
-.ft-wrap .goto-site-box.active .goto-list span::after {
+.ft-wrap .goto-container .goto-site-box .goto-site.active span::after {
   content: "\f139";
   font-family: "Line Awesome Free";
   font-weight: 900;

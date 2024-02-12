@@ -66,6 +66,12 @@ $(document).ready(function () {
     ftSns.toggleClass("active");
   });
 
+  const ftFamily = $(".goto-family");
+  const ftFamilyList = $(".goto-list-family");
+  ftFamily.click(function () {
+    ftFamilyList.slideToggle();
+    ftFamily.toggleClass("active");
+  });
   //   const ftSns = $(".ft-gotosns-wrap");
   //   const ftSnsList = $(".gotolist-sns");
   //   ftSns.click(function () {

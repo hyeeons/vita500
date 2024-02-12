@@ -1036,25 +1036,44 @@
 
   .goto-list-sns {
     left: 0;
+    border-right: 1px solid $gray-ft7B;
   }
 
   .goto-list-family {
     right: 0;
+    border-left: 1px solid $gray-ft7B;
   }
 
-  .goto-site-box {
-    cursor: pointer;
-    &.active {
-      .goto-list {
-        transition: all 0.3s ease;
-        background: $white-bgcFC;
-        span {
-          color: $txtDefult;
-          @include icon-up;
+  // 바로가기사이트 활성화
+  .goto-container {
+    .goto-site-box {
+      .goto-site {
+        cursor: pointer;
+        &.active {
+          transition: all 0.3s ease;
+          background: $white-bgcFC;
+          span {
+            color: $txtDefult;
+            @include icon-up;
+          }
         }
       }
     }
   }
+
+  //   .goto-site-box {
+  //     cursor: pointer;
+  //     &.active {
+  //       .goto-site {
+  //         transition: all 0.3s ease;
+  //         background: $white-bgcFC;
+  //         span {
+  //           color: $txtDefult;
+  //           @include icon-up;
+  //         }
+  //       }
+  //     }
+  //   }
 }
 // footer- pc
 @media screen and (min-width: $breakpoint-xl) {
