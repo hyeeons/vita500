@@ -927,7 +927,6 @@
   height: 100%;
   color: $gray-ft7B;
   @include ft-bdsz14;
-  padding: 0 14px 14px 14px;
 
   .goto-container {
     height: 44px;
@@ -935,6 +934,10 @@
       display: flex;
       .goto-site {
         width: 50%;
+        border-bottom: 1px solid $gray-ft7B;
+        &:first-child {
+          border-right: 1px solid $gray-ft7B;
+        }
         span {
           color: $white;
           display: block;
@@ -952,11 +955,13 @@
     display: none;
   }
 
-  .pc-menu {
+  .pc-menu-wrap {
     display: none;
   }
 
   .ft-info {
+    padding: 0 14px 14px 14px;
+
     .ft-logo {
       text-indent: -9999px;
       width: 173px;
@@ -1001,4 +1006,89 @@
 }
 // footer- pc
 @media screen and (min-width: $breakpoint-xl) {
+  .ft-wrap {
+    .goto-box-pc {
+      display: block;
+    }
+    .ft-info {
+      .goto-box-mb {
+        display: none;
+      }
+    }
+    .pc-menu-wrap {
+      display: block;
+      height: 171px;
+      padding: 37px 250px 28px;
+    }
+    .pc-menu {
+      margin-bottom: 30px;
+      height: 15px;
+
+      span {
+        float: left;
+        color: $red-4023;
+        margin-right: 63px;
+      }
+      .menu-box {
+        display: block;
+        width: 110%;
+        height: 50px;
+        padding-left: 110px;
+        a {
+          display: block;
+          padding-right: 10px;
+          float: left;
+          width: 125px;
+          color: $white;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .goto-container {
+      padding: 0 10%;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      justify-content: space-between;
+      border-top: 1px solid $gray-ft7B;
+      border-bottom: 1px solid $gray-ft7B;
+      .goto-box-pc {
+        padding-left: 20%;
+        position: relative;
+        a {
+          padding-right: 46px;
+          &:nth-child(2) {
+            &::before {
+              position: absolute;
+              @include icon-bar;
+              left: 54%;
+              top: 8%;
+            }
+            &::after {
+              position: absolute;
+              @include icon-bar;
+              right: 18%;
+              top: 8%;
+            }
+          }
+        }
+      }
+      .goto-site-box {
+        .goto-site {
+          width: 176px;
+        }
+        .goto-sns {
+          border-left: 1px solid $gray-ft7B;
+        }
+        .goto-family {
+          border-right: 1px solid $gray-ft7B;
+        }
+      }
+    }
+  }
+  .ft-info {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+  }
 }
