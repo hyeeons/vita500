@@ -1537,6 +1537,59 @@ legend {
 .ft-wrap .ft-info .goto-box-mb a:nth-child(3) {
   padding: 0 22px 0 6px;
 }
+.ft-wrap .goto-site-box {
+  position: relative;
+}
+.ft-wrap .goto-list {
+  display: none;
+  color: #7b7b7b;
+  position: absolute;
+  background: #fcfcfc;
+  width: 50%;
+  height: 210px;
+  z-index: 1000;
+  bottom: 50px;
+}
+.ft-wrap .goto-list ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  align-items: center;
+}
+.ft-wrap .goto-list ul li {
+  padding-top: 13px;
+}
+.ft-wrap .goto-list a {
+  display: block;
+  width: 100%;
+  color: #212126;
+  padding: 3px 0;
+}
+.ft-wrap .goto-list-sns {
+  left: 0;
+}
+.ft-wrap .goto-list-family {
+  right: 0;
+}
+.ft-wrap .goto-site-box {
+  cursor: pointer;
+}
+.ft-wrap .goto-site-box.active .goto-list {
+  transition: all 0.3s ease;
+  background: #fcfcfc;
+}
+.ft-wrap .goto-site-box.active .goto-list span {
+  color: #212126;
+}
+.ft-wrap .goto-site-box.active .goto-list span::after {
+  content: "\f139";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 18px;
+  vertical-align: middle;
+  color: #212126;
+  margin-left: 10px;
+}
 
 @media screen and (min-width: 1280px) {
   .ft-wrap .goto-box-pc {
@@ -1571,7 +1624,7 @@ legend {
     float: left;
     width: 125px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .ft-wrap .goto-container {
     padding: 0 10%;

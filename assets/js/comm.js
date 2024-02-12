@@ -59,23 +59,30 @@ AOS.init({ duration: 1000, easing: "ease-in-out", once: true, dealy: 0 });
 
 $(document).ready(function () {
   // footer
-  const ftSns = $(".ft-gotosns-wrap");
-  const ftSnsList = $(".gotolist-sns");
+  const ftSns = $(".goto-sns");
+  const ftSnsList = $(".goto-list-sns");
   ftSns.click(function () {
     ftSnsList.slideToggle();
     ftSns.toggleClass("active");
   });
-  const ftSite = $(".ft-gotosite-wrap");
-  const ftSiteList = $(".gotolist-family");
-  ftSite.click(function () {
-    ftSiteList.slideToggle();
-    ftSite.toggleClass("active");
-  });
 
-  const btnGoto = $(".goto-wrap");
-  btnGoto.click(function () {
-    $(this).toggleClass("orange");
-  });
+  //   const ftSns = $(".ft-gotosns-wrap");
+  //   const ftSnsList = $(".gotolist-sns");
+  //   ftSns.click(function () {
+  //     ftSnsList.slideToggle();
+  //     ftSns.toggleClass("active");
+  //   });
+  //   const ftSite = $(".ft-gotosite-wrap");
+  //   const ftSiteList = $(".gotolist-family");
+  //   ftSite.click(function () {
+  //     ftSiteList.slideToggle();
+  //     ftSite.toggleClass("active");
+  //   });
+
+  //   const btnGoto = $(".goto-wrap");
+  //   btnGoto.click(function () {
+  //     $(this).toggleClass("orange");
+  //   });
 
   $("a").attr("href", "javascript:void(0)");
 

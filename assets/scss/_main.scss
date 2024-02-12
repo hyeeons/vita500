@@ -1003,6 +1003,58 @@
       }
     }
   }
+  // footer-바로가기사이트
+  .goto-site-box {
+    position: relative;
+  }
+  .goto-list {
+    display: none;
+    color: $gray-ft7B;
+    position: absolute;
+    background: $white-bgcFC;
+    width: 50%;
+    height: 210px;
+    z-index: 1000;
+    bottom: 50px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 8px;
+      align-items: center;
+
+      li {
+        padding-top: 13px;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      color: $txtDefult;
+      padding: 3px 0;
+    }
+  }
+
+  .goto-list-sns {
+    left: 0;
+  }
+
+  .goto-list-family {
+    right: 0;
+  }
+
+  .goto-site-box {
+    cursor: pointer;
+    &.active {
+      .goto-list {
+        transition: all 0.3s ease;
+        background: $white-bgcFC;
+        span {
+          color: $txtDefult;
+          @include icon-up;
+        }
+      }
+    }
+  }
 }
 // footer- pc
 @media screen and (min-width: $breakpoint-xl) {
@@ -1040,7 +1092,7 @@
           float: left;
           width: 125px;
           color: $white;
-          margin-bottom: 20px;
+          margin-bottom: 18px;
         }
       }
     }
