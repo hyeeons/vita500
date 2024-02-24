@@ -234,6 +234,7 @@
   border-radius: 5px;
   border: 1px solid $gray-ft7B;
   box-shadow: 1px 1px 1px 0px $gray-ft7B;
+  transition: all 0.3s ease;
 }
 
 @mixin ft-goto-line {

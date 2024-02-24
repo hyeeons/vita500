@@ -21,6 +21,10 @@ var swiper = new Swiper(".swiper-prod", {
   loop: true,
   autoplay: { delay: 2500, disableOnInteraction: true },
   breakpoints: {
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -99,6 +103,12 @@ $(document).ready(function () {
       navDepth2.removeClass("hover");
     });
   });
+  //goto버튼활성
+
+  const gotobtn = $(".goto");
+  gotobtn.click(function () {
+    gotobtn.toggleClass("active");
+  });
 });
 
 // gsap
@@ -141,6 +151,7 @@ $(document).ready(function () {
     }
   }
 });
+
 //   //header-mobile
 //   const mbDepth1 = $(".nav-list-depth1");
 //   const mbDepth2 = $(".nav-list-depth2");
