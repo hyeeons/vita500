@@ -133,7 +133,7 @@
 }
 
 // header - pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   #header {
     position: fixed;
     top: 0;
@@ -262,7 +262,7 @@
 }
 
 // slide - pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .u-skip {
     margin-top: -24px;
   }
@@ -305,7 +305,7 @@
   display: none;
 }
 // video - PC버전
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .video {
     // background: $white;
     background: url(../../images/main/video/main_video_pc_md.png) 50% no-repeat;
@@ -389,7 +389,7 @@
 }
 
 // vita500 - pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-intro {
     display: flex;
     flex-direction: column;
@@ -478,7 +478,7 @@
 }
 
 // vita500 zero - PC버전
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-zero {
     position: relative;
     padding: 150px 9% 0;
@@ -571,7 +571,7 @@
 }
 
 // vita500 - reh - PC
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-reh {
     padding-top: 110px;
   }
@@ -692,7 +692,7 @@
 }
 
 // section-history - PC
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-hist {
     padding: 70px 0;
     width: 1280px;
@@ -816,7 +816,7 @@
 }
 
 // section-prod - PC
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .bg-prod {
     width: 1280px;
     margin: 0 auto;
@@ -897,7 +897,7 @@
 }
 
 // sec-video - PC
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .bg-vdo {
     width: 1280px;
     margin: 0 auto;
@@ -1076,7 +1076,7 @@
   //   }
 }
 // footer- pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .ft-wrap {
     .goto-box-pc {
       display: block;

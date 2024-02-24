@@ -49,7 +49,7 @@
 
 // PC
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .wrap {
     min-height: 100vh;
     max-width: 1920px;
@@ -141,7 +141,7 @@
 }
 
 // section-vita-wrap 공통 - PC
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-wrap {
     .sec-titbox {
       align-items: flex-start;
@@ -214,7 +214,7 @@
 
 // section-prod & video 공통 - PC
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .vita-prod,
   .vita-vdo {
     .sec-titbox {
@@ -243,7 +243,7 @@
 }
 
 // goto-pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .goto-wrap-mobile {
     display: none;
   }
@@ -271,7 +271,7 @@
 }
 
 //pagination - pc
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .swiper-pg-pc {
     display: block;
   }
@@ -282,7 +282,7 @@
   --swiper-theme-color: rgba(255, 204, 95, 1);
 }
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) {
   .swiper {
     --swiper-theme-color: rgba(116, 116, 116, 0.8);
   }

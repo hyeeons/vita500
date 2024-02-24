@@ -144,7 +144,7 @@ body {
 }
 
 /* desktop */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $breakpoint-lg) {
   body {
     font-size: 16px;
   }
