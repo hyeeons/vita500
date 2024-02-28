@@ -294,7 +294,7 @@
 .goto {
   &.active {
     background: $orange-goto;
-    border: none;
+    border: 1px solid;
     a {
       color: $white;
     }
