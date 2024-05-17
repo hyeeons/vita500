@@ -107,7 +107,7 @@ $(document).ready(function () {
 
   const gotobtn = $(".goto");
   gotobtn.click(function () {
-    gotobtn.toggleClass("active");
+    $(this).toggleClass("active");
   });
 });
 
