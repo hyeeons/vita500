@@ -1,922 +1,719 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>광동제약 비타500ㅣ메인페이지</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="광동제약 비타500" />
-    <meta
-      property="og:description"
-      content="광동제약의 비타500을 소개하는 홈페이지입니다."
-    />
-    <meta
-      property="og:image"
-      content="http://www.mysite.com/article/article1_featured_image.jpg"
-    />
-    <meta
-      property="og:url"
-      content="http://www.mysite.com/article/article1.html"
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="페이지 제목" />
-    <meta name="twitter:description" content="페이지 설명" />
-    <meta
-      name="twitter:image"
-      content="http://www.mysite.com/article/article1.html"
-    />
-    <meta name="twitter:domain" content="사이트 명" />
-    <link rel="icon" href="./favicon.png" />
-    <!-- 스와이퍼 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- 프리텐다드 -->
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-    />
-    <!-- 구글머터리얼아이콘 -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <!-- 라인어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
 
-    <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- 폰트어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/comm.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>광동제약 비타500ㅣ메인페이지</title>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="광동제약 비타500" />
+	<meta property="og:description" content="광동제약의 비타500을 소개하는 홈페이지입니다." />
+	<meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+	<meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="페이지 제목" />
+	<meta name="twitter:description" content="페이지 설명" />
+	<meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+	<meta name="twitter:domain" content="사이트 명" />
+	<link rel="icon" href="./favicon.png" />
+	<!-- 스와이퍼 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- 프리텐다드 -->
+	<link rel="stylesheet" as="style" crossorigin
+		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+	<!-- 구글머터리얼아이콘 -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<!-- 라인어썸 -->
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
 
-    <!-- 스와이퍼 -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-    <!-- aos -->
-    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- 제이쿼리 -->
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- 폰트어썸 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+	<link rel="stylesheet" href="./assets/css/comm.css" />
 
-    <!-- lodash -->
-    <script
-      defer
-      src="
+	<!-- 스와이퍼 -->
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- aos -->
+	<script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<!-- 제이쿼리 -->
+	<script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<!-- lodash -->
+	<script defer src="
 	https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
-	"
-    ></script>
-    <!-- gsap 스크롤트리거 -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
-    ></script>
-    <!-- gsap -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
-    ></script>
-    <!-- 폰트어썸 -->
-    <script src="https://kit.fontawesome.com/4db3bd4ed7.js"></script>
-    <script defer src="./assets/js/comm.js"></script>
-  </head>
-  <body>
-    <div class="u-skip">
-      <a href="#gnb">주메뉴 바로가기</a>
-      <a href="#main">본문 바로가기</a>
-    </div>
-    <div class="wrap">
-      <div class="gnb-pc-bg">
-        <img src="./images/main/product/p_vita500.png" alt="" />
-      </div>
-      <header id="header">
-        <div class="inner">
-          <h1 id="logo">
-            <a href="#">광동제약 로고</a>
-          </h1>
-          <nav id="gnb">
-            <div class="gnb-wrap">
-              <input
-                type="checkbox"
-                name="gnbNav"
-                id="gnbNav"
-                class="inp-burger"
-              />
-              <label for="gnbNav" class="label-burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <div class="blind">전체메뉴 보기</div>
-              </label>
-              <div class="blind">전체 메뉴</div>
+	"></script>
+	<!-- gsap 스크롤트리거 -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+	<!-- gsap -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+	<!-- 폰트어썸 -->
+	<script src="https://kit.fontawesome.com/4db3bd4ed7.js"></script>
+	<script defer src="./assets/js/comm.js"></script>
+</head>
 
-              <div class="gnb-mobile">
-                <ul class="nav-list">
-                  <li class="nav-list-depth1">
-                    <a href="#">광동제약</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">회사소개</a></li>
-                      <li><a href="#">CEO소개</a></li>
-                      <li><a href="#">회사연혁</a></li>
-                      <li><a href="#">오시는길</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">제품소개</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">비타500</a></li>
-                      <li><a href="#">비타500제로</a></li>
-                      <li><a href="#">캔류</a></li>
-                      <li><a href="#">젤리류</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">홍보자료</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">영상광고</a></li>
-                      <li><a href="#">포스터광고</a></li>
-                      <li><a href="#">라디오광고</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">보도자료</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">공지사항</a></li>
-                      <li><a href="#">보도자료</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">고객센터</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">고객센터</a></li>
-                      <li><a href="#">고객의 소리</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+<body>
+	<div class="u-skip">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#main">본문 바로가기</a>
+	</div>
+	<div class="wrap">
+		<div class="gnb-pc-bg">
+			<img src="./images/main/product/p_vita500.png" alt="" />
+		</div>
+		<header id="header">
+			<div class="inner">
+				<h1 id="logo">
+					<a href="#">광동제약 로고</a>
+				</h1>
+				<nav id="gnb">
+					<div class="gnb-wrap">
+						<input type="checkbox" name="gnbNav" id="gnbNav" class="inp-burger" />
+						<label for="gnbNav" class="label-burger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<div class="blind">전체메뉴 보기</div>
+						</label>
+						<div class="blind">전체 메뉴</div>
 
-              <div class="gnb-pc">
-                <ul class="nav-list">
-                  <li class="nav-list-depth1">
-                    <a href="#">광동제약</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">회사소개</a></li>
-                      <li><a href="#">CEO소개</a></li>
-                      <li><a href="#">회사연혁</a></li>
-                      <li><a href="#">오시는길</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">제품소개</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">비타500</a></li>
-                      <li><a href="#">비타500제로</a></li>
-                      <li><a href="#">캔류</a></li>
-                      <li><a href="#">젤리류</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">홍보자료</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">영상광고</a></li>
-                      <li><a href="#">포스터광고</a></li>
-                      <li><a href="#">라디오광고</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">보도자료</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">공지사항</a></li>
-                      <li><a href="#">보도자료</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-list-depth1">
-                    <a href="#">고객센터</a>
-                    <ul class="nav-list-depth2">
-                      <li><a href="#">고객센터</a></li>
-                      <li><a href="#">고객의 소리</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+						<div class="gnb-mobile">
+							<ul class="nav-list">
+								<li class="nav-list-depth1">
+									<a href="#">광동제약</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">회사소개</a></li>
+										<li><a href="#">CEO소개</a></li>
+										<li><a href="#">회사연혁</a></li>
+										<li><a href="#">오시는길</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">제품소개</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">비타500</a></li>
+										<li><a href="#">비타500제로</a></li>
+										<li><a href="#">캔류</a></li>
+										<li><a href="#">젤리류</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">홍보자료</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">영상광고</a></li>
+										<li><a href="#">포스터광고</a></li>
+										<li><a href="#">라디오광고</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">보도자료</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">보도자료</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">고객센터</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">고객센터</a></li>
+										<li><a href="#">고객의 소리</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 
-      <!-- slid-bnr -->
-      <!-- Swiper -->
-      <div class="swiper swiper-bnr">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a class="bnr-img-box" href="#"
-              ><img
-                class="bnr-mobile"
-                src="./images/main/banner/mobile_banner_1_add.png"
-                alt="제로에 비타민C 가드득 칼로리zero, 당류zero, 비타500zero" />
-              <img
-                class="bnr-pc"
-                src="./images/main/banner/pc_banner_add.png"
-                alt="제로에 비타민C 가드득 칼로리zero, 당류zero, 비타500zero"
-            /></a>
-          </div>
-          <div class="swiper-slide">
-            <a class="bnr-img-box" href="#">
-              <img
-                class="bnr-mobile"
-                src="./images/main/banner/mobile_banner_2_add.png"
-                alt="오늘도
-              고생한 나를 위해 하루 한 포 충전타임 비타500 데일리스틱 30포"
-              />
-              <img
-                class="bnr-pc"
-                src="./images/main/banner/pc_banner_2.png"
-                alt="에너지 up 활력up 하루 한 포, 건강 에너지 충전 비타500데일리스틱으로 매일 항산화 비타민C 500mg 충전"
-              />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a class="bnr-img-box" href="#">
-              <img
-                class="bnr-mobile"
-                src="./images/main/banner/mobile_banner_3.png"
-                alt="내몸에 옳타! 카페인 대신 비타! 나를 위한 건강한 비타민C"
-              />
-              <img
-                class="bnr-pc"
-                src="./images/main/banner/pc_banner_3.png"
-                alt="나를 위한 건강한 비타민C 비타500"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+						<div class="gnb-pc">
+							<ul class="nav-list">
+								<li class="nav-list-depth1">
+									<a href="#">광동제약</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">회사소개</a></li>
+										<li><a href="#">CEO소개</a></li>
+										<li><a href="#">회사연혁</a></li>
+										<li><a href="#">오시는길</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">제품소개</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">비타500</a></li>
+										<li><a href="#">비타500제로</a></li>
+										<li><a href="#">캔류</a></li>
+										<li><a href="#">젤리류</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">홍보자료</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">영상광고</a></li>
+										<li><a href="#">포스터광고</a></li>
+										<li><a href="#">라디오광고</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">보도자료</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">보도자료</a></li>
+									</ul>
+								</li>
+								<li class="nav-list-depth1">
+									<a href="#">고객센터</a>
+									<ul class="nav-list-depth2">
+										<li><a href="#">고객센터</a></li>
+										<li><a href="#">고객의 소리</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-      <!-- video -->
-      <div class="video">
-        <div class="flower flower-first"></div>
-        <div class="flower flower-second"></div>
-        <div class="flower flower-third"></div>
-        <div class="flower flower-fourth"></div>
-        <div class="video-wraper">
-          <iframe
-            width="726"
-            height="409"
-            src="https://www.youtube.com/embed/HJ5yXx_HpHI"
-            title="[비타500 ZERO &amp; 르세라핌] 비타민C 가드득 피었습니다 (15초)"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+		<!-- slid-bnr -->
+		<!-- Swiper -->
+		<div class="swiper swiper-bnr">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a class="bnr-img-box" href="#"><img class="bnr-mobile"
+							src="./images/main/banner/mobile_banner_1_add.png"
+							alt="제로에 비타민C 가드득 칼로리zero, 당류zero, 비타500zero" />
+						<img class="bnr-pc" src="./images/main/banner/pc_banner_add.png"
+							alt="제로에 비타민C 가드득 칼로리zero, 당류zero, 비타500zero" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a class="bnr-img-box" href="#">
+						<img class="bnr-mobile" src="./images/main/banner/mobile_banner_2_add.png" alt="오늘도
+              고생한 나를 위해 하루 한 포 충전타임 비타500 데일리스틱 30포" />
+						<img class="bnr-pc" src="./images/main/banner/pc_banner_2.png"
+							alt="에너지 up 활력up 하루 한 포, 건강 에너지 충전 비타500데일리스틱으로 매일 항산화 비타민C 500mg 충전" />
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a class="bnr-img-box" href="#">
+						<img class="bnr-mobile" src="./images/main/banner/mobile_banner_3.png"
+							alt="내몸에 옳타! 카페인 대신 비타! 나를 위한 건강한 비타민C" />
+						<img class="bnr-pc" src="./images/main/banner/pc_banner_3.png" alt="나를 위한 건강한 비타민C 비타500" />
+					</a>
+				</div>
+			</div>
+		</div>
 
-      <main id="main">
-        <!-- vita500 -->
-        <div
-          class="bg-vita"
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-delay="300"
-        >
-          <div class="vita-intro" data-aos="fade-up">
-            <em>건강하게 마시는 비타민C</em>
-            <h2>비타500을 소개합니다.</h2>
-          </div>
-          <section class="vita-mp">
-            <div class="vita-wrap vita-wrap-mp">
-              <div class="sec-titbox sec-titbox-mp" data-aos="fade-up">
-                <em class="sec-subtit-bk"
-                  >건강하게 마시는 비타민C 건강드링크</em
-                >
-                <h2 class="sec-tit1">광동제약 비타500</h2>
-                <em class="sec-subtit2"
-                  >100년을 건강하게 지켜줄 수 있는 건강 드링크</em
-                >
-              </div>
-              <div class="sec-img sec-img-mp">
-                <img
-                  src="./images/main/product/p_vita500_m.png"
-                  alt="비타500"
-                  data-aos="fade-up"
-                  data-aos-delay="700"
-                />
-              </div>
-              <div class="sec-text sec-text-mp">
-                <ul>
-                  <li data-aos="fade-up" data-aos-delay="600">
-                    <span>남녀노소부터 임산부까지</span>
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="800"
-                  >
-                    <span>비타민C 500mg을 온전하게</span>
-                  </li>
-                  <li data-aos="fade-up" data-aos-delay="1000">
-                    <span>안전하고 맛있는 건강한 비타민C</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="goto-wrap goto-wrap-pc">
-                <div class="goto" data-aos="fade-right" data-aos-delay="1200">
-                  <a href="#">자세히 보기</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- vita500-zero -->
-          <section class="vita-zero">
-            <div class="vita-wrap vita-wrap-zero">
-              <div
-                class="sec-titbox sec-titbox-zero"
-                data-aos="fade-up"
-                data-aos-offset="300"
-              >
-                <em class="sec-subtit-bk"
-                  >제로와 함께 더 건강하게 챙기는 비타민C</em
-                >
-                <em class="sec-subtit-bk subtit-pc"
-                  >건강한 비타민C를 가득 채운</em
-                >
+		<!-- video -->
+		<div class="video">
+			<div class="flower flower-first"></div>
+			<div class="flower flower-second"></div>
+			<div class="flower flower-third"></div>
+			<div class="flower flower-fourth"></div>
+			<div class="video-wraper">
+				<iframe width="726" height="409" src="https://www.youtube.com/embed/HJ5yXx_HpHI"
+					title="[비타500 ZERO &amp; 르세라핌] 비타민C 가드득 피었습니다 (15초)" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div>
 
-                <h2 class="sec-tit1">비타500 ZERO</h2>
-                <em class="sec-subtit2"
-                  >제로와 함께 더 건강하게 챙기는 비타민C</em
-                >
-              </div>
-              <div class="sec-img sec-img-zero">
-                <img
-                  src="./images/main/product/p_vita500zero_m.png"
-                  alt="비타500 제로"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-delay="300"
-                />
-              </div>
-              <div class="sec-text sec-text-zero">
-                <ul>
-                  <li data-aos="fade-up" data-aos-delay="600">
-                    <span>칼로리 제로! 당류 제로!</span>
-                  </li>
-                  <li data-aos="fade-up" data-aos-delay="800">
-                    <span>제로에 비타민C 500mg 가득!</span>
-                  </li>
-                  <li data-aos="fade-up" data-aos-delay="1000">
-                    <span>다른 제로들과 차원이 다른 비타500 제로!</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="goto-wrap goto-wrap-pc">
-                <div class="goto" data-aos="fade-left" data-aos-delay="1200">
-                  <a href="#">자세히 보기</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- vita500 reh -->
-          <section class="vita-reh">
-            <div
-              class="sec-titbox sec-titbox-reh"
-              data-aos="fade-up"
-              data-aos-offset="300"
-            >
-              <h2 class="sec-tit2 sec-tit2-mobile">
-                비타민C는 <br />
-                액상으로 섭취할 때 <br />빠른 흡수가 가능합니다.
-              </h2>
-              <h2 class="sec-tit2 sec-tit2-pc">
-                비타민C는 액상으로 섭취할 때 <br />빠른 흡수가 가능합니다.
-              </h2>
-            </div>
-            <div class="sec-img sec-img-reh">
-              <img
-                src="./images/main/product/p_vitareh_m.png"
-                alt="마시는 비타민C 비타500"
-                data-aos="fade-up"
-                data-aos-offset="300"
-              />
-            </div>
-            <div
-              class="text-reh text-reh-mobile"
-              data-aos="fade-up"
-              data-aos-offset="300"
-            >
-              <ul>
-                <li>"여러가지 제형(액상, 캡슐, 정제)의</li>
-                <li>비타민C 흡수율을 확인한 인체적용시험 결과,</li>
-                <li>
-                  액상제형에서 비타민C가 더 잘 흡수된다는 것을 확인하였습니다."
-                </li>
-              </ul>
-            </div>
-            <div class="text-reh text-reh-pc" data-aos="fade-up">
-              <ul>
-                <li>
-                  "여러가지 제형(액상, 캡슐, 정제)의 비타민C 흡수율을 확인한
-                  인체적용시험 결과,
-                </li>
-                <li>
-                  액상제형에서 비타민C가 더 잘 흡수된다는 것을 확인하였습니다."
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
+		<main id="main">
+			<!-- vita500 -->
+			<div class="bg-vita" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
+				<div class="vita-intro" data-aos="fade-up">
+					<em>건강하게 마시는 비타민C</em>
+					<h2>비타500을 소개합니다.</h2>
+				</div>
+				<section class="vita-mp">
+					<div class="vita-wrap vita-wrap-mp">
+						<div class="sec-titbox sec-titbox-mp" data-aos="fade-up">
+							<em class="sec-subtit-bk">건강하게 마시는 비타민C 건강드링크</em>
+							<h2 class="sec-tit1">광동제약 비타500</h2>
+							<em class="sec-subtit2">100년을 건강하게 지켜줄 수 있는 건강 드링크</em>
+						</div>
+						<div class="sec-img sec-img-mp">
+							<img src="./images/main/product/p_vita500_m.png" alt="비타500" data-aos="fade-up"
+								data-aos-delay="700" />
+						</div>
+						<div class="sec-text sec-text-mp">
+							<ul>
+								<li data-aos="fade-up" data-aos-delay="600">
+									<span>남녀노소부터 임산부까지</span>
+								</li>
+								<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+									<span>비타민C 500mg을 온전하게</span>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="1000">
+									<span>안전하고 맛있는 건강한 비타민C</span>
+								</li>
+							</ul>
+						</div>
+						<div class="goto-wrap goto-wrap-pc">
+							<div class="goto" data-aos="fade-right" data-aos-delay="1200">
+								<a href="#">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- vita500-zero -->
+				<section class="vita-zero">
+					<div class="vita-wrap vita-wrap-zero">
+						<div class="sec-titbox sec-titbox-zero" data-aos="fade-up" data-aos-offset="300">
+							<em class="sec-subtit-bk">제로와 함께 더 건강하게 챙기는 비타민C</em>
+							<em class="sec-subtit-bk subtit-pc">건강한 비타민C를 가득 채운</em>
 
-        <!-- section-history -->
-        <section class="vita-hist">
-          <div class="bg-hist">
-            <div class="his-titbox" data-aos="fade-up">
-              <em class="sec-subtit-bk">20년간 꾸준히 사랑받고 있는</em>
-              <h2 class="sec-tit2 sec-tit2-mobile">광동제약의</h2>
-              <h2 class="sec-tit2">비타500이 걸어온 길</h2>
-            </div>
-            <div class="hist-container">
-              <div class="hist-img" data-aos="fade-right" data-aos-delay="300">
-                <img
-                  src="./images/main/history/history_all_m.png"
-                  alt="비타500의 다양한 제품들"
-                />
-              </div>
-              <!-- swiper -->
-              <div
-                class="hiscard-wrap"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <div class="swiper swiper-history">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="hiscard">
-                        <span class="hiscard-year">2022</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2022.png"
-                            alt="비타500온에어"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>국민브랜드 비타500</span>
-                          <span>온 국민 온에어 캠페인</span>
-                        </div>
-                      </div>
-                      <!-- 2021 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2021</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2021.png"
-                            alt="제니의 비타민c"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>비타500 20주년</span>
-                          <span>새로 시작하는 힘 비타500 CF 공개</span>
-                        </div>
-                      </div>
-                      <!-- 2020 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2020</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2020.png"
-                            alt="펭수와 함께 하는 나를 위한 건강한 비타민c"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>나를 위한 건강한 비타민C</span>
-                          <span>비타500 광고 캠페인</span>
-                        </div>
-                      </div>
-                      <!-- 2019 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2019</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2019.png"
-                            alt="비타500 광고"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>프리미엄 비타500 로열폴리스 출시</span>
-                          <span>비타500 스파클링 출시</span>
-                          <span>따자마자 젊음충전 경품 대축제 이벤트</span>
-                          <span>비타500 X 스파이더맨</span>
-                          <span>제 18회 고3응원이벤트 - 부산 성일여고</span>
-                        </div>
-                      </div>
-                      <!-- 2018-->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2018</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2018.png"
-                            alt="워너원 비타500광고"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>비타500 따자마자 이벤트</span>
-                          <span>비타500 X 워너원 청춘파티</span>
-                          <span>제 17회 고3응원이벤트 - 광주 설월고</span>
-                        </div>
-                      </div>
-                      <!-- 2017 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2017</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2017.png"
-                            alt="비타500젤리"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>비타500 젤리 출시</span>
-                          <span>비타500 청춘카페 오픈</span>
-                          <span>제16회 고3응원이벤트 - 대구 도원고교</span>
-                        </div>
-                      </div>
-                      <!-- 2016 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2016</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2016.png"
-                            alt="수지와 함께하는 비타500"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>비타500 수지CF 기운이 뿅 활력이 쓩쓩!</span>
-                          <span>제15회 고3응원이벤트 - 경북 영천여고</span>
-                        </div>
-                      </div>
-                      <!-- 2015 -->
-                      <div class="hiscard">
-                        <span class="hiscard-year">2015</span>
-                        <span class="hiscard-img"
-                          ><img
-                            src="./images/main/history/history_2015.png"
-                            alt="수지와 함께하는 비타500"
-                        /></span>
-                        <div class="hiscard-text">
-                          <span>광동제약 비타500 신규 CF 공개</span>
-                          <span>제14회 고3응원이벤트 - 부산영도여고</span>
-                          <span>비타500 X 다음카카오 모금 캠페인 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-scrollbar"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+							<h2 class="sec-tit1">비타500 ZERO</h2>
+							<em class="sec-subtit2">제로와 함께 더 건강하게 챙기는 비타민C</em>
+						</div>
+						<div class="sec-img sec-img-zero">
+							<img src="./images/main/product/p_vita500zero_m.png" alt="비타500 제로" data-aos="fade-up"
+								data-aos-offset="300" data-aos-delay="300" />
+						</div>
+						<div class="sec-text sec-text-zero">
+							<ul>
+								<li data-aos="fade-up" data-aos-delay="600">
+									<span>칼로리 제로! 당류 제로!</span>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="800">
+									<span>제로에 비타민C 500mg 가득!</span>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="1000">
+									<span>다른 제로들과 차원이 다른 비타500 제로!</span>
+								</li>
+							</ul>
+						</div>
+						<div class="goto-wrap goto-wrap-pc">
+							<div class="goto" data-aos="fade-left" data-aos-delay="1200">
+								<a href="#">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- vita500 reh -->
+				<section class="vita-reh">
+					<div class="sec-titbox sec-titbox-reh" data-aos="fade-up" data-aos-offset="300">
+						<h2 class="sec-tit2 sec-tit2-mobile">
+							비타민C는 <br />
+							액상으로 섭취할 때 <br />빠른 흡수가 가능합니다.
+						</h2>
+						<h2 class="sec-tit2 sec-tit2-pc">
+							비타민C는 액상으로 섭취할 때 <br />빠른 흡수가 가능합니다.
+						</h2>
+					</div>
+					<div class="sec-img sec-img-reh">
+						<img src="./images/main/product/p_vitareh_m.png" alt="마시는 비타민C 비타500" data-aos="fade-up"
+							data-aos-offset="300" />
+					</div>
+					<div class="text-reh text-reh-mobile" data-aos="fade-up" data-aos-offset="300">
+						<ul>
+							<li>"여러가지 제형(액상, 캡슐, 정제)의</li>
+							<li>비타민C 흡수율을 확인한 인체적용시험 결과,</li>
+							<li>
+								액상제형에서 비타민C가 더 잘 흡수된다는 것을 확인하였습니다."
+							</li>
+						</ul>
+					</div>
+					<div class="text-reh text-reh-pc" data-aos="fade-up">
+						<ul>
+							<li>
+								"여러가지 제형(액상, 캡슐, 정제)의 비타민C 흡수율을 확인한
+								인체적용시험 결과,
+							</li>
+							<li>
+								액상제형에서 비타민C가 더 잘 흡수된다는 것을 확인하였습니다."
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
 
-        <!-- section - product -->
-        <section class="vita-prod">
-          <div class="bg-prod">
-            <div
-              class="sec-titbox sec-titbox-prod"
-              class="his-titbox"
-              data-aos="fade-up"
-            >
-              <h2 class="sec-tit3">다양한 비타500 제품</h2>
-              <em class="sec-subtit-gray"
-                >비타500의 다양한 제품을 만나보세요.</em
-              >
-            </div>
-            <!-- Swiper -->
-            <div class="product-wrap" class="his-titbox" data-aos="fade-up">
-              <div class="swiper swiper-prod">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_1_pc.png"
-                            alt="비타500 프레쉬"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 Fresh프레쉬</div>
-                        <div class="prod-text-info">
-                          현대인에게 필요한 비타민C부터 비타민 B2, 아연까지!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_2_pc.png"
-                            alt="비타500 부탁해 B군"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 부탁해 B군!</div>
-                        <div class="prod-text-info">
-                          일상에서 에너지가 필요하다면? 부탁해 B군!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_3_pc.png"
-                            alt="비타500 광도르방"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 광도르방</div>
-                        <div class="prod-text-info">
-                          제주 감귤을 담은 돌하르방 제주 에디션
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_5_pc.png"
-                            alt="비타500라임"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 라임</div>
-                        <div class="prod-text-info">
-                          새콤달콤 라임맛과 함께 맛있고 건강한 비타민C 충전
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_6_pc.png"
-                            alt="비타500 자몽"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 자몽</div>
-                        <div class="prod-text-info">
-                          달콤쌉싸름한 자몽맛의 새로운 비타500
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_7_pc.png"
-                            alt="비타500 콜라겐스틱젤리"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 콜라겐스틱젤리</div>
-                        <div class="prod-text-info">
-                          비타민C와 콜라겐을 한번에 맛있게!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_4_pc.png"
-                            alt="비타500 젤리"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 젤리</div>
-                        <div class="prod-text-info">
-                          새콤달콤한 젤리로 비타민C를 그대로!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="prod-box">
-                      <div class="prod-imgbox">
-                        <a href="#"
-                          ><img
-                            src="./images/main/product/product_8_pc.png"
-                            alt="비타500 로열폴리스"
-                        /></a>
-                      </div>
-                      <div class="prod-textbox">
-                        <div class="prod-text-tit">비타500 로열폴리스</div>
-                        <div class="prod-text-info">
-                          로열젤리펩타이드와 수용성프로폴리스 추출물로
-                          업그레이드된 비타500!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pg-pc">
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-              </div>
-            </div>
-            <div class="goto-wrap goto-wrap-mobile" data-aos="fade-up">
-              <div class="goto">
-                <a href="#">제품 보러가기</a>
-              </div>
-            </div>
-            <div
-              class="goto-wrap goto-wrap-pc"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="goto"><a href="#">더 많은 제품 보러가기</a></div>
-            </div>
-          </div>
-        </section>
-        <!-- section - video -->
-        <section class="vita-vdo">
-          <div class="bg-vdo">
-            <div
-              class="sec-titbox sec-titbox-vdo"
-              class="his-titbox"
-              data-aos="fade-up"
-            >
-              <h2 class="sec-tit3">영상으로 만나는 비타500</h2>
-              <em class="sec-subtit-gray">다양한 비타500 광고를 만나보세요.</em>
-            </div>
-            <!-- Swiper -->
-            <div class="sec-vdo" class="his-titbox" data-aos="fade-up">
-              <div class="swiper swiper-vdo">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_1.png"
-                        alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 15초"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_2.jpg"
-                        alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 30초"
-                    /></a>
-                  </div>
+			<!-- section-history -->
+			<section class="vita-hist">
+				<div class="bg-hist">
+					<div class="his-titbox" data-aos="fade-up">
+						<em class="sec-subtit-bk">20년간 꾸준히 사랑받고 있는</em>
+						<h2 class="sec-tit2 sec-tit2-mobile">광동제약의</h2>
+						<h2 class="sec-tit2">비타500이 걸어온 길</h2>
+					</div>
+					<div class="hist-container">
+						<div class="hist-img" data-aos="fade-right" data-aos-delay="300">
+							<img src="./images/main/history/history_all_m.png" alt="비타500의 다양한 제품들" />
+						</div>
+						<!-- swiper -->
+						<div class="hiscard-wrap" data-aos="fade-left" data-aos-delay="300">
+							<div class="swiper swiper-history">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="hiscard">
+											<span class="hiscard-year">2022</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2022.png"
+													alt="비타500온에어" /></span>
+											<div class="hiscard-text">
+												<span>국민브랜드 비타500</span>
+												<span>온 국민 온에어 캠페인</span>
+											</div>
+										</div>
+										<!-- 2021 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2021</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2021.png"
+													alt="제니의 비타민c" /></span>
+											<div class="hiscard-text">
+												<span>비타500 20주년</span>
+												<span>새로 시작하는 힘 비타500 CF 공개</span>
+											</div>
+										</div>
+										<!-- 2020 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2020</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2020.png"
+													alt="펭수와 함께 하는 나를 위한 건강한 비타민c" /></span>
+											<div class="hiscard-text">
+												<span>나를 위한 건강한 비타민C</span>
+												<span>비타500 광고 캠페인</span>
+											</div>
+										</div>
+										<!-- 2019 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2019</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2019.png"
+													alt="비타500 광고" /></span>
+											<div class="hiscard-text">
+												<span>프리미엄 비타500 로열폴리스 출시</span>
+												<span>비타500 스파클링 출시</span>
+												<span>따자마자 젊음충전 경품 대축제 이벤트</span>
+												<span>비타500 X 스파이더맨</span>
+												<span>제 18회 고3응원이벤트 - 부산 성일여고</span>
+											</div>
+										</div>
+										<!-- 2018-->
+										<div class="hiscard">
+											<span class="hiscard-year">2018</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2018.png"
+													alt="워너원 비타500광고" /></span>
+											<div class="hiscard-text">
+												<span>비타500 따자마자 이벤트</span>
+												<span>비타500 X 워너원 청춘파티</span>
+												<span>제 17회 고3응원이벤트 - 광주 설월고</span>
+											</div>
+										</div>
+										<!-- 2017 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2017</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2017.png"
+													alt="비타500젤리" /></span>
+											<div class="hiscard-text">
+												<span>비타500 젤리 출시</span>
+												<span>비타500 청춘카페 오픈</span>
+												<span>제16회 고3응원이벤트 - 대구 도원고교</span>
+											</div>
+										</div>
+										<!-- 2016 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2016</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2016.png"
+													alt="수지와 함께하는 비타500" /></span>
+											<div class="hiscard-text">
+												<span>비타500 수지CF 기운이 뿅 활력이 쓩쓩!</span>
+												<span>제15회 고3응원이벤트 - 경북 영천여고</span>
+											</div>
+										</div>
+										<!-- 2015 -->
+										<div class="hiscard">
+											<span class="hiscard-year">2015</span>
+											<span class="hiscard-img"><img src="./images/main/history/history_2015.png"
+													alt="수지와 함께하는 비타500" /></span>
+											<div class="hiscard-text">
+												<span>광동제약 비타500 신규 CF 공개</span>
+												<span>제14회 고3응원이벤트 - 부산영도여고</span>
+												<span>비타500 X 다음카카오 모금 캠페인 </span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-scrollbar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_5.jpg"
-                        alt="제니와 함께하는 비타500"
-                    /></a>
-                  </div>
+			<!-- section - product -->
+			<section class="vita-prod">
+				<div class="bg-prod">
+					<div class="sec-titbox sec-titbox-prod" class="his-titbox" data-aos="fade-up">
+						<h2 class="sec-tit3">다양한 비타500 제품</h2>
+						<em class="sec-subtit-gray">비타500의 다양한 제품을 만나보세요.</em>
+					</div>
+					<!-- Swiper -->
+					<div class="product-wrap" class="his-titbox" data-aos="fade-up">
+						<div class="swiper swiper-prod">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_1_pc.png"
+													alt="비타500 프레쉬" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 Fresh프레쉬</div>
+											<div class="prod-text-info">
+												현대인에게 필요한 비타민C부터 비타민 B2, 아연까지!
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_2_pc.png"
+													alt="비타500 부탁해 B군" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 부탁해 B군!</div>
+											<div class="prod-text-info">
+												일상에서 에너지가 필요하다면? 부탁해 B군!
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_3_pc.png"
+													alt="비타500 광도르방" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 광도르방</div>
+											<div class="prod-text-info">
+												제주 감귤을 담은 돌하르방 제주 에디션
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_5_pc.png"
+													alt="비타500라임" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 라임</div>
+											<div class="prod-text-info">
+												새콤달콤 라임맛과 함께 맛있고 건강한 비타민C 충전
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_6_pc.png"
+													alt="비타500 자몽" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 자몽</div>
+											<div class="prod-text-info">
+												달콤쌉싸름한 자몽맛의 새로운 비타500
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_7_pc.png"
+													alt="비타500 콜라겐스틱젤리" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 콜라겐스틱젤리</div>
+											<div class="prod-text-info">
+												비타민C와 콜라겐을 한번에 맛있게!
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_4_pc.png"
+													alt="비타500 젤리" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 젤리</div>
+											<div class="prod-text-info">
+												새콤달콤한 젤리로 비타민C를 그대로!
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="prod-box">
+										<div class="prod-imgbox">
+											<a href="#"><img src="./images/main/product/product_8_pc.png"
+													alt="비타500 로열폴리스" /></a>
+										</div>
+										<div class="prod-textbox">
+											<div class="prod-text-tit">비타500 로열폴리스</div>
+											<div class="prod-text-info">
+												로열젤리펩타이드와 수용성프로폴리스 추출물로
+												업그레이드된 비타500!
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pg-pc">
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+					</div>
+					<div class="goto-wrap goto-wrap-mobile" data-aos="fade-up">
+						<div class="goto">
+							<a href="#">제품 보러가기</a>
+						</div>
+					</div>
+					<div class="goto-wrap goto-wrap-pc" data-aos="fade-up" data-aos-delay="500">
+						<div class="goto"><a href="#">더 많은 제품 보러가기</a></div>
+					</div>
+				</div>
+			</section>
+			<!-- section - video -->
+			<section class="vita-vdo">
+				<div class="bg-vdo">
+					<div class="sec-titbox sec-titbox-vdo" class="his-titbox" data-aos="fade-up">
+						<h2 class="sec-tit3">영상으로 만나는 비타500</h2>
+						<em class="sec-subtit-gray">다양한 비타500 광고를 만나보세요.</em>
+					</div>
+					<!-- Swiper -->
+					<div class="sec-vdo" class="his-titbox" data-aos="fade-up">
+						<div class="swiper swiper-vdo">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_1.png"
+											alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 15초" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_2.jpg"
+											alt="비타민C 가드득 피었습니다. 비타500 제로 르세라핌 30초" /></a>
+								</div>
 
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_6.jpg"
-                        alt="비타500 제니의 새로운 펼침"
-                    /></a>
-                  </div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_5.jpg"
+											alt="제니와 함께하는 비타500" /></a>
+								</div>
 
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_7.jpg"
-                        alt="펭수와 함께하는 비타500 뮤비"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_8.jpg"
-                        alt="펭수와 함께하는 비타500"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#"
-                      ><img
-                        src="./images/main/video/pc_video_9.jpg"
-                        alt="수지의 거꾸로 삼행시로 알아보는 극장에티켓"
-                    /></a>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="goto-wrap goto-wrap-mobile" data-aos="fade-up">
-              <div class="goto">
-                <a href="#">더 보기</a>
-              </div>
-            </div>
-            <div
-              class="goto-wrap goto-wrap-pc"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="goto"><a href="#">더 많은 광고영상 보러가기</a></div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer id="footer">
-        <div class="ft-wrap">
-          <div class="pc-menu-wrap">
-            <div class="pc-menu">
-              <span>광동제약</span>
-              <div class="menu-box">
-                <a href="#">회사소개</a>
-                <a href="#">연구개발</a>
-                <a href="#">투자정보</a>
-                <a href="#">사회공헌</a>
-                <a href="#">윤리경영</a>
-                <a href="#">인재채용</a>
-              </div>
-            </div>
-            <div class="pc-menu">
-              <span>제품소개</span>
-              <div class="menu-box">
-                <a href="#">일반의약품</a>
-                <a href="#">전문의약품</a>
-                <a href="#">원료의약품</a>
-                <a href="#">의약외품</a>
-                <a href="#">약국드링크</a>
-                <a href="#">일반유통식품</a>
-                <a href="#">건강기능식품</a>
-                <a href="#">전통소재식품</a>
-                <a href="#">기타</a>
-                <a href="#">공지사항</a>
-              </div>
-            </div>
-          </div>
-          <div class="goto-container">
-            <div class="goto-box goto-box-pc">
-              <a href="#">개인정보처리방침</a>
-              <a href="#">이메일무단수집거부</a>
-              <a href="#">공개입찰</a>
-            </div>
-            <div class="goto-site-box">
-              <div class="goto-site goto-sns">
-                <span>광동제약 SNS</span>
-                <div class="goto-list goto-list-sns">
-                  <ul>
-                    <li><a href="#">인스타그램</a></li>
-                    <li><a href="#">유튜브</a></li>
-                    <li><a href="#">페이스북</a></li>
-                    <li><a href="#">네이버포스트</a></li>
-                    <li><a href="#">네이버블로그</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="goto-site goto-family">
-                <span>패밀리사이트</span>
-                <div class="goto-list goto-list-family">
-                  <ul>
-                    <li><a href="#">광동상회</a></li>
-                    <li><a href="#">광동병원</a></li>
-                    <li><a href="#">KD케어몰</a></li>
-                    <li><a href="#">코리아이플랫폼</a></li>
-                    <li><a href="#">광동약국몰</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ft-info">
-            <div class="ft-logo"><a href="#">광동제약로고</a></div>
-            <p>서울시 서초구 서초중앙로 85 가산빌딩 Tel.02-6006-7777</p>
-            <div class="goto-box goto-box-mb">
-              <a href="#">개인정보처리방침</a>
-              <a href="#">이메일무단수집거부</a>
-              <a href="#">공개입찰</a>
-            </div>
-            <p>
-              CopyrightⓒKwangdong Pharmaceutical Co., Ltd. <br />
-              All rights Reserved
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_6.jpg"
+											alt="비타500 제니의 새로운 펼침" /></a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_7.jpg"
+											alt="펭수와 함께하는 비타500 뮤비" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_8.jpg"
+											alt="펭수와 함께하는 비타500" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./images/main/video/pc_video_9.jpg"
+											alt="수지의 거꾸로 삼행시로 알아보는 극장에티켓" /></a>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="goto-wrap goto-wrap-mobile" data-aos="fade-up">
+						<div class="goto">
+							<a href="#">더 보기</a>
+						</div>
+					</div>
+					<div class="goto-wrap goto-wrap-pc" data-aos="fade-up" data-aos-delay="500">
+						<div class="goto"><a href="#">더 많은 광고영상 보러가기</a></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer id="footer">
+			<div class="ft-wrap">
+				<div class="pc-menu-wrap">
+					<div class="pc-menu">
+						<span>광동제약</span>
+						<div class="menu-box">
+							<a href="#">회사소개</a>
+							<a href="#">연구개발</a>
+							<a href="#">투자정보</a>
+							<a href="#">사회공헌</a>
+							<a href="#">윤리경영</a>
+							<a href="#">인재채용</a>
+						</div>
+					</div>
+					<div class="pc-menu">
+						<span>제품소개</span>
+						<div class="menu-box">
+							<a href="#">일반의약품</a>
+							<a href="#">전문의약품</a>
+							<a href="#">원료의약품</a>
+							<a href="#">의약외품</a>
+							<a href="#">약국드링크</a>
+							<a href="#">일반유통식품</a>
+							<a href="#">건강기능식품</a>
+							<a href="#">전통소재식품</a>
+							<a href="#">기타</a>
+							<a href="#">공지사항</a>
+						</div>
+					</div>
+				</div>
+				<div class="goto-container">
+					<div class="goto-box goto-box-pc">
+						<a href="#">개인정보처리방침</a>
+						<a href="#">이메일무단수집거부</a>
+						<a href="#">공개입찰</a>
+					</div>
+					<div class="goto-site-box">
+						<div class="goto-site goto-sns">
+							<span>광동제약 SNS</span>
+							<div class="goto-list goto-list-sns">
+								<ul>
+									<li><a href="#">인스타그램</a></li>
+									<li><a href="#">유튜브</a></li>
+									<li><a href="#">페이스북</a></li>
+									<li><a href="#">네이버포스트</a></li>
+									<li><a href="#">네이버블로그</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="goto-site goto-family">
+							<span>패밀리사이트</span>
+							<div class="goto-list goto-list-family">
+								<ul>
+									<li><a href="#">광동상회</a></li>
+									<li><a href="#">광동병원</a></li>
+									<li><a href="#">KD케어몰</a></li>
+									<li><a href="#">코리아이플랫폼</a></li>
+									<li><a href="#">광동약국몰</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ft-info">
+					<div class="ft-logo"><a href="#">광동제약로고</a></div>
+					<p>서울시 서초구 서초중앙로 85 가산빌딩 Tel.02-6006-7777</p>
+					<div class="goto-box goto-box-mb">
+						<a href="#">개인정보처리방침</a>
+						<a href="#">이메일무단수집거부</a>
+						<a href="#">공개입찰</a>
+					</div>
+					<p>
+						CopyrightⓒKwangdong Pharmaceutical Co., Ltd. <br />
+						All rights Reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
