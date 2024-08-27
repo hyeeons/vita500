@@ -62,6 +62,11 @@ var swiper = new Swiper(".swiper-vdo", {
 AOS.init({ duration: 1000, easing: "ease-in-out", once: true, dealy: 0 });
 
 $(document).ready(function () {
+	//모바일 헤더
+	$(".gnb-mobile .nav-list-depth1 > a").click(function(){
+		$(this).next(".nav-list-depth2").toggleClass("active");
+		$(this).parents(".nav-list-depth1").toggleClass("active");
+	})
   // footer
   const ftSns = $(".goto-sns");
   const ftSnsList = $(".goto-list-sns");
@@ -102,6 +107,8 @@ $(document).ready(function () {
       gnbBg.removeClass("hover");
       navDepth2.removeClass("hover");
     });
+
+
   });
   //goto버튼활성
 
